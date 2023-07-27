@@ -32,8 +32,8 @@ namespace VPG_DHS
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.vpgMenu = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.btnActiveadd = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.tbControl = new System.Windows.Forms.TabControl();
@@ -49,20 +49,15 @@ namespace VPG_DHS
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.lblGrab = new System.Windows.Forms.Label();
-            this.lblMode = new System.Windows.Forms.Label();
-            this.lblDelay = new System.Windows.Forms.Label();
-            this.lblLevel = new System.Windows.Forms.Label();
-            this.lblHysteresis = new System.Windows.Forms.Label();
-            this.lblTrigger = new System.Windows.Forms.Label();
+            this.tbWeightformat = new System.Windows.Forms.TabPage();
+            this.tbFilters = new System.Windows.Forms.TabPage();
+            this.label3 = new System.Windows.Forms.Label();
             this.vpgMenu.SuspendLayout();
             this.tbControl.SuspendLayout();
-            this.pgWeighing.SuspendLayout();
+            this.pgLoadcell.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
+            this.tbFilters.SuspendLayout();
             this.SuspendLayout();
             // 
             // vpgMenu
@@ -83,17 +78,17 @@ namespace VPG_DHS
             this.toolStripMenuItem1.Size = new System.Drawing.Size(60, 20);
             this.toolStripMenuItem1.Text = "Log File";
             // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(39, 20);
-            this.toolStripMenuItem3.Text = "Edit";
-            // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             this.toolStripMenuItem2.Size = new System.Drawing.Size(52, 20);
             this.toolStripMenuItem2.Text = "About";
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(39, 20);
+            this.toolStripMenuItem3.Text = "Edit";
             // 
             // btnActiveadd
             // 
@@ -124,18 +119,17 @@ namespace VPG_DHS
             this.tbControl.Location = new System.Drawing.Point(12, 64);
             this.tbControl.Name = "tbControl";
             this.tbControl.SelectedIndex = 0;
-            this.tbControl.Size = new System.Drawing.Size(760, 374);
+            this.tbControl.Size = new System.Drawing.Size(760, 497);
             this.tbControl.TabIndex = 3;
             this.tbControl.Click += new System.EventHandler(this.tbControl_Click);
             // 
             // pgWeighing
             // 
-            this.pgWeighing.Controls.Add(this.tabControl1);
             this.pgWeighing.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pgWeighing.Location = new System.Drawing.Point(4, 27);
             this.pgWeighing.Name = "pgWeighing";
             this.pgWeighing.Padding = new System.Windows.Forms.Padding(3);
-            this.pgWeighing.Size = new System.Drawing.Size(752, 343);
+            this.pgWeighing.Size = new System.Drawing.Size(752, 466);
             this.pgWeighing.TabIndex = 0;
             this.pgWeighing.Text = "Weighing Display & Status";
             this.pgWeighing.UseVisualStyleBackColor = true;
@@ -143,10 +137,11 @@ namespace VPG_DHS
             // 
             // pgLoadcell
             // 
+            this.pgLoadcell.Controls.Add(this.tabControl1);
             this.pgLoadcell.Location = new System.Drawing.Point(4, 27);
             this.pgLoadcell.Name = "pgLoadcell";
             this.pgLoadcell.Padding = new System.Windows.Forms.Padding(3);
-            this.pgLoadcell.Size = new System.Drawing.Size(744, 343);
+            this.pgLoadcell.Size = new System.Drawing.Size(752, 466);
             this.pgLoadcell.TabIndex = 1;
             this.pgLoadcell.Text = "LoadCell Setup";
             this.pgLoadcell.UseVisualStyleBackColor = true;
@@ -156,7 +151,7 @@ namespace VPG_DHS
             this.pgCalibration.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pgCalibration.Location = new System.Drawing.Point(4, 27);
             this.pgCalibration.Name = "pgCalibration";
-            this.pgCalibration.Size = new System.Drawing.Size(744, 343);
+            this.pgCalibration.Size = new System.Drawing.Size(752, 504);
             this.pgCalibration.TabIndex = 2;
             this.pgCalibration.Text = "Calibration";
             this.pgCalibration.UseVisualStyleBackColor = true;
@@ -165,7 +160,7 @@ namespace VPG_DHS
             // 
             this.pgView.Location = new System.Drawing.Point(4, 27);
             this.pgView.Name = "pgView";
-            this.pgView.Size = new System.Drawing.Size(744, 343);
+            this.pgView.Size = new System.Drawing.Size(752, 504);
             this.pgView.TabIndex = 3;
             this.pgView.Text = "View All";
             this.pgView.UseVisualStyleBackColor = true;
@@ -174,7 +169,7 @@ namespace VPG_DHS
             // 
             this.pgGraph.Location = new System.Drawing.Point(4, 27);
             this.pgGraph.Name = "pgGraph";
-            this.pgGraph.Size = new System.Drawing.Size(752, 343);
+            this.pgGraph.Size = new System.Drawing.Size(752, 504);
             this.pgGraph.TabIndex = 4;
             this.pgGraph.Text = "Graph";
             this.pgGraph.UseVisualStyleBackColor = true;
@@ -238,101 +233,50 @@ namespace VPG_DHS
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(19, 33);
+            this.tabControl1.Controls.Add(this.tbWeightformat);
+            this.tabControl1.Controls.Add(this.tbFilters);
+            this.tabControl1.Location = new System.Drawing.Point(24, 31);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(503, 304);
+            this.tabControl1.Size = new System.Drawing.Size(558, 420);
             this.tabControl1.TabIndex = 0;
             // 
-            // tabPage1
+            // tbWeightformat
             // 
-            this.tabPage1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage1.Location = new System.Drawing.Point(4, 23);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(495, 277);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Weighing Format/ Zero/ Tare/ Motion ";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tbWeightformat.Location = new System.Drawing.Point(4, 27);
+            this.tbWeightformat.Name = "tbWeightformat";
+            this.tbWeightformat.Padding = new System.Windows.Forms.Padding(3);
+            this.tbWeightformat.Size = new System.Drawing.Size(550, 389);
+            this.tbWeightformat.TabIndex = 0;
+            this.tbWeightformat.Text = "Weight Format/Zero/Tare/Motion ";
+            this.tbWeightformat.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // tbFilters
             // 
-            this.tabPage2.Controls.Add(this.lblTrigger);
-            this.tabPage2.Controls.Add(this.lblHysteresis);
-            this.tabPage2.Controls.Add(this.lblLevel);
-            this.tabPage2.Controls.Add(this.lblDelay);
-            this.tabPage2.Controls.Add(this.lblMode);
-            this.tabPage2.Controls.Add(this.lblGrab);
-            this.tabPage2.Location = new System.Drawing.Point(4, 23);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(495, 277);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Filters/ Peak/ Grab/ Setpoints";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tbFilters.Controls.Add(this.label3);
+            this.tbFilters.Location = new System.Drawing.Point(4, 27);
+            this.tbFilters.Name = "tbFilters";
+            this.tbFilters.Padding = new System.Windows.Forms.Padding(3);
+            this.tbFilters.Size = new System.Drawing.Size(550, 389);
+            this.tbFilters.TabIndex = 1;
+            this.tbFilters.Text = "Filters/Peak/Grab/Setpoints";
+            this.tbFilters.UseVisualStyleBackColor = true;
             // 
-            // lblGrab
+            // label3
             // 
-            this.lblGrab.AutoSize = true;
-            this.lblGrab.Font = new System.Drawing.Font("Calibri", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGrab.Location = new System.Drawing.Point(10, 12);
-            this.lblGrab.Name = "lblGrab";
-            this.lblGrab.Size = new System.Drawing.Size(38, 18);
-            this.lblGrab.TabIndex = 0;
-            this.lblGrab.Text = "Grab";
-            // 
-            // lblMode
-            // 
-            this.lblMode.AutoSize = true;
-            this.lblMode.Location = new System.Drawing.Point(13, 44);
-            this.lblMode.Name = "lblMode";
-            this.lblMode.Size = new System.Drawing.Size(35, 14);
-            this.lblMode.TabIndex = 1;
-            this.lblMode.Text = "Mode";
-            // 
-            // lblDelay
-            // 
-            this.lblDelay.AutoSize = true;
-            this.lblDelay.Location = new System.Drawing.Point(13, 70);
-            this.lblDelay.Name = "lblDelay";
-            this.lblDelay.Size = new System.Drawing.Size(36, 14);
-            this.lblDelay.TabIndex = 2;
-            this.lblDelay.Text = "Delay";
-            // 
-            // lblLevel
-            // 
-            this.lblLevel.AutoSize = true;
-            this.lblLevel.Location = new System.Drawing.Point(14, 94);
-            this.lblLevel.Name = "lblLevel";
-            this.lblLevel.Size = new System.Drawing.Size(33, 14);
-            this.lblLevel.TabIndex = 3;
-            this.lblLevel.Text = "Level";
-            // 
-            // lblHysteresis
-            // 
-            this.lblHysteresis.AutoSize = true;
-            this.lblHysteresis.Location = new System.Drawing.Point(14, 120);
-            this.lblHysteresis.Name = "lblHysteresis";
-            this.lblHysteresis.Size = new System.Drawing.Size(59, 14);
-            this.lblHysteresis.TabIndex = 4;
-            this.lblHysteresis.Text = "Hysteresis";
-            // 
-            // lblTrigger
-            // 
-            this.lblTrigger.AutoSize = true;
-            this.lblTrigger.Location = new System.Drawing.Point(14, 144);
-            this.lblTrigger.Name = "lblTrigger";
-            this.lblTrigger.Size = new System.Drawing.Size(41, 14);
-            this.lblTrigger.TabIndex = 5;
-            this.lblTrigger.Text = "Trigger";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Calibri", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(18, 21);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(38, 18);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Grab";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 573);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
@@ -345,14 +289,15 @@ namespace VPG_DHS
             this.Controls.Add(this.vpgMenu);
             this.Name = "Form1";
             this.Text = "VPG";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.vpgMenu.ResumeLayout(false);
             this.vpgMenu.PerformLayout();
             this.tbControl.ResumeLayout(false);
-            this.pgWeighing.ResumeLayout(false);
+            this.pgLoadcell.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabControl1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
+            this.tbFilters.ResumeLayout(false);
+            this.tbFilters.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -379,14 +324,9 @@ namespace VPG_DHS
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Label lblTrigger;
-        private System.Windows.Forms.Label lblHysteresis;
-        private System.Windows.Forms.Label lblLevel;
-        private System.Windows.Forms.Label lblDelay;
-        private System.Windows.Forms.Label lblMode;
-        private System.Windows.Forms.Label lblGrab;
+        private System.Windows.Forms.TabPage tbWeightformat;
+        private System.Windows.Forms.TabPage tbFilters;
+        private System.Windows.Forms.Label label3;
     }
 }
 
