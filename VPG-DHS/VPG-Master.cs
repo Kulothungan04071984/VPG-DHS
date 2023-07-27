@@ -22,9 +22,14 @@ namespace VPG_DHS
           
             if (tbControl.SelectedTab == pgWeighing)
             {
-                Test test = new Test();
-                test.Show();
+                //Test test = new Test();
+                //test.Show();
             }
+        }
+
+        private void tbControl_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
