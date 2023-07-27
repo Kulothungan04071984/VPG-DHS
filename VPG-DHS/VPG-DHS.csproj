@@ -54,6 +54,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WeighingDisplayStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WeighingDisplayStatus.Designer.cs">
+      <DependentUpon>WeighingDisplayStatus.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="EthercatCommunication.resx">
+      <DependentUpon>EthercatCommunication.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
