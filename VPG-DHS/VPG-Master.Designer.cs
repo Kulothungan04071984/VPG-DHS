@@ -29,6 +29,7 @@ namespace VPG_DHS
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.vpgMenu = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
@@ -102,15 +103,22 @@ namespace VPG_DHS
             this.pgCalibration = new System.Windows.Forms.TabPage();
             this.pgView = new System.Windows.Forms.TabPage();
             this.pgGraph = new System.Windows.Forms.TabPage();
+            this.lblTemp = new System.Windows.Forms.Label();
+            this.txtTemp = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tbWeightformat = new System.Windows.Forms.TabPage();
+            this.tbFilters = new System.Windows.Forms.TabPage();
+            this.label3 = new System.Windows.Forms.Label();
             this.vpgMenu.SuspendLayout();
             this.tbControl.SuspendLayout();
-            this.pgWeighing.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.pgLoadcell.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tabControl1.SuspendLayout();
+            this.tbFilters.SuspendLayout();
             this.SuspendLayout();
             // 
             // vpgMenu
@@ -146,7 +154,7 @@ namespace VPG_DHS
             // btnActiveadd
             // 
             this.btnActiveadd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActiveadd.Location = new System.Drawing.Point(236, 35);
+            this.btnActiveadd.Location = new System.Drawing.Point(208, 31);
             this.btnActiveadd.Name = "btnActiveadd";
             this.btnActiveadd.Size = new System.Drawing.Size(124, 23);
             this.btnActiveadd.TabIndex = 1;
@@ -156,7 +164,7 @@ namespace VPG_DHS
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(366, 36);
+            this.comboBox1.Location = new System.Drawing.Point(335, 32);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(40, 21);
             this.comboBox1.TabIndex = 2;
@@ -172,8 +180,9 @@ namespace VPG_DHS
             this.tbControl.Location = new System.Drawing.Point(12, 64);
             this.tbControl.Name = "tbControl";
             this.tbControl.SelectedIndex = 0;
-            this.tbControl.Size = new System.Drawing.Size(820, 503);
+            this.tbControl.Size = new System.Drawing.Size(760, 497);
             this.tbControl.TabIndex = 3;
+            this.tbControl.Click += new System.EventHandler(this.tbControl_Click);
             // 
             // pgWeighing
             // 
@@ -182,7 +191,7 @@ namespace VPG_DHS
             this.pgWeighing.Location = new System.Drawing.Point(4, 27);
             this.pgWeighing.Name = "pgWeighing";
             this.pgWeighing.Padding = new System.Windows.Forms.Padding(3);
-            this.pgWeighing.Size = new System.Drawing.Size(812, 472);
+            this.pgWeighing.Size = new System.Drawing.Size(752, 466);
             this.pgWeighing.TabIndex = 0;
             this.pgWeighing.Text = "Weighing Display & Status";
             this.pgWeighing.UseVisualStyleBackColor = true;
@@ -820,10 +829,11 @@ namespace VPG_DHS
             // 
             // pgLoadcell
             // 
+            this.pgLoadcell.Controls.Add(this.tabControl1);
             this.pgLoadcell.Location = new System.Drawing.Point(4, 27);
             this.pgLoadcell.Name = "pgLoadcell";
             this.pgLoadcell.Padding = new System.Windows.Forms.Padding(3);
-            this.pgLoadcell.Size = new System.Drawing.Size(812, 472);
+            this.pgLoadcell.Size = new System.Drawing.Size(752, 466);
             this.pgLoadcell.TabIndex = 1;
             this.pgLoadcell.Text = "LoadCell Setup";
             this.pgLoadcell.UseVisualStyleBackColor = true;
@@ -833,7 +843,7 @@ namespace VPG_DHS
             this.pgCalibration.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pgCalibration.Location = new System.Drawing.Point(4, 27);
             this.pgCalibration.Name = "pgCalibration";
-            this.pgCalibration.Size = new System.Drawing.Size(812, 472);
+            this.pgCalibration.Size = new System.Drawing.Size(752, 504);
             this.pgCalibration.TabIndex = 2;
             this.pgCalibration.Text = "Calibration";
             this.pgCalibration.UseVisualStyleBackColor = true;
@@ -842,7 +852,7 @@ namespace VPG_DHS
             // 
             this.pgView.Location = new System.Drawing.Point(4, 27);
             this.pgView.Name = "pgView";
-            this.pgView.Size = new System.Drawing.Size(812, 472);
+            this.pgView.Size = new System.Drawing.Size(752, 504);
             this.pgView.TabIndex = 3;
             this.pgView.Text = "View All";
             this.pgView.UseVisualStyleBackColor = true;
@@ -851,37 +861,135 @@ namespace VPG_DHS
             // 
             this.pgGraph.Location = new System.Drawing.Point(4, 27);
             this.pgGraph.Name = "pgGraph";
-            this.pgGraph.Size = new System.Drawing.Size(812, 472);
+            this.pgGraph.Size = new System.Drawing.Size(752, 504);
             this.pgGraph.TabIndex = 4;
             this.pgGraph.Text = "Graph";
             this.pgGraph.UseVisualStyleBackColor = true;
+            // 
+            // lblTemp
+            // 
+            this.lblTemp.AutoSize = true;
+            this.lblTemp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTemp.Location = new System.Drawing.Point(380, 35);
+            this.lblTemp.Name = "lblTemp";
+            this.lblTemp.Size = new System.Drawing.Size(89, 15);
+            this.lblTemp.TabIndex = 4;
+            this.lblTemp.Text = "Temperature";
+            // 
+            // txtTemp
+            // 
+            this.txtTemp.Location = new System.Drawing.Point(475, 33);
+            this.txtTemp.Name = "txtTemp";
+            this.txtTemp.Size = new System.Drawing.Size(90, 20);
+            this.txtTemp.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(565, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(21, 25);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "°";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(580, 37);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(18, 16);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "C";
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(605, 31);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(69, 25);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Help";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(680, 27);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(92, 41);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tbWeightformat);
+            this.tabControl1.Controls.Add(this.tbFilters);
+            this.tabControl1.Location = new System.Drawing.Point(24, 31);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(558, 420);
+            this.tabControl1.TabIndex = 0;
+            // 
+            // tbWeightformat
+            // 
+            this.tbWeightformat.Location = new System.Drawing.Point(4, 27);
+            this.tbWeightformat.Name = "tbWeightformat";
+            this.tbWeightformat.Padding = new System.Windows.Forms.Padding(3);
+            this.tbWeightformat.Size = new System.Drawing.Size(550, 389);
+            this.tbWeightformat.TabIndex = 0;
+            this.tbWeightformat.Text = "Weight Format/Zero/Tare/Motion ";
+            this.tbWeightformat.UseVisualStyleBackColor = true;
+            // 
+            // tbFilters
+            // 
+            this.tbFilters.Controls.Add(this.label3);
+            this.tbFilters.Location = new System.Drawing.Point(4, 27);
+            this.tbFilters.Name = "tbFilters";
+            this.tbFilters.Padding = new System.Windows.Forms.Padding(3);
+            this.tbFilters.Size = new System.Drawing.Size(550, 389);
+            this.tbFilters.TabIndex = 1;
+            this.tbFilters.Text = "Filters/Peak/Grab/Setpoints";
+            this.tbFilters.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Calibri", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(18, 21);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(38, 18);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Grab";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(942, 580);
+            this.ClientSize = new System.Drawing.Size(800, 573);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtTemp);
+            this.Controls.Add(this.lblTemp);
             this.Controls.Add(this.tbControl);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btnActiveadd);
             this.Controls.Add(this.vpgMenu);
             this.Name = "Form1";
             this.Text = "VPG";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.vpgMenu.ResumeLayout(false);
             this.vpgMenu.PerformLayout();
             this.tbControl.ResumeLayout(false);
-            this.pgWeighing.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.pgLoadcell.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tabControl1.ResumeLayout(false);
+            this.tbFilters.ResumeLayout(false);
+            this.tbFilters.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -901,67 +1009,16 @@ namespace VPG_DHS
         private System.Windows.Forms.TabPage pgCalibration;
         private System.Windows.Forms.TabPage pgView;
         private System.Windows.Forms.TabPage pgGraph;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.CheckBox chkexcitiation;
-        private System.Windows.Forms.CheckBox chkloadcellunder;
-        private System.Windows.Forms.CheckBox chkloadcellintegrity;
-        private System.Windows.Forms.CheckBox chkhardwarefailure;
-        private System.Windows.Forms.CheckBox chknofactory;
-        private System.Windows.Forms.CheckBox chkinvalidcalib;
-        private System.Windows.Forms.CheckBox chknouserdata;
-        private System.Windows.Forms.CheckBox chkInvaliddata;
-        private System.Windows.Forms.CheckBox chkTimeout;
-        private System.Windows.Forms.CheckBox chkUndertemp;
-        private System.Windows.Forms.CheckBox chkloadcell;
-        private System.Windows.Forms.CheckBox chlTempLimit;
-        private System.Windows.Forms.CheckBox chkNonvolatile;
-        private System.Windows.Forms.CheckBox chkVolatileramfailure;
-        private System.Windows.Forms.CheckBox chkEpromFailure;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.CheckBox chkset4WD;
-        private System.Windows.Forms.CheckBox chkset3WD;
-        private System.Windows.Forms.CheckBox chkset2WD;
-        private System.Windows.Forms.CheckBox chkset1WD;
-        private System.Windows.Forms.CheckBox chkin4WD;
-        private System.Windows.Forms.CheckBox chkin3WD;
-        private System.Windows.Forms.CheckBox chkin2WD;
-        private System.Windows.Forms.CheckBox chkin1WD;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label lblport;
-        private System.Windows.Forms.ComboBox cbostopbitsWD;
-        private System.Windows.Forms.ComboBox cboparityWD;
-        private System.Windows.Forms.ComboBox cboBaudrateWD;
-        private System.Windows.Forms.ComboBox cbodatabitsWD;
-        private System.Windows.Forms.ComboBox cboportnumWD;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.CheckBox chkZeroTrack;
-        private System.Windows.Forms.CheckBox chkMotion;
-        private System.Windows.Forms.CheckBox chkNet;
-        private System.Windows.Forms.CheckBox chkGross;
-        private System.Windows.Forms.CheckBox chkready;
-        private System.Windows.Forms.Button btnResetDevice;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button btnResetPeak;
-        private System.Windows.Forms.TextBox txtGrab;
-        private System.Windows.Forms.TextBox txtmVV;
-        private System.Windows.Forms.TextBox txtPeak;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnTare;
-        private System.Windows.Forms.Button btnzero;
+        private System.Windows.Forms.Label lblTemp;
+        private System.Windows.Forms.TextBox txtTemp;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtWeight;
-        private System.Windows.Forms.Label lblweight;
-        private System.Windows.Forms.CheckBox chlZerofaillimit;
-        private System.Windows.Forms.CheckBox chkZerofailed;
-        private System.Windows.Forms.CheckBox chkpowerfailed;
-        private System.Windows.Forms.CheckBox chkTarefailed;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tbWeightformat;
+        private System.Windows.Forms.TabPage tbFilters;
+        private System.Windows.Forms.Label label3;
     }
 }
 

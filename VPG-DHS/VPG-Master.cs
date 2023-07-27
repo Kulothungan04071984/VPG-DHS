@@ -20,11 +20,21 @@ namespace VPG_DHS
         private void pgWeighing_Click(object sender, EventArgs e)
         {
           
-            //if (tbControl.SelectedTab == pgWeighing)
-            //{
-            //    Form1 test = new Form1();
-            //    test.Show();
-            //}
+            if (tbControl.SelectedTab == pgWeighing)
+            {
+                //Test test = new Test();
+                //test.Show();
+            }
+        }
+
+        private void tbControl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
 
        
