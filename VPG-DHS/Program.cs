@@ -16,7 +16,7 @@ namespace VPG_DHS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new EthercatCommunication());
+            Application.Run(new Form1());
         }
     }
 }
