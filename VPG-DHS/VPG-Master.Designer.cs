@@ -31,30 +31,30 @@ namespace VPG_DHS
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.vpgMenu = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.tlLogfile = new System.Windows.Forms.ToolStripMenuItem();
+            this.tlAbout = new System.Windows.Forms.ToolStripMenuItem();
+            this.tlEdit = new System.Windows.Forms.ToolStripMenuItem();
+            this.cboAddress = new System.Windows.Forms.ComboBox();
             this.tbControl = new System.Windows.Forms.TabControl();
             this.pgWeighing = new System.Windows.Forms.TabPage();
             this.pgLoadcell = new System.Windows.Forms.TabPage();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
+            this.pnlWeightkg = new System.Windows.Forms.Panel();
+            this.lblweightkg = new System.Windows.Forms.Label();
             this.lblkg = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtWeightkg = new System.Windows.Forms.TextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tbWeightformat = new System.Windows.Forms.TabPage();
             this.tbFilters = new System.Windows.Forms.TabPage();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
+            this.grpMeasuring = new System.Windows.Forms.GroupBox();
+            this.lblMax2per = new System.Windows.Forms.Label();
+            this.lblHysteresisweightunit = new System.Windows.Forms.Label();
+            this.lblWeightunit = new System.Windows.Forms.Label();
+            this.lblMilli = new System.Windows.Forms.Label();
             this.cboPeak = new System.Windows.Forms.ComboBox();
             this.cboMeasure = new System.Windows.Forms.ComboBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
+            this.lblPeaktrough = new System.Windows.Forms.Label();
+            this.lblPeak = new System.Windows.Forms.Label();
+            this.lblMeasurate = new System.Windows.Forms.Label();
             this.txtNo4hysteresis = new System.Windows.Forms.TextBox();
             this.txtNo4level = new System.Windows.Forms.TextBox();
             this.txtNo3hysteresis = new System.Windows.Forms.TextBox();
@@ -67,27 +67,27 @@ namespace VPG_DHS
             this.cboNo3source = new System.Windows.Forms.ComboBox();
             this.cboNo2source = new System.Windows.Forms.ComboBox();
             this.cboSource = new System.Windows.Forms.ComboBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.lblNo4level = new System.Windows.Forms.Label();
+            this.lblNo2level = new System.Windows.Forms.Label();
+            this.lblNo4hysteresis = new System.Windows.Forms.Label();
+            this.lblNo2Hysteresis = new System.Windows.Forms.Label();
+            this.lblNo3source = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblNo4source = new System.Windows.Forms.Label();
+            this.lblNo2source = new System.Windows.Forms.Label();
+            this.lblNo3level = new System.Windows.Forms.Label();
+            this.lblNo3hysteresis = new System.Windows.Forms.Label();
+            this.lblNo1Hysteresis = new System.Windows.Forms.Label();
+            this.lblNo1level = new System.Windows.Forms.Label();
+            this.lblNo1source = new System.Windows.Forms.Label();
+            this.lblSetpoints = new System.Windows.Forms.Label();
             this.cboFir = new System.Windows.Forms.ComboBox();
             this.cboRecursive = new System.Windows.Forms.ComboBox();
             this.cboFiltertype = new System.Windows.Forms.ComboBox();
             this.lblRecursive = new System.Windows.Forms.Label();
             this.lblFir = new System.Windows.Forms.Label();
             this.lblFiltertype = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblFiltering = new System.Windows.Forms.Label();
             this.txtHysteresis = new System.Windows.Forms.TextBox();
             this.txtLevel = new System.Windows.Forms.TextBox();
             this.txtDelay = new System.Windows.Forms.TextBox();
@@ -98,66 +98,66 @@ namespace VPG_DHS
             this.lblLevel = new System.Windows.Forms.Label();
             this.lblDelay = new System.Windows.Forms.Label();
             this.lblMode = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pgCalibration = new System.Windows.Forms.TabPage();
+            this.lblGrab = new System.Windows.Forms.Label();
             this.pgView = new System.Windows.Forms.TabPage();
             this.pgGraph = new System.Windows.Forms.TabPage();
             this.lblTemp = new System.Windows.Forms.Label();
             this.txtTemp = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.lblDegree = new System.Windows.Forms.Label();
+            this.lblCel = new System.Windows.Forms.Label();
+            this.btnHelp = new System.Windows.Forms.Button();
+            this.picSyrma = new System.Windows.Forms.PictureBox();
+            this.lblAddress = new System.Windows.Forms.Label();
+            this.pnlAddress = new System.Windows.Forms.Panel();
+            this.pgCalibration = new System.Windows.Forms.TabPage();
             this.vpgMenu.SuspendLayout();
             this.tbControl.SuspendLayout();
             this.pgLoadcell.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.pnlWeightkg.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tbFilters.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel2.SuspendLayout();
+            this.grpMeasuring.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picSyrma)).BeginInit();
+            this.pnlAddress.SuspendLayout();
             this.SuspendLayout();
             // 
             // vpgMenu
             // 
             this.vpgMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1,
-            this.toolStripMenuItem2,
-            this.toolStripMenuItem3});
+            this.tlLogfile,
+            this.tlAbout,
+            this.tlEdit});
             this.vpgMenu.Location = new System.Drawing.Point(0, 0);
             this.vpgMenu.Name = "vpgMenu";
             this.vpgMenu.Size = new System.Drawing.Size(800, 24);
             this.vpgMenu.TabIndex = 0;
             this.vpgMenu.Text = "Log File";
             // 
-            // toolStripMenuItem1
+            // tlLogfile
             // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(60, 20);
-            this.toolStripMenuItem1.Text = "Log File";
+            this.tlLogfile.Name = "tlLogfile";
+            this.tlLogfile.Size = new System.Drawing.Size(60, 20);
+            this.tlLogfile.Text = "Log File";
             // 
-            // toolStripMenuItem2
+            // tlAbout
             // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(52, 20);
-            this.toolStripMenuItem2.Text = "About";
+            this.tlAbout.Name = "tlAbout";
+            this.tlAbout.Size = new System.Drawing.Size(52, 20);
+            this.tlAbout.Text = "About";
             // 
-            // toolStripMenuItem3
+            // tlEdit
             // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(39, 20);
-            this.toolStripMenuItem3.Text = "Edit";
+            this.tlEdit.Name = "tlEdit";
+            this.tlEdit.Size = new System.Drawing.Size(39, 20);
+            this.tlEdit.Text = "Edit";
             // 
-            // comboBox1
+            // cboAddress
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(335, 32);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(40, 21);
-            this.comboBox1.TabIndex = 2;
+            this.cboAddress.FormattingEnabled = true;
+            this.cboAddress.Location = new System.Drawing.Point(335, 32);
+            this.cboAddress.Name = "cboAddress";
+            this.cboAddress.Size = new System.Drawing.Size(40, 21);
+            this.cboAddress.TabIndex = 2;
             // 
             // tbControl
             // 
@@ -187,9 +187,9 @@ namespace VPG_DHS
             // 
             // pgLoadcell
             // 
-            this.pgLoadcell.Controls.Add(this.panel1);
+            this.pgLoadcell.Controls.Add(this.pnlWeightkg);
             this.pgLoadcell.Controls.Add(this.lblkg);
-            this.pgLoadcell.Controls.Add(this.textBox1);
+            this.pgLoadcell.Controls.Add(this.txtWeightkg);
             this.pgLoadcell.Controls.Add(this.tabControl1);
             this.pgLoadcell.Location = new System.Drawing.Point(4, 27);
             this.pgLoadcell.Name = "pgLoadcell";
@@ -199,22 +199,22 @@ namespace VPG_DHS
             this.pgLoadcell.Text = "LoadCell Setup";
             this.pgLoadcell.UseVisualStyleBackColor = true;
             // 
-            // panel1
+            // pnlWeightkg
             // 
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Location = new System.Drawing.Point(205, 5);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(89, 28);
-            this.panel1.TabIndex = 15;
+            this.pnlWeightkg.Controls.Add(this.lblweightkg);
+            this.pnlWeightkg.Location = new System.Drawing.Point(205, 5);
+            this.pnlWeightkg.Name = "pnlWeightkg";
+            this.pnlWeightkg.Size = new System.Drawing.Size(89, 28);
+            this.pnlWeightkg.TabIndex = 15;
             // 
-            // label5
+            // lblweightkg
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(32, 4);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 18);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "Weight";
+            this.lblweightkg.AutoSize = true;
+            this.lblweightkg.Location = new System.Drawing.Point(32, 4);
+            this.lblweightkg.Name = "lblweightkg";
+            this.lblweightkg.Size = new System.Drawing.Size(53, 18);
+            this.lblweightkg.TabIndex = 15;
+            this.lblweightkg.Text = "Weight";
             // 
             // lblkg
             // 
@@ -225,12 +225,12 @@ namespace VPG_DHS
             this.lblkg.TabIndex = 3;
             this.lblkg.Text = "kg";
             // 
-            // textBox1
+            // txtWeightkg
             // 
-            this.textBox1.Location = new System.Drawing.Point(295, 5);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(84, 26);
-            this.textBox1.TabIndex = 2;
+            this.txtWeightkg.Location = new System.Drawing.Point(295, 5);
+            this.txtWeightkg.Name = "txtWeightkg";
+            this.txtWeightkg.Size = new System.Drawing.Size(84, 26);
+            this.txtWeightkg.TabIndex = 2;
             // 
             // tabControl1
             // 
@@ -254,12 +254,12 @@ namespace VPG_DHS
             // 
             // tbFilters
             // 
-            this.tbFilters.Controls.Add(this.groupBox1);
+            this.tbFilters.Controls.Add(this.grpMeasuring);
             this.tbFilters.Controls.Add(this.cboPeak);
             this.tbFilters.Controls.Add(this.cboMeasure);
-            this.tbFilters.Controls.Add(this.label23);
-            this.tbFilters.Controls.Add(this.label22);
-            this.tbFilters.Controls.Add(this.label21);
+            this.tbFilters.Controls.Add(this.lblPeaktrough);
+            this.tbFilters.Controls.Add(this.lblPeak);
+            this.tbFilters.Controls.Add(this.lblMeasurate);
             this.tbFilters.Controls.Add(this.txtNo4hysteresis);
             this.tbFilters.Controls.Add(this.txtNo4level);
             this.tbFilters.Controls.Add(this.txtNo3hysteresis);
@@ -272,27 +272,27 @@ namespace VPG_DHS
             this.tbFilters.Controls.Add(this.cboNo3source);
             this.tbFilters.Controls.Add(this.cboNo2source);
             this.tbFilters.Controls.Add(this.cboSource);
-            this.tbFilters.Controls.Add(this.label19);
-            this.tbFilters.Controls.Add(this.label14);
-            this.tbFilters.Controls.Add(this.label20);
-            this.tbFilters.Controls.Add(this.label13);
-            this.tbFilters.Controls.Add(this.label11);
+            this.tbFilters.Controls.Add(this.lblNo4level);
+            this.tbFilters.Controls.Add(this.lblNo2level);
+            this.tbFilters.Controls.Add(this.lblNo4hysteresis);
+            this.tbFilters.Controls.Add(this.lblNo2Hysteresis);
+            this.tbFilters.Controls.Add(this.lblNo3source);
             this.tbFilters.Controls.Add(this.label18);
-            this.tbFilters.Controls.Add(this.label17);
-            this.tbFilters.Controls.Add(this.label12);
-            this.tbFilters.Controls.Add(this.label15);
-            this.tbFilters.Controls.Add(this.label16);
-            this.tbFilters.Controls.Add(this.label10);
-            this.tbFilters.Controls.Add(this.label9);
-            this.tbFilters.Controls.Add(this.label8);
-            this.tbFilters.Controls.Add(this.label7);
+            this.tbFilters.Controls.Add(this.lblNo4source);
+            this.tbFilters.Controls.Add(this.lblNo2source);
+            this.tbFilters.Controls.Add(this.lblNo3level);
+            this.tbFilters.Controls.Add(this.lblNo3hysteresis);
+            this.tbFilters.Controls.Add(this.lblNo1Hysteresis);
+            this.tbFilters.Controls.Add(this.lblNo1level);
+            this.tbFilters.Controls.Add(this.lblNo1source);
+            this.tbFilters.Controls.Add(this.lblSetpoints);
             this.tbFilters.Controls.Add(this.cboFir);
             this.tbFilters.Controls.Add(this.cboRecursive);
             this.tbFilters.Controls.Add(this.cboFiltertype);
             this.tbFilters.Controls.Add(this.lblRecursive);
             this.tbFilters.Controls.Add(this.lblFir);
             this.tbFilters.Controls.Add(this.lblFiltertype);
-            this.tbFilters.Controls.Add(this.label4);
+            this.tbFilters.Controls.Add(this.lblFiltering);
             this.tbFilters.Controls.Add(this.txtHysteresis);
             this.tbFilters.Controls.Add(this.txtLevel);
             this.tbFilters.Controls.Add(this.txtDelay);
@@ -303,7 +303,7 @@ namespace VPG_DHS
             this.tbFilters.Controls.Add(this.lblLevel);
             this.tbFilters.Controls.Add(this.lblDelay);
             this.tbFilters.Controls.Add(this.lblMode);
-            this.tbFilters.Controls.Add(this.label3);
+            this.tbFilters.Controls.Add(this.lblGrab);
             this.tbFilters.Location = new System.Drawing.Point(4, 27);
             this.tbFilters.Name = "tbFilters";
             this.tbFilters.Padding = new System.Windows.Forms.Padding(3);
@@ -312,58 +312,58 @@ namespace VPG_DHS
             this.tbFilters.Text = "Filters/Peak/Grab/Setpoints";
             this.tbFilters.UseVisualStyleBackColor = true;
             // 
-            // groupBox1
+            // grpMeasuring
             // 
-            this.groupBox1.Controls.Add(this.label27);
-            this.groupBox1.Controls.Add(this.label26);
-            this.groupBox1.Controls.Add(this.label25);
-            this.groupBox1.Controls.Add(this.label24);
-            this.groupBox1.Location = new System.Drawing.Point(366, 236);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(173, 108);
-            this.groupBox1.TabIndex = 43;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Measuring Units";
+            this.grpMeasuring.Controls.Add(this.lblMax2per);
+            this.grpMeasuring.Controls.Add(this.lblHysteresisweightunit);
+            this.grpMeasuring.Controls.Add(this.lblWeightunit);
+            this.grpMeasuring.Controls.Add(this.lblMilli);
+            this.grpMeasuring.Location = new System.Drawing.Point(366, 236);
+            this.grpMeasuring.Name = "grpMeasuring";
+            this.grpMeasuring.Size = new System.Drawing.Size(173, 108);
+            this.grpMeasuring.TabIndex = 43;
+            this.grpMeasuring.TabStop = false;
+            this.grpMeasuring.Text = "Measuring Units";
             // 
-            // label27
+            // lblMax2per
             // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(6, 73);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(147, 15);
-            this.label27.TabIndex = 0;
-            this.label27.Text = "maximum 2% of full scale.";
+            this.lblMax2per.AutoSize = true;
+            this.lblMax2per.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMax2per.Location = new System.Drawing.Point(6, 73);
+            this.lblMax2per.Name = "lblMax2per";
+            this.lblMax2per.Size = new System.Drawing.Size(147, 15);
+            this.lblMax2per.TabIndex = 0;
+            this.lblMax2per.Text = "maximum 2% of full scale.";
             // 
-            // label26
+            // lblHysteresisweightunit
             // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(6, 57);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(155, 15);
-            this.label26.TabIndex = 0;
-            this.label26.Text = "Hysteresis - In Weight Unit.";
+            this.lblHysteresisweightunit.AutoSize = true;
+            this.lblHysteresisweightunit.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHysteresisweightunit.Location = new System.Drawing.Point(6, 57);
+            this.lblHysteresisweightunit.Name = "lblHysteresisweightunit";
+            this.lblHysteresisweightunit.Size = new System.Drawing.Size(155, 15);
+            this.lblHysteresisweightunit.TabIndex = 0;
+            this.lblHysteresisweightunit.Text = "Hysteresis - In Weight Unit.";
             // 
-            // label25
+            // lblWeightunit
             // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(6, 40);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(125, 15);
-            this.label25.TabIndex = 0;
-            this.label25.Text = "Level- In Weight Unit.";
+            this.lblWeightunit.AutoSize = true;
+            this.lblWeightunit.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWeightunit.Location = new System.Drawing.Point(6, 40);
+            this.lblWeightunit.Name = "lblWeightunit";
+            this.lblWeightunit.Size = new System.Drawing.Size(125, 15);
+            this.lblWeightunit.TabIndex = 0;
+            this.lblWeightunit.Text = "Level- In Weight Unit.";
             // 
-            // label24
+            // lblMilli
             // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(6, 23);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(123, 15);
-            this.label24.TabIndex = 0;
-            this.label24.Text = "Delay-In milliseconds.";
+            this.lblMilli.AutoSize = true;
+            this.lblMilli.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMilli.Location = new System.Drawing.Point(6, 23);
+            this.lblMilli.Name = "lblMilli";
+            this.lblMilli.Size = new System.Drawing.Size(123, 15);
+            this.lblMilli.TabIndex = 0;
+            this.lblMilli.Text = "Delay-In milliseconds.";
             // 
             // cboPeak
             // 
@@ -381,35 +381,35 @@ namespace VPG_DHS
             this.cboMeasure.Size = new System.Drawing.Size(82, 26);
             this.cboMeasure.TabIndex = 41;
             // 
-            // label23
+            // lblPeaktrough
             // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(366, 113);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(76, 30);
-            this.label23.TabIndex = 40;
-            this.label23.Text = "Peak Trough \r\nSource";
+            this.lblPeaktrough.AutoSize = true;
+            this.lblPeaktrough.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPeaktrough.Location = new System.Drawing.Point(366, 113);
+            this.lblPeaktrough.Name = "lblPeaktrough";
+            this.lblPeaktrough.Size = new System.Drawing.Size(76, 30);
+            this.lblPeaktrough.TabIndex = 40;
+            this.lblPeaktrough.Text = "Peak Trough \r\nSource";
             // 
-            // label22
+            // lblPeak
             // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Calibri", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(366, 85);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(38, 18);
-            this.label22.TabIndex = 39;
-            this.label22.Text = "Peak";
+            this.lblPeak.AutoSize = true;
+            this.lblPeak.Font = new System.Drawing.Font("Calibri", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPeak.Location = new System.Drawing.Point(366, 85);
+            this.lblPeak.Name = "lblPeak";
+            this.lblPeak.Size = new System.Drawing.Size(38, 18);
+            this.lblPeak.TabIndex = 39;
+            this.lblPeak.Text = "Peak";
             // 
-            // label21
+            // lblMeasurate
             // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(366, 31);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(88, 30);
-            this.label21.TabIndex = 38;
-            this.label21.Text = "Measurement \r\nRate";
+            this.lblMeasurate.AutoSize = true;
+            this.lblMeasurate.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMeasurate.Location = new System.Drawing.Point(366, 31);
+            this.lblMeasurate.Name = "lblMeasurate";
+            this.lblMeasurate.Size = new System.Drawing.Size(88, 30);
+            this.lblMeasurate.TabIndex = 38;
+            this.lblMeasurate.Text = "Measurement \r\nRate";
             // 
             // txtNo4hysteresis
             // 
@@ -509,55 +509,55 @@ namespace VPG_DHS
             this.cboSource.Size = new System.Drawing.Size(84, 23);
             this.cboSource.TabIndex = 26;
             // 
-            // label19
+            // lblNo4level
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(183, 316);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(52, 15);
-            this.label19.TabIndex = 25;
-            this.label19.Text = "#4 Level";
+            this.lblNo4level.AutoSize = true;
+            this.lblNo4level.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNo4level.Location = new System.Drawing.Point(183, 316);
+            this.lblNo4level.Name = "lblNo4level";
+            this.lblNo4level.Size = new System.Drawing.Size(52, 15);
+            this.lblNo4level.TabIndex = 25;
+            this.lblNo4level.Text = "#4 Level";
             // 
-            // label14
+            // lblNo2level
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(183, 147);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(52, 15);
-            this.label14.TabIndex = 25;
-            this.label14.Text = "#2 Level";
+            this.lblNo2level.AutoSize = true;
+            this.lblNo2level.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNo2level.Location = new System.Drawing.Point(183, 147);
+            this.lblNo2level.Name = "lblNo2level";
+            this.lblNo2level.Size = new System.Drawing.Size(52, 15);
+            this.lblNo2level.TabIndex = 25;
+            this.lblNo2level.Text = "#2 Level";
             // 
-            // label20
+            // lblNo4hysteresis
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(183, 340);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(79, 15);
-            this.label20.TabIndex = 24;
-            this.label20.Text = "#4 Hysteresis";
+            this.lblNo4hysteresis.AutoSize = true;
+            this.lblNo4hysteresis.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNo4hysteresis.Location = new System.Drawing.Point(183, 340);
+            this.lblNo4hysteresis.Name = "lblNo4hysteresis";
+            this.lblNo4hysteresis.Size = new System.Drawing.Size(79, 15);
+            this.lblNo4hysteresis.TabIndex = 24;
+            this.lblNo4hysteresis.Text = "#4 Hysteresis";
             // 
-            // label13
+            // lblNo2Hysteresis
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(183, 171);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(79, 15);
-            this.label13.TabIndex = 24;
-            this.label13.Text = "#2 Hysteresis";
+            this.lblNo2Hysteresis.AutoSize = true;
+            this.lblNo2Hysteresis.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNo2Hysteresis.Location = new System.Drawing.Point(183, 171);
+            this.lblNo2Hysteresis.Name = "lblNo2Hysteresis";
+            this.lblNo2Hysteresis.Size = new System.Drawing.Size(79, 15);
+            this.lblNo2Hysteresis.TabIndex = 24;
+            this.lblNo2Hysteresis.Text = "#2 Hysteresis";
             // 
-            // label11
+            // lblNo3source
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(182, 204);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(60, 15);
-            this.label11.TabIndex = 23;
-            this.label11.Text = "#3 Source";
+            this.lblNo3source.AutoSize = true;
+            this.lblNo3source.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNo3source.Location = new System.Drawing.Point(182, 204);
+            this.lblNo3source.Name = "lblNo3source";
+            this.lblNo3source.Size = new System.Drawing.Size(60, 15);
+            this.lblNo3source.TabIndex = 23;
+            this.lblNo3source.Text = "#3 Source";
             // 
             // label18
             // 
@@ -569,85 +569,85 @@ namespace VPG_DHS
             this.label18.TabIndex = 23;
             this.label18.Text = "#1 Source";
             // 
-            // label17
+            // lblNo4source
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(183, 291);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(60, 15);
-            this.label17.TabIndex = 23;
-            this.label17.Text = "#4 Source";
+            this.lblNo4source.AutoSize = true;
+            this.lblNo4source.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNo4source.Location = new System.Drawing.Point(183, 291);
+            this.lblNo4source.Name = "lblNo4source";
+            this.lblNo4source.Size = new System.Drawing.Size(60, 15);
+            this.lblNo4source.TabIndex = 23;
+            this.lblNo4source.Text = "#4 Source";
             // 
-            // label12
+            // lblNo2source
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(183, 122);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(60, 15);
-            this.label12.TabIndex = 23;
-            this.label12.Text = "#2 Source";
+            this.lblNo2source.AutoSize = true;
+            this.lblNo2source.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNo2source.Location = new System.Drawing.Point(183, 122);
+            this.lblNo2source.Name = "lblNo2source";
+            this.lblNo2source.Size = new System.Drawing.Size(60, 15);
+            this.lblNo2source.TabIndex = 23;
+            this.lblNo2source.Text = "#2 Source";
             // 
-            // label15
+            // lblNo3level
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(182, 230);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(52, 15);
-            this.label15.TabIndex = 20;
-            this.label15.Text = "#3 Level";
+            this.lblNo3level.AutoSize = true;
+            this.lblNo3level.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNo3level.Location = new System.Drawing.Point(182, 230);
+            this.lblNo3level.Name = "lblNo3level";
+            this.lblNo3level.Size = new System.Drawing.Size(52, 15);
+            this.lblNo3level.TabIndex = 20;
+            this.lblNo3level.Text = "#3 Level";
             // 
-            // label16
+            // lblNo3hysteresis
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(182, 255);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(79, 15);
-            this.label16.TabIndex = 21;
-            this.label16.Text = "#3 Hysteresis";
+            this.lblNo3hysteresis.AutoSize = true;
+            this.lblNo3hysteresis.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNo3hysteresis.Location = new System.Drawing.Point(182, 255);
+            this.lblNo3hysteresis.Name = "lblNo3hysteresis";
+            this.lblNo3hysteresis.Size = new System.Drawing.Size(79, 15);
+            this.lblNo3hysteresis.TabIndex = 21;
+            this.lblNo3hysteresis.Text = "#3 Hysteresis";
             // 
-            // label10
+            // lblNo1Hysteresis
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(182, 87);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(79, 15);
-            this.label10.TabIndex = 21;
-            this.label10.Text = "#1 Hysteresis";
+            this.lblNo1Hysteresis.AutoSize = true;
+            this.lblNo1Hysteresis.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNo1Hysteresis.Location = new System.Drawing.Point(182, 87);
+            this.lblNo1Hysteresis.Name = "lblNo1Hysteresis";
+            this.lblNo1Hysteresis.Size = new System.Drawing.Size(79, 15);
+            this.lblNo1Hysteresis.TabIndex = 21;
+            this.lblNo1Hysteresis.Text = "#1 Hysteresis";
             // 
-            // label9
+            // lblNo1level
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(182, 62);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(52, 15);
-            this.label9.TabIndex = 20;
-            this.label9.Text = "#1 Level";
+            this.lblNo1level.AutoSize = true;
+            this.lblNo1level.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNo1level.Location = new System.Drawing.Point(182, 62);
+            this.lblNo1level.Name = "lblNo1level";
+            this.lblNo1level.Size = new System.Drawing.Size(52, 15);
+            this.lblNo1level.TabIndex = 20;
+            this.lblNo1level.Text = "#1 Level";
             // 
-            // label8
+            // lblNo1source
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(183, 36);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(60, 15);
-            this.label8.TabIndex = 19;
-            this.label8.Text = "#1 Source";
+            this.lblNo1source.AutoSize = true;
+            this.lblNo1source.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNo1source.Location = new System.Drawing.Point(183, 36);
+            this.lblNo1source.Name = "lblNo1source";
+            this.lblNo1source.Size = new System.Drawing.Size(60, 15);
+            this.lblNo1source.TabIndex = 19;
+            this.lblNo1source.Text = "#1 Source";
             // 
-            // label7
+            // lblSetpoints
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Calibri", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(182, 7);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(67, 18);
-            this.label7.TabIndex = 18;
-            this.label7.Text = "SetPoints";
+            this.lblSetpoints.AutoSize = true;
+            this.lblSetpoints.Font = new System.Drawing.Font("Calibri", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSetpoints.Location = new System.Drawing.Point(182, 7);
+            this.lblSetpoints.Name = "lblSetpoints";
+            this.lblSetpoints.Size = new System.Drawing.Size(67, 18);
+            this.lblSetpoints.TabIndex = 18;
+            this.lblSetpoints.Text = "SetPoints";
             // 
             // cboFir
             // 
@@ -703,15 +703,15 @@ namespace VPG_DHS
             this.lblFiltertype.TabIndex = 12;
             this.lblFiltertype.Text = "Filter Type";
             // 
-            // label4
+            // lblFiltering
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Calibri", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(14, 233);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 18);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "Filtering";
+            this.lblFiltering.AutoSize = true;
+            this.lblFiltering.Font = new System.Drawing.Font("Calibri", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFiltering.Location = new System.Drawing.Point(14, 233);
+            this.lblFiltering.Name = "lblFiltering";
+            this.lblFiltering.Size = new System.Drawing.Size(60, 18);
+            this.lblFiltering.TabIndex = 11;
+            this.lblFiltering.Text = "Filtering";
             // 
             // txtHysteresis
             // 
@@ -804,25 +804,15 @@ namespace VPG_DHS
             this.lblMode.TabIndex = 1;
             this.lblMode.Text = "Mode";
             // 
-            // label3
+            // lblGrab
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Calibri", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(14, 7);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 18);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Grab";
-            // 
-            // pgCalibration
-            // 
-            this.pgCalibration.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pgCalibration.Location = new System.Drawing.Point(4, 27);
-            this.pgCalibration.Name = "pgCalibration";
-            this.pgCalibration.Size = new System.Drawing.Size(752, 466);
-            this.pgCalibration.TabIndex = 2;
-            this.pgCalibration.Text = "Calibration";
-            this.pgCalibration.UseVisualStyleBackColor = true;
+            this.lblGrab.AutoSize = true;
+            this.lblGrab.Font = new System.Drawing.Font("Calibri", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGrab.Location = new System.Drawing.Point(14, 7);
+            this.lblGrab.Name = "lblGrab";
+            this.lblGrab.Size = new System.Drawing.Size(38, 18);
+            this.lblGrab.TabIndex = 0;
+            this.lblGrab.Text = "Grab";
             // 
             // pgView
             // 
@@ -859,78 +849,88 @@ namespace VPG_DHS
             this.txtTemp.Size = new System.Drawing.Size(90, 20);
             this.txtTemp.TabIndex = 5;
             // 
-            // label1
+            // lblDegree
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(565, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(21, 25);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "°";
+            this.lblDegree.AutoSize = true;
+            this.lblDegree.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDegree.Location = new System.Drawing.Point(565, 32);
+            this.lblDegree.Name = "lblDegree";
+            this.lblDegree.Size = new System.Drawing.Size(21, 25);
+            this.lblDegree.TabIndex = 6;
+            this.lblDegree.Text = "°";
             // 
-            // label2
+            // lblCel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(580, 37);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(18, 16);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "C";
+            this.lblCel.AutoSize = true;
+            this.lblCel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCel.Location = new System.Drawing.Point(580, 37);
+            this.lblCel.Name = "lblCel";
+            this.lblCel.Size = new System.Drawing.Size(18, 16);
+            this.lblCel.TabIndex = 7;
+            this.lblCel.Text = "C";
             // 
-            // button1
+            // btnHelp
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(605, 31);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(69, 25);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Help";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnHelp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHelp.Location = new System.Drawing.Point(605, 31);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Size = new System.Drawing.Size(69, 25);
+            this.btnHelp.TabIndex = 8;
+            this.btnHelp.Text = "Help";
+            this.btnHelp.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
+            // picSyrma
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(680, 27);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(92, 41);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
+            this.picSyrma.Image = ((System.Drawing.Image)(resources.GetObject("picSyrma.Image")));
+            this.picSyrma.Location = new System.Drawing.Point(680, 27);
+            this.picSyrma.Name = "picSyrma";
+            this.picSyrma.Size = new System.Drawing.Size(92, 41);
+            this.picSyrma.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picSyrma.TabIndex = 9;
+            this.picSyrma.TabStop = false;
             // 
-            // label6
+            // lblAddress
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(12, 5);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(119, 18);
-            this.label6.TabIndex = 16;
-            this.label6.Text = "Active Address";
+            this.lblAddress.AutoSize = true;
+            this.lblAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddress.Location = new System.Drawing.Point(12, 5);
+            this.lblAddress.Name = "lblAddress";
+            this.lblAddress.Size = new System.Drawing.Size(119, 18);
+            this.lblAddress.TabIndex = 16;
+            this.lblAddress.Text = "Active Address";
             // 
-            // panel2
+            // pnlAddress
             // 
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Location = new System.Drawing.Point(192, 27);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(137, 29);
-            this.panel2.TabIndex = 15;
+            this.pnlAddress.Controls.Add(this.lblAddress);
+            this.pnlAddress.Location = new System.Drawing.Point(192, 27);
+            this.pnlAddress.Name = "pnlAddress";
+            this.pnlAddress.Size = new System.Drawing.Size(137, 29);
+            this.pnlAddress.TabIndex = 15;
+            // 
+            // pgCalibration
+            // 
+            this.pgCalibration.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pgCalibration.Location = new System.Drawing.Point(4, 27);
+            this.pgCalibration.Name = "pgCalibration";
+            this.pgCalibration.Size = new System.Drawing.Size(752, 466);
+            this.pgCalibration.TabIndex = 2;
+            this.pgCalibration.Text = "Calibration";
+            this.pgCalibration.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 573);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pnlAddress);
+            this.Controls.Add(this.picSyrma);
+            this.Controls.Add(this.btnHelp);
+            this.Controls.Add(this.lblCel);
+            this.Controls.Add(this.lblDegree);
             this.Controls.Add(this.txtTemp);
             this.Controls.Add(this.lblTemp);
             this.Controls.Add(this.tbControl);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cboAddress);
             this.Controls.Add(this.vpgMenu);
             this.Name = "Form1";
             this.Text = "VPG";
@@ -939,16 +939,16 @@ namespace VPG_DHS
             this.tbControl.ResumeLayout(false);
             this.pgLoadcell.ResumeLayout(false);
             this.pgLoadcell.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.pnlWeightkg.ResumeLayout(false);
+            this.pnlWeightkg.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.tbFilters.ResumeLayout(false);
             this.tbFilters.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.grpMeasuring.ResumeLayout(false);
+            this.grpMeasuring.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picSyrma)).EndInit();
+            this.pnlAddress.ResumeLayout(false);
+            this.pnlAddress.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -957,32 +957,31 @@ namespace VPG_DHS
         #endregion
 
         private System.Windows.Forms.MenuStrip vpgMenu;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ToolStripMenuItem tlLogfile;
+        private System.Windows.Forms.ToolStripMenuItem tlAbout;
+        private System.Windows.Forms.ToolStripMenuItem tlEdit;
+        private System.Windows.Forms.ComboBox cboAddress;
         private System.Windows.Forms.TabControl tbControl;
         private System.Windows.Forms.TabPage pgWeighing;
         private System.Windows.Forms.TabPage pgLoadcell;
-        private System.Windows.Forms.TabPage pgCalibration;
         private System.Windows.Forms.TabPage pgView;
         private System.Windows.Forms.TabPage pgGraph;
         private System.Windows.Forms.Label lblTemp;
         private System.Windows.Forms.TextBox txtTemp;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblDegree;
+        private System.Windows.Forms.Label lblCel;
+        private System.Windows.Forms.Button btnHelp;
+        private System.Windows.Forms.PictureBox picSyrma;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tbWeightformat;
         private System.Windows.Forms.TabPage tbFilters;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblGrab;
         private System.Windows.Forms.Label lblkg;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtWeightkg;
         private System.Windows.Forms.Label lblRecursive;
         private System.Windows.Forms.Label lblFir;
         private System.Windows.Forms.Label lblFiltertype;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblFiltering;
         private System.Windows.Forms.TextBox txtHysteresis;
         private System.Windows.Forms.TextBox txtLevel;
         private System.Windows.Forms.TextBox txtDelay;
@@ -993,26 +992,26 @@ namespace VPG_DHS
         private System.Windows.Forms.Label lblLevel;
         private System.Windows.Forms.Label lblDelay;
         private System.Windows.Forms.Label lblMode;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Panel pnlWeightkg;
+        private System.Windows.Forms.Label lblweightkg;
+        private System.Windows.Forms.Label lblAddress;
+        private System.Windows.Forms.Panel pnlAddress;
+        private System.Windows.Forms.Label lblNo2level;
+        private System.Windows.Forms.Label lblNo2Hysteresis;
+        private System.Windows.Forms.Label lblNo2source;
+        private System.Windows.Forms.Label lblNo1Hysteresis;
+        private System.Windows.Forms.Label lblNo1level;
+        private System.Windows.Forms.Label lblNo1source;
+        private System.Windows.Forms.Label lblSetpoints;
         private System.Windows.Forms.ComboBox cboFir;
         private System.Windows.Forms.ComboBox cboRecursive;
         private System.Windows.Forms.ComboBox cboFiltertype;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox grpMeasuring;
         private System.Windows.Forms.ComboBox cboPeak;
         private System.Windows.Forms.ComboBox cboMeasure;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label lblPeaktrough;
+        private System.Windows.Forms.Label lblPeak;
+        private System.Windows.Forms.Label lblMeasurate;
         private System.Windows.Forms.TextBox txtNo4hysteresis;
         private System.Windows.Forms.TextBox txtNo4level;
         private System.Windows.Forms.TextBox txtNo3hysteresis;
@@ -1025,17 +1024,18 @@ namespace VPG_DHS
         private System.Windows.Forms.ComboBox cboNo3source;
         private System.Windows.Forms.ComboBox cboNo2source;
         private System.Windows.Forms.ComboBox cboSource;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lblNo4level;
+        private System.Windows.Forms.Label lblNo4hysteresis;
+        private System.Windows.Forms.Label lblNo3source;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label lblNo4source;
+        private System.Windows.Forms.Label lblNo3level;
+        private System.Windows.Forms.Label lblNo3hysteresis;
+        private System.Windows.Forms.Label lblMax2per;
+        private System.Windows.Forms.Label lblHysteresisweightunit;
+        private System.Windows.Forms.Label lblWeightunit;
+        private System.Windows.Forms.Label lblMilli;
+        private System.Windows.Forms.TabPage pgCalibration;
     }
 }
 
