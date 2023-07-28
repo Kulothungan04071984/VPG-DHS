@@ -38,11 +38,9 @@ namespace VPG_DHS
             this.tbControl = new System.Windows.Forms.TabControl();
             this.pgWeighing = new System.Windows.Forms.TabPage();
             this.pgLoadcell = new System.Windows.Forms.TabPage();
-            this.pnlWeightkg = new System.Windows.Forms.Panel();
-            this.lblweightkg = new System.Windows.Forms.Label();
             this.lblkg = new System.Windows.Forms.Label();
             this.txtWeightkg = new System.Windows.Forms.TextBox();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tbWeightfilter = new System.Windows.Forms.TabControl();
             this.tbWeightformat = new System.Windows.Forms.TabPage();
             this.tbFilters = new System.Windows.Forms.TabPage();
             this.grpMeasuring = new System.Windows.Forms.GroupBox();
@@ -108,17 +106,15 @@ namespace VPG_DHS
             this.btnHelp = new System.Windows.Forms.Button();
             this.picSyrma = new System.Windows.Forms.PictureBox();
             this.lblAddress = new System.Windows.Forms.Label();
-            this.pnlAddress = new System.Windows.Forms.Panel();
             this.pgCalibration = new System.Windows.Forms.TabPage();
+            this.lblweightkg = new System.Windows.Forms.Label();
             this.vpgMenu.SuspendLayout();
             this.tbControl.SuspendLayout();
             this.pgLoadcell.SuspendLayout();
-            this.pnlWeightkg.SuspendLayout();
-            this.tabControl1.SuspendLayout();
+            this.tbWeightfilter.SuspendLayout();
             this.tbFilters.SuspendLayout();
             this.grpMeasuring.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picSyrma)).BeginInit();
-            this.pnlAddress.SuspendLayout();
             this.SuspendLayout();
             // 
             // vpgMenu
@@ -135,20 +131,26 @@ namespace VPG_DHS
             // 
             // tlLogfile
             // 
+            this.tlLogfile.BackColor = System.Drawing.Color.PowderBlue;
+            this.tlLogfile.Image = ((System.Drawing.Image)(resources.GetObject("tlLogfile.Image")));
             this.tlLogfile.Name = "tlLogfile";
-            this.tlLogfile.Size = new System.Drawing.Size(60, 20);
+            this.tlLogfile.Size = new System.Drawing.Size(76, 20);
             this.tlLogfile.Text = "Log File";
             // 
             // tlAbout
             // 
+            this.tlAbout.BackColor = System.Drawing.Color.PowderBlue;
+            this.tlAbout.Image = ((System.Drawing.Image)(resources.GetObject("tlAbout.Image")));
             this.tlAbout.Name = "tlAbout";
-            this.tlAbout.Size = new System.Drawing.Size(52, 20);
+            this.tlAbout.Size = new System.Drawing.Size(68, 20);
             this.tlAbout.Text = "About";
             // 
             // tlEdit
             // 
+            this.tlEdit.BackColor = System.Drawing.Color.PowderBlue;
+            this.tlEdit.Image = ((System.Drawing.Image)(resources.GetObject("tlEdit.Image")));
             this.tlEdit.Name = "tlEdit";
-            this.tlEdit.Size = new System.Drawing.Size(39, 20);
+            this.tlEdit.Size = new System.Drawing.Size(55, 20);
             this.tlEdit.Text = "Edit";
             // 
             // cboAddress
@@ -187,34 +189,17 @@ namespace VPG_DHS
             // 
             // pgLoadcell
             // 
-            this.pgLoadcell.Controls.Add(this.pnlWeightkg);
+            this.pgLoadcell.BackColor = System.Drawing.Color.AliceBlue;
+            this.pgLoadcell.Controls.Add(this.lblweightkg);
             this.pgLoadcell.Controls.Add(this.lblkg);
             this.pgLoadcell.Controls.Add(this.txtWeightkg);
-            this.pgLoadcell.Controls.Add(this.tabControl1);
+            this.pgLoadcell.Controls.Add(this.tbWeightfilter);
             this.pgLoadcell.Location = new System.Drawing.Point(4, 27);
             this.pgLoadcell.Name = "pgLoadcell";
             this.pgLoadcell.Padding = new System.Windows.Forms.Padding(3);
             this.pgLoadcell.Size = new System.Drawing.Size(752, 466);
             this.pgLoadcell.TabIndex = 1;
             this.pgLoadcell.Text = "LoadCell Setup";
-            this.pgLoadcell.UseVisualStyleBackColor = true;
-            // 
-            // pnlWeightkg
-            // 
-            this.pnlWeightkg.Controls.Add(this.lblweightkg);
-            this.pnlWeightkg.Location = new System.Drawing.Point(205, 5);
-            this.pnlWeightkg.Name = "pnlWeightkg";
-            this.pnlWeightkg.Size = new System.Drawing.Size(89, 28);
-            this.pnlWeightkg.TabIndex = 15;
-            // 
-            // lblweightkg
-            // 
-            this.lblweightkg.AutoSize = true;
-            this.lblweightkg.Location = new System.Drawing.Point(32, 4);
-            this.lblweightkg.Name = "lblweightkg";
-            this.lblweightkg.Size = new System.Drawing.Size(53, 18);
-            this.lblweightkg.TabIndex = 15;
-            this.lblweightkg.Text = "Weight";
             // 
             // lblkg
             // 
@@ -232,15 +217,16 @@ namespace VPG_DHS
             this.txtWeightkg.Size = new System.Drawing.Size(84, 26);
             this.txtWeightkg.TabIndex = 2;
             // 
-            // tabControl1
+            // tbWeightfilter
             // 
-            this.tabControl1.Controls.Add(this.tbWeightformat);
-            this.tabControl1.Controls.Add(this.tbFilters);
-            this.tabControl1.Location = new System.Drawing.Point(24, 39);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(558, 420);
-            this.tabControl1.TabIndex = 0;
+            this.tbWeightfilter.Controls.Add(this.tbWeightformat);
+            this.tbWeightfilter.Controls.Add(this.tbFilters);
+            this.tbWeightfilter.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.tbWeightfilter.Location = new System.Drawing.Point(24, 39);
+            this.tbWeightfilter.Name = "tbWeightfilter";
+            this.tbWeightfilter.SelectedIndex = 0;
+            this.tbWeightfilter.Size = new System.Drawing.Size(558, 420);
+            this.tbWeightfilter.TabIndex = 0;
             // 
             // tbWeightformat
             // 
@@ -254,6 +240,7 @@ namespace VPG_DHS
             // 
             // tbFilters
             // 
+            this.tbFilters.BackColor = System.Drawing.Color.Azure;
             this.tbFilters.Controls.Add(this.grpMeasuring);
             this.tbFilters.Controls.Add(this.cboPeak);
             this.tbFilters.Controls.Add(this.cboMeasure);
@@ -310,7 +297,6 @@ namespace VPG_DHS
             this.tbFilters.Size = new System.Drawing.Size(550, 389);
             this.tbFilters.TabIndex = 1;
             this.tbFilters.Text = "Filters/Peak/Grab/Setpoints";
-            this.tbFilters.UseVisualStyleBackColor = true;
             // 
             // grpMeasuring
             // 
@@ -871,13 +857,14 @@ namespace VPG_DHS
             // 
             // btnHelp
             // 
+            this.btnHelp.BackColor = System.Drawing.Color.LightCyan;
             this.btnHelp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHelp.Location = new System.Drawing.Point(605, 31);
             this.btnHelp.Name = "btnHelp";
             this.btnHelp.Size = new System.Drawing.Size(69, 25);
             this.btnHelp.TabIndex = 8;
             this.btnHelp.Text = "Help";
-            this.btnHelp.UseVisualStyleBackColor = true;
+            this.btnHelp.UseVisualStyleBackColor = false;
             // 
             // picSyrma
             // 
@@ -892,20 +879,13 @@ namespace VPG_DHS
             // lblAddress
             // 
             this.lblAddress.AutoSize = true;
+            this.lblAddress.BackColor = System.Drawing.Color.PowderBlue;
             this.lblAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddress.Location = new System.Drawing.Point(12, 5);
+            this.lblAddress.Location = new System.Drawing.Point(216, 33);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(119, 18);
             this.lblAddress.TabIndex = 16;
             this.lblAddress.Text = "Active Address";
-            // 
-            // pnlAddress
-            // 
-            this.pnlAddress.Controls.Add(this.lblAddress);
-            this.pnlAddress.Location = new System.Drawing.Point(192, 27);
-            this.pnlAddress.Name = "pnlAddress";
-            this.pnlAddress.Size = new System.Drawing.Size(137, 29);
-            this.pnlAddress.TabIndex = 15;
             // 
             // pgCalibration
             // 
@@ -917,12 +897,23 @@ namespace VPG_DHS
             this.pgCalibration.Text = "Calibration";
             this.pgCalibration.UseVisualStyleBackColor = true;
             // 
+            // lblweightkg
+            // 
+            this.lblweightkg.AutoSize = true;
+            this.lblweightkg.BackColor = System.Drawing.Color.AliceBlue;
+            this.lblweightkg.Location = new System.Drawing.Point(242, 8);
+            this.lblweightkg.Name = "lblweightkg";
+            this.lblweightkg.Size = new System.Drawing.Size(53, 18);
+            this.lblweightkg.TabIndex = 15;
+            this.lblweightkg.Text = "Weight";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PowderBlue;
             this.ClientSize = new System.Drawing.Size(800, 573);
-            this.Controls.Add(this.pnlAddress);
+            this.Controls.Add(this.lblAddress);
             this.Controls.Add(this.picSyrma);
             this.Controls.Add(this.btnHelp);
             this.Controls.Add(this.lblCel);
@@ -939,16 +930,12 @@ namespace VPG_DHS
             this.tbControl.ResumeLayout(false);
             this.pgLoadcell.ResumeLayout(false);
             this.pgLoadcell.PerformLayout();
-            this.pnlWeightkg.ResumeLayout(false);
-            this.pnlWeightkg.PerformLayout();
-            this.tabControl1.ResumeLayout(false);
+            this.tbWeightfilter.ResumeLayout(false);
             this.tbFilters.ResumeLayout(false);
             this.tbFilters.PerformLayout();
             this.grpMeasuring.ResumeLayout(false);
             this.grpMeasuring.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picSyrma)).EndInit();
-            this.pnlAddress.ResumeLayout(false);
-            this.pnlAddress.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -972,7 +959,7 @@ namespace VPG_DHS
         private System.Windows.Forms.Label lblCel;
         private System.Windows.Forms.Button btnHelp;
         private System.Windows.Forms.PictureBox picSyrma;
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl tbWeightfilter;
         private System.Windows.Forms.TabPage tbWeightformat;
         private System.Windows.Forms.TabPage tbFilters;
         private System.Windows.Forms.Label lblGrab;
@@ -992,10 +979,7 @@ namespace VPG_DHS
         private System.Windows.Forms.Label lblLevel;
         private System.Windows.Forms.Label lblDelay;
         private System.Windows.Forms.Label lblMode;
-        private System.Windows.Forms.Panel pnlWeightkg;
-        private System.Windows.Forms.Label lblweightkg;
         private System.Windows.Forms.Label lblAddress;
-        private System.Windows.Forms.Panel pnlAddress;
         private System.Windows.Forms.Label lblNo2level;
         private System.Windows.Forms.Label lblNo2Hysteresis;
         private System.Windows.Forms.Label lblNo2source;
@@ -1036,6 +1020,7 @@ namespace VPG_DHS
         private System.Windows.Forms.Label lblWeightunit;
         private System.Windows.Forms.Label lblMilli;
         private System.Windows.Forms.TabPage pgCalibration;
+        private System.Windows.Forms.Label lblweightkg;
     }
 }
 
