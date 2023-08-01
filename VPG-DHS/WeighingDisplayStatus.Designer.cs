@@ -86,6 +86,10 @@ namespace VPG_DHS
             this.label1 = new System.Windows.Forms.Label();
             this.txtWeight = new System.Windows.Forms.TextBox();
             this.lblweight = new System.Windows.Forms.Label();
+            this.chktarefailed = new System.Windows.Forms.CheckBox();
+            this.chkPowerfailed = new System.Windows.Forms.CheckBox();
+            this.chkZerofailed = new System.Windows.Forms.CheckBox();
+            this.chkZerolimit = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -102,13 +106,17 @@ namespace VPG_DHS
             this.panel1.Controls.Add(this.groupBox4);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(34, 61);
+            this.panel1.Location = new System.Drawing.Point(34, 63);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(803, 472);
+            this.panel1.Size = new System.Drawing.Size(754, 470);
             this.panel1.TabIndex = 0;
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.chkZerolimit);
+            this.groupBox5.Controls.Add(this.chkZerofailed);
+            this.groupBox5.Controls.Add(this.chkPowerfailed);
+            this.groupBox5.Controls.Add(this.chktarefailed);
             this.groupBox5.Controls.Add(this.chkexcitiation);
             this.groupBox5.Controls.Add(this.chkloadcellunder);
             this.groupBox5.Controls.Add(this.chkloadcellintegrity);
@@ -124,9 +132,9 @@ namespace VPG_DHS
             this.groupBox5.Controls.Add(this.chkNonvolatile);
             this.groupBox5.Controls.Add(this.chkVolatileramfailure);
             this.groupBox5.Controls.Add(this.chkEpromFailure);
-            this.groupBox5.Location = new System.Drawing.Point(552, 54);
+            this.groupBox5.Location = new System.Drawing.Point(536, 54);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(242, 413);
+            this.groupBox5.Size = new System.Drawing.Size(210, 413);
             this.groupBox5.TabIndex = 4;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Status Error";
@@ -134,152 +142,152 @@ namespace VPG_DHS
             // chkexcitiation
             // 
             this.chkexcitiation.AutoSize = true;
-            this.chkexcitiation.Location = new System.Drawing.Point(8, 366);
+            this.chkexcitiation.Location = new System.Drawing.Point(9, 294);
             this.chkexcitiation.Name = "chkexcitiation";
-            this.chkexcitiation.Size = new System.Drawing.Size(82, 19);
+            this.chkexcitiation.Size = new System.Drawing.Size(130, 19);
             this.chkexcitiation.TabIndex = 14;
-            this.chkexcitiation.Text = "Excitiation";
+            this.chkexcitiation.Text = "15-Excitation Short";
             this.chkexcitiation.UseVisualStyleBackColor = true;
             // 
             // chkloadcellunder
             // 
             this.chkloadcellunder.AutoSize = true;
-            this.chkloadcellunder.Location = new System.Drawing.Point(8, 341);
+            this.chkloadcellunder.Location = new System.Drawing.Point(9, 275);
             this.chkloadcellunder.Name = "chkloadcellunder";
-            this.chkloadcellunder.Size = new System.Drawing.Size(133, 19);
+            this.chkloadcellunder.Size = new System.Drawing.Size(151, 19);
             this.chkloadcellunder.TabIndex = 13;
-            this.chkloadcellunder.Text = "Loadcell UnderLoad";
+            this.chkloadcellunder.Text = "14-Loadcell UnderLoad";
             this.chkloadcellunder.UseVisualStyleBackColor = true;
             // 
             // chkloadcellintegrity
             // 
             this.chkloadcellintegrity.AutoSize = true;
-            this.chkloadcellintegrity.Location = new System.Drawing.Point(6, 316);
+            this.chkloadcellintegrity.Location = new System.Drawing.Point(9, 256);
             this.chkloadcellintegrity.Name = "chkloadcellintegrity";
-            this.chkloadcellintegrity.Size = new System.Drawing.Size(122, 19);
+            this.chkloadcellintegrity.Size = new System.Drawing.Size(140, 19);
             this.chkloadcellintegrity.TabIndex = 12;
-            this.chkloadcellintegrity.Text = "LoadCell Integrity";
+            this.chkloadcellintegrity.Text = "13-LoadCell Integrity";
             this.chkloadcellintegrity.UseVisualStyleBackColor = true;
             // 
             // chkhardwarefailure
             // 
             this.chkhardwarefailure.AutoSize = true;
-            this.chkhardwarefailure.Location = new System.Drawing.Point(8, 299);
+            this.chkhardwarefailure.Location = new System.Drawing.Point(9, 237);
             this.chkhardwarefailure.Name = "chkhardwarefailure";
-            this.chkhardwarefailure.Size = new System.Drawing.Size(120, 19);
+            this.chkhardwarefailure.Size = new System.Drawing.Size(138, 19);
             this.chkhardwarefailure.TabIndex = 11;
-            this.chkhardwarefailure.Text = "Hardware Failure";
+            this.chkhardwarefailure.Text = "12-Hardware Failure";
             this.chkhardwarefailure.UseVisualStyleBackColor = true;
             // 
             // chknofactory
             // 
             this.chknofactory.AutoSize = true;
-            this.chknofactory.Location = new System.Drawing.Point(8, 269);
+            this.chknofactory.Location = new System.Drawing.Point(8, 216);
             this.chknofactory.Name = "chknofactory";
-            this.chknofactory.Size = new System.Drawing.Size(145, 19);
+            this.chknofactory.Size = new System.Drawing.Size(163, 19);
             this.chknofactory.TabIndex = 10;
-            this.chknofactory.Text = "No factory Calibration";
+            this.chknofactory.Text = "11-No factory Calibration";
             this.chknofactory.UseVisualStyleBackColor = true;
             // 
             // chkinvalidcalib
             // 
             this.chkinvalidcalib.AutoSize = true;
-            this.chkinvalidcalib.Location = new System.Drawing.Point(8, 244);
+            this.chkinvalidcalib.Location = new System.Drawing.Point(8, 195);
             this.chkinvalidcalib.Name = "chkinvalidcalib";
-            this.chkinvalidcalib.Size = new System.Drawing.Size(179, 19);
+            this.chkinvalidcalib.Size = new System.Drawing.Size(197, 19);
             this.chkinvalidcalib.TabIndex = 9;
-            this.chkinvalidcalib.Text = "Invalid Data User Calibration";
+            this.chkinvalidcalib.Text = "10-Invalid Data User Calibration";
             this.chkinvalidcalib.UseVisualStyleBackColor = true;
             // 
             // chknouserdata
             // 
             this.chknouserdata.AutoSize = true;
-            this.chknouserdata.Location = new System.Drawing.Point(8, 219);
+            this.chknouserdata.Location = new System.Drawing.Point(9, 177);
             this.chknouserdata.Name = "chknouserdata";
-            this.chknouserdata.Size = new System.Drawing.Size(98, 19);
+            this.chknouserdata.Size = new System.Drawing.Size(109, 19);
             this.chknouserdata.TabIndex = 8;
-            this.chknouserdata.Text = "No User Data";
+            this.chknouserdata.Text = "9-No User Data";
             this.chknouserdata.UseVisualStyleBackColor = true;
             // 
             // chkInvaliddata
             // 
             this.chkInvaliddata.AutoSize = true;
-            this.chkInvaliddata.Location = new System.Drawing.Point(8, 194);
+            this.chkInvaliddata.Location = new System.Drawing.Point(8, 157);
             this.chkInvaliddata.Name = "chkInvaliddata";
-            this.chkInvaliddata.Size = new System.Drawing.Size(114, 19);
+            this.chkInvaliddata.Size = new System.Drawing.Size(125, 19);
             this.chkInvaliddata.TabIndex = 7;
-            this.chkInvaliddata.Text = "Invalid UserData";
+            this.chkInvaliddata.Text = "8-Invalid UserData";
             this.chkInvaliddata.UseVisualStyleBackColor = true;
             // 
             // chkTimeout
             // 
             this.chkTimeout.AutoSize = true;
-            this.chkTimeout.Location = new System.Drawing.Point(8, 169);
+            this.chkTimeout.Location = new System.Drawing.Point(8, 137);
             this.chkTimeout.Name = "chkTimeout";
-            this.chkTimeout.Size = new System.Drawing.Size(132, 19);
+            this.chkTimeout.Size = new System.Drawing.Size(143, 19);
             this.chkTimeout.TabIndex = 6;
-            this.chkTimeout.Text = "Watch dot Timeout";
+            this.chkTimeout.Text = "7-Watch dot Timeout";
             this.chkTimeout.UseVisualStyleBackColor = true;
             // 
             // chkUndertemp
             // 
             this.chkUndertemp.AutoSize = true;
-            this.chkUndertemp.Location = new System.Drawing.Point(8, 146);
+            this.chkUndertemp.Location = new System.Drawing.Point(8, 116);
             this.chkUndertemp.Name = "chkUndertemp";
-            this.chkUndertemp.Size = new System.Drawing.Size(166, 19);
+            this.chkUndertemp.Size = new System.Drawing.Size(177, 19);
             this.chkUndertemp.TabIndex = 5;
-            this.chkUndertemp.Text = "Under Temperature Limit";
+            this.chkUndertemp.Text = "6-Under Temperature Limit";
             this.chkUndertemp.UseVisualStyleBackColor = true;
             this.chkUndertemp.CheckedChanged += new System.EventHandler(this.checkBox6_CheckedChanged);
             // 
             // chkloadcell
             // 
             this.chkloadcell.AutoSize = true;
-            this.chkloadcell.Location = new System.Drawing.Point(8, 124);
+            this.chkloadcell.Location = new System.Drawing.Point(8, 96);
             this.chkloadcell.Name = "chkloadcell";
-            this.chkloadcell.Size = new System.Drawing.Size(139, 19);
+            this.chkloadcell.Size = new System.Drawing.Size(150, 19);
             this.chkloadcell.TabIndex = 4;
-            this.chkloadcell.Text = "LoadCell Overloaded";
+            this.chkloadcell.Text = "5-LoadCell Overloaded";
             this.chkloadcell.UseVisualStyleBackColor = true;
             this.chkloadcell.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
             // 
             // chlTempLimit
             // 
             this.chlTempLimit.AutoSize = true;
-            this.chlTempLimit.Location = new System.Drawing.Point(8, 99);
+            this.chlTempLimit.Location = new System.Drawing.Point(7, 77);
             this.chlTempLimit.Name = "chlTempLimit";
-            this.chlTempLimit.Size = new System.Drawing.Size(164, 19);
+            this.chlTempLimit.Size = new System.Drawing.Size(175, 19);
             this.chlTempLimit.TabIndex = 3;
-            this.chlTempLimit.Text = "Over Temperature Limits";
+            this.chlTempLimit.Text = "4-Over Temperature Limits";
             this.chlTempLimit.UseVisualStyleBackColor = true;
             this.chlTempLimit.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
             // 
             // chkNonvolatile
             // 
             this.chkNonvolatile.AutoSize = true;
-            this.chkNonvolatile.Location = new System.Drawing.Point(7, 74);
+            this.chkNonvolatile.Location = new System.Drawing.Point(6, 57);
             this.chkNonvolatile.Name = "chkNonvolatile";
-            this.chkNonvolatile.Size = new System.Drawing.Size(159, 19);
+            this.chkNonvolatile.Size = new System.Drawing.Size(170, 19);
             this.chkNonvolatile.TabIndex = 2;
-            this.chkNonvolatile.Text = "Non-Volatile ram Failure";
+            this.chkNonvolatile.Text = "3-Non-Volatile ram Failure";
             this.chkNonvolatile.UseVisualStyleBackColor = true;
             this.chkNonvolatile.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
             // chkVolatileramfailure
             // 
             this.chkVolatileramfailure.AutoSize = true;
-            this.chkVolatileramfailure.Location = new System.Drawing.Point(7, 49);
+            this.chkVolatileramfailure.Location = new System.Drawing.Point(6, 36);
             this.chkVolatileramfailure.Name = "chkVolatileramfailure";
-            this.chkVolatileramfailure.Size = new System.Drawing.Size(165, 19);
+            this.chkVolatileramfailure.Size = new System.Drawing.Size(176, 19);
             this.chkVolatileramfailure.TabIndex = 1;
-            this.chkVolatileramfailure.Text = "Volatile write ram Failure";
+            this.chkVolatileramfailure.Text = "2-Volatile write ram Failure";
             this.chkVolatileramfailure.UseVisualStyleBackColor = true;
             this.chkVolatileramfailure.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // chkEpromFailure
             // 
             this.chkEpromFailure.AutoSize = true;
-            this.chkEpromFailure.Location = new System.Drawing.Point(6, 24);
+            this.chkEpromFailure.Location = new System.Drawing.Point(6, 17);
             this.chkEpromFailure.Name = "chkEpromFailure";
             this.chkEpromFailure.Size = new System.Drawing.Size(113, 19);
             this.chkEpromFailure.TabIndex = 0;
@@ -296,7 +304,7 @@ namespace VPG_DHS
             this.groupBox3.Controls.Add(this.chkin3WD);
             this.groupBox3.Controls.Add(this.chkin2WD);
             this.groupBox3.Controls.Add(this.chkin1WD);
-            this.groupBox3.Location = new System.Drawing.Point(348, 302);
+            this.groupBox3.Location = new System.Drawing.Point(332, 292);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(198, 165);
             this.groupBox3.TabIndex = 3;
@@ -395,7 +403,7 @@ namespace VPG_DHS
             this.groupBox4.Controls.Add(this.cboBaudrateWD);
             this.groupBox4.Controls.Add(this.cbodatabitsWD);
             this.groupBox4.Controls.Add(this.cboportnumWD);
-            this.groupBox4.Location = new System.Drawing.Point(19, 302);
+            this.groupBox4.Location = new System.Drawing.Point(0, 292);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(323, 165);
             this.groupBox4.TabIndex = 2;
@@ -502,12 +510,12 @@ namespace VPG_DHS
             this.groupBox1.Controls.Add(this.txtWeight);
             this.groupBox1.Controls.Add(this.lblweight);
             this.groupBox1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(19, 20);
+            this.groupBox1.Location = new System.Drawing.Point(6, 18);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(527, 268);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Weighing Display Status";
+            this.groupBox1.Text = "Weighing and Operations";
             // 
             // chkZeroTrack
             // 
@@ -580,7 +588,7 @@ namespace VPG_DHS
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Location = new System.Drawing.Point(7, 114);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(255, 139);
+            this.groupBox2.Size = new System.Drawing.Size(248, 139);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Additional";
@@ -663,9 +671,10 @@ namespace VPG_DHS
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(219, 46);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(19, 15);
+            this.label1.Size = new System.Drawing.Size(25, 19);
             this.label1.TabIndex = 2;
             this.label1.Text = "kg";
             // 
@@ -679,11 +688,52 @@ namespace VPG_DHS
             // lblweight
             // 
             this.lblweight.AutoSize = true;
-            this.lblweight.Location = new System.Drawing.Point(8, 40);
+            this.lblweight.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblweight.Location = new System.Drawing.Point(13, 43);
             this.lblweight.Name = "lblweight";
-            this.lblweight.Size = new System.Drawing.Size(47, 15);
+            this.lblweight.Size = new System.Drawing.Size(58, 19);
             this.lblweight.TabIndex = 0;
             this.lblweight.Text = "Weight";
+            // 
+            // chktarefailed
+            // 
+            this.chktarefailed.AutoSize = true;
+            this.chktarefailed.Location = new System.Drawing.Point(9, 315);
+            this.chktarefailed.Name = "chktarefailed";
+            this.chktarefailed.Size = new System.Drawing.Size(182, 19);
+            this.chktarefailed.TabIndex = 15;
+            this.chktarefailed.Text = "16-Tare failed due to motion";
+            this.chktarefailed.UseVisualStyleBackColor = true;
+            // 
+            // chkPowerfailed
+            // 
+            this.chkPowerfailed.AutoSize = true;
+            this.chkPowerfailed.Location = new System.Drawing.Point(9, 337);
+            this.chkPowerfailed.Name = "chkPowerfailed";
+            this.chkPowerfailed.Size = new System.Drawing.Size(195, 19);
+            this.chkPowerfailed.TabIndex = 16;
+            this.chkPowerfailed.Text = "17-Power failed due to motion";
+            this.chkPowerfailed.UseVisualStyleBackColor = true;
+            // 
+            // chkZerofailed
+            // 
+            this.chkZerofailed.AutoSize = true;
+            this.chkZerofailed.Location = new System.Drawing.Point(9, 358);
+            this.chkZerofailed.Name = "chkZerofailed";
+            this.chkZerofailed.Size = new System.Drawing.Size(186, 19);
+            this.chkZerofailed.TabIndex = 17;
+            this.chkZerofailed.Text = "18-Zero Failed due to Motion";
+            this.chkZerofailed.UseVisualStyleBackColor = true;
+            // 
+            // chkZerolimit
+            // 
+            this.chkZerolimit.AutoSize = true;
+            this.chkZerolimit.Location = new System.Drawing.Point(9, 380);
+            this.chkZerolimit.Name = "chkZerolimit";
+            this.chkZerolimit.Size = new System.Drawing.Size(179, 19);
+            this.chkZerolimit.TabIndex = 18;
+            this.chkZerolimit.Text = "19-Zero Failed due to Limits";
+            this.chkZerolimit.UseVisualStyleBackColor = true;
             // 
             // WeighingDisplayStatus
             // 
@@ -768,5 +818,9 @@ namespace VPG_DHS
         private System.Windows.Forms.CheckBox chkloadcellunder;
         private System.Windows.Forms.CheckBox chkloadcellintegrity;
         private System.Windows.Forms.CheckBox chkhardwarefailure;
+        private System.Windows.Forms.CheckBox chkZerolimit;
+        private System.Windows.Forms.CheckBox chkZerofailed;
+        private System.Windows.Forms.CheckBox chkPowerfailed;
+        private System.Windows.Forms.CheckBox chktarefailed;
     }
 }

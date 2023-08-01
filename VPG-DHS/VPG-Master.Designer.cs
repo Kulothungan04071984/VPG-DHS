@@ -29,6 +29,7 @@ namespace VPG_DHS
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
@@ -407,7 +408,7 @@ namespace VPG_DHS
             this.tlEdit});
             this.vpgMenu.Location = new System.Drawing.Point(0, 0);
             this.vpgMenu.Name = "vpgMenu";
-            this.vpgMenu.Size = new System.Drawing.Size(800, 24);
+            this.vpgMenu.Size = new System.Drawing.Size(822, 24);
             this.vpgMenu.TabIndex = 0;
             this.vpgMenu.Text = "Log File";
             // 
@@ -454,7 +455,7 @@ namespace VPG_DHS
             this.tbControl.Location = new System.Drawing.Point(12, 64);
             this.tbControl.Name = "tbControl";
             this.tbControl.SelectedIndex = 0;
-            this.tbControl.Size = new System.Drawing.Size(760, 497);
+            this.tbControl.Size = new System.Drawing.Size(792, 510);
             this.tbControl.TabIndex = 3;
             // 
             // pgWeighing
@@ -474,7 +475,7 @@ namespace VPG_DHS
             this.pgWeighing.Location = new System.Drawing.Point(4, 27);
             this.pgWeighing.Name = "pgWeighing";
             this.pgWeighing.Padding = new System.Windows.Forms.Padding(3);
-            this.pgWeighing.Size = new System.Drawing.Size(752, 466);
+            this.pgWeighing.Size = new System.Drawing.Size(784, 479);
             this.pgWeighing.TabIndex = 0;
             this.pgWeighing.Text = "Weighing Display & Status";
             this.pgWeighing.Click += new System.EventHandler(this.pgWeighing_Click);
@@ -1529,7 +1530,7 @@ namespace VPG_DHS
             this.pgLoadcell.Location = new System.Drawing.Point(4, 27);
             this.pgLoadcell.Name = "pgLoadcell";
             this.pgLoadcell.Padding = new System.Windows.Forms.Padding(3);
-            this.pgLoadcell.Size = new System.Drawing.Size(752, 466);
+            this.pgLoadcell.Size = new System.Drawing.Size(784, 479);
             this.pgLoadcell.TabIndex = 1;
             this.pgLoadcell.Text = "LoadCell Setup";
             // 
@@ -2462,15 +2463,15 @@ namespace VPG_DHS
             this.lblMode.TabIndex = 1;
             this.lblMode.Text = "Mode";
             // 
-            // lblGrab
+            // pgCalibration
             // 
-            this.lblGrab.AutoSize = true;
-            this.lblGrab.Font = new System.Drawing.Font("Calibri", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGrab.Location = new System.Drawing.Point(14, 7);
-            this.lblGrab.Name = "lblGrab";
-            this.lblGrab.Size = new System.Drawing.Size(38, 18);
-            this.lblGrab.TabIndex = 0;
-            this.lblGrab.Text = "Grab";
+            this.pgCalibration.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pgCalibration.Location = new System.Drawing.Point(4, 27);
+            this.pgCalibration.Name = "pgCalibration";
+            this.pgCalibration.Size = new System.Drawing.Size(752, 504);
+            this.pgCalibration.TabIndex = 2;
+            this.pgCalibration.Text = "Calibration";
+            this.pgCalibration.UseVisualStyleBackColor = true;
             // 
             // pgCalibration
             // 
@@ -2715,7 +2716,7 @@ namespace VPG_DHS
             this.pgView.Controls.Add(this.txtVactive);
             this.pgView.Location = new System.Drawing.Point(4, 27);
             this.pgView.Name = "pgView";
-            this.pgView.Size = new System.Drawing.Size(752, 466);
+            this.pgView.Size = new System.Drawing.Size(752, 504);
             this.pgView.TabIndex = 3;
             this.pgView.Text = "View All";
             // 
@@ -2724,7 +2725,7 @@ namespace VPG_DHS
             this.pgGraph.Controls.Add(this.panel13);
             this.pgGraph.Location = new System.Drawing.Point(4, 27);
             this.pgGraph.Name = "pgGraph";
-            this.pgGraph.Size = new System.Drawing.Size(752, 466);
+            this.pgGraph.Size = new System.Drawing.Size(752, 504);
             this.pgGraph.TabIndex = 4;
             this.pgGraph.Text = "Graph";
             this.pgGraph.UseVisualStyleBackColor = true;
@@ -2777,26 +2778,25 @@ namespace VPG_DHS
             this.btnHelp.Text = "Help";
             this.btnHelp.UseVisualStyleBackColor = false;
             // 
-            // picSyrma
+            // tabControl1
             // 
-            this.picSyrma.Image = ((System.Drawing.Image)(resources.GetObject("picSyrma.Image")));
-            this.picSyrma.Location = new System.Drawing.Point(680, 27);
-            this.picSyrma.Name = "picSyrma";
-            this.picSyrma.Size = new System.Drawing.Size(92, 41);
-            this.picSyrma.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picSyrma.TabIndex = 9;
-            this.picSyrma.TabStop = false;
+            this.tabControl1.Controls.Add(this.tbWeightformat);
+            this.tabControl1.Controls.Add(this.tbFilters);
+            this.tabControl1.Location = new System.Drawing.Point(24, 31);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(558, 420);
+            this.tabControl1.TabIndex = 0;
             // 
-            // lblAddress
+            // tbWeightformat
             // 
-            this.lblAddress.AutoSize = true;
-            this.lblAddress.BackColor = System.Drawing.Color.PowderBlue;
-            this.lblAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddress.Location = new System.Drawing.Point(216, 33);
-            this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(119, 18);
-            this.lblAddress.TabIndex = 16;
-            this.lblAddress.Text = "Active Address";
+            this.tbWeightformat.Location = new System.Drawing.Point(4, 27);
+            this.tbWeightformat.Name = "tbWeightformat";
+            this.tbWeightformat.Padding = new System.Windows.Forms.Padding(3);
+            this.tbWeightformat.Size = new System.Drawing.Size(550, 389);
+            this.tbWeightformat.TabIndex = 0;
+            this.tbWeightformat.Text = "Weight Format/Zero/Tare/Motion ";
+            this.tbWeightformat.UseVisualStyleBackColor = true;
             // 
             // txtVactive
             // 
