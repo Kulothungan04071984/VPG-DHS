@@ -27,6 +27,24 @@ namespace VPG_DHS
             }
         }
 
-      
+        private void lblWPeak_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtWmV_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void grbWWeighingandOperation_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
