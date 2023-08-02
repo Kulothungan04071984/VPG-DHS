@@ -13,7 +13,7 @@ namespace VPG_DHS
 {
     public partial class Form1 : Form
     {
-        private SerialPort serialPort;
+       
         public Form1()
         {
             InitializeComponent();
@@ -27,26 +27,64 @@ namespace VPG_DHS
                 //Test test = new Test();
                 //test.Show();
             }
-        }
-
-        private void lblWPeak_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtWmV_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
+        }    
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            try
+            {
+                var ports = SerialPort.GetPortNames();
+                cboPortNumber.DataSource = ports;
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("Error", err.Message.ToString(), MessageBoxButtons.OK);
+            }
         }
-
-        private void grbWWeighingandOperation_Enter(object sender, EventArgs e)
+        private void btnConnect_Click(object sender, EventArgs e)
         {
-
+            if (cboPortNumber.Items.Count == 0 || cboPortNumber.SelectedItem == null)
+            {
+                MessageBox.Show("Please select the Port");
+            }
+            try
+            {
+                VPGSerialPort.PortName = cboPortNumber.SelectedItem.ToString();
+                VPGSerialPort.Open();
+                MessageBox.Show("Serial Port is Open");
+                chKWReady.Checked = true;
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("Error", err.Message.ToString());
+                if(VPGSerialPort.IsOpen)
+                {
+                    VPGSerialPort.Close();
+                }
+            }
         }
+
+        private void VPGSerialPort_DataReceived(object sender, SerialDataReceivedEventArgs e)
+        {
+            if(VPGSerialPort.IsOpen)
+            {
+               
+                var data = VPGSerialPort.ReadByte();
+                byte[] arrdata = new byte[data + 3];
+                arrdata[0] = Convert.ToByte(data);
+
+                btnIndicator.Visible = true;
+
+                this.BeginInvoke((MethodInvoker)delegate {
+                    txtWWeight.AppendText(arrdata[0].ToString());
+                   
+                });
+               
+
+
+
+            }
+        }
+
+       
     }
 }
