@@ -71,17 +71,18 @@ namespace VPG_DHS
                 var data = VPGSerialPort.ReadByte();
                 byte[] arrdata = new byte[data + 3];
                 arrdata[0] = Convert.ToByte(data);
-
-                btnIndicator.Visible = true;
-
+                
                 this.BeginInvoke((MethodInvoker)delegate {
+                    txtWWeight.Clear();
                     txtWWeight.AppendText(arrdata[0].ToString());
-                   
+                    
+
+                    btnIndicator.Visible = true;
+                    btnIndicator.Refresh(); 
+                    System.Threading.Thread.Sleep(500);
+                    btnIndicator.Visible = false;
                 });
-               
-
-
-
+                
             }
         }
 
