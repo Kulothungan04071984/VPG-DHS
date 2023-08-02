@@ -895,17 +895,16 @@
   </data>
   <data name="btnWResetDevice.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH4SURBVDhPjVPdK4NhFH/Ntdy4MHan3O9CuXKx/Au7QG7c
-        uRGTlJSIC6FEKRsXPtoW4cbEMJ8JMxshNCnFNOTr3WYvdZzf45lM83Hq1HnOc37nOc/vnKP8R3Ja7Mbs
-        ZmeBPP4h5rH0zMYhY1aTvcrQ6uw2tDm7clsdU/pmh0upGMiQUaklq2FED5BpwB22zAeoyxekts1jKuxz
-        UX7HZNziDlQSUZoMTxaA89rHp6vdflq8fSL/i0YH2ht52K5dCNDQ6SVtPUcffVHNwkl0EiaFy8bLAHsj
-        L+SPabStxmg0GBK6rbKPE+6yf+b6Xi2yztYDI9GKgj+jbLyMICTo3AmSeXRJKGz4dmNxUZ1pcO4GGAnn
-        8pkw/BlBvmhcvFgyvk62zROhsOHDHWIQC4yEKwrKB2EBWSaIK7bNUal9WShs+HCHGMQCI+HJCcBB+cQG
-        TR9dkBp/FQobPtylTPD1C4kEy2chJvtDYCcSpPyCIJGJEe3jALStzLFC9S6vUNjw4U6QaHOHk0hES9Aa
-        tAhBaw8Rsh5eUM/eOfWy9rO9eq+KCtBqUf7XNkK4Up0votVgWIZPr6jOs0eeuyc6eH2jfeYBAwUwhg1D
-        J2HJwknSMK4YW4wvmAdh+DPKxss/gj+FFwaLgwXCIgkQEyb+/L3snwSrixWWx19EUd4BStLvTpoOdJsA
-        AAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAfhJREFUOE+NU90rg2EUf8213Lgwdqfc70K5crH8C7tAbty5EZOUlIgLoUQpGxc+
+        2hbhxsQwnwkzGyE0KcU05OvdZi91nN/jmUzzcerUec5zfuc5z++co/xHclrsxuxmZ4E8/iHmsfTMxiFj
+        VpO9ytDq7Da0ObtyWx1T+maHS6kYyJBRqSWrYUQPkGnAHbbMB6jLF6S2zWMq7HNRfsdk3OIOVBJRmgxP
+        FoDz2senq91+Wrx9Iv+LRgfaG3nYrl0I0NDpJW09Rx99Uc3CSXQSJoXLxssAeyMv5I9ptK3GaDQYErqt
+        so8T7rJ/5vpeLbLO1gMj0YqCP6NsvIwgJOjcCZJ5dEkobPh2Y3FRnWlw7gYYCefymTD8GUG+aFy8WDK+
+        TrbNE6Gw4cMdYhALjIQrCsoHYQFZJogrts1RqX1ZKGz4cIcYxAIj4ckJwEH5xAZNH12QGn8VChs+3KVM
+        8PULiQTLZyEm+0NgJxKk/IIgkYkR7eMAtK3MsUL1Lq9Q2PDhTpBoc4eTSERL0Bq0CEFrDxGyHl5Qz945
+        9bL2s716r4oK0GpR/tc2QrhSnS+i1WBYhk+vqM6zR567Jzp4faN95gEDBTCGDUMnYcnCSdIwrhhbjC+Y
+        B2H4M8rGyz+CP4UXBouDBcIiCRATJv78veyfBKuLFZbHX0RR3gFK0u9Omg50mwAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="lblLNotes.Text" xml:space="preserve">

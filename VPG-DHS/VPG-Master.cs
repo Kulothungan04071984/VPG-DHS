@@ -48,5 +48,10 @@ namespace VPG_DHS
         {
 
         }
+
+        private void chKWReady_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
