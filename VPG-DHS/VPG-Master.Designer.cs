@@ -30,9 +30,9 @@ namespace VPG_DHS
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.vpgMenu = new System.Windows.Forms.MenuStrip();
             this.tlLogfile = new System.Windows.Forms.ToolStripMenuItem();
             this.tlAbout = new System.Windows.Forms.ToolStripMenuItem();
@@ -97,6 +97,7 @@ namespace VPG_DHS
             this.lblWSetpoint = new System.Windows.Forms.Label();
             this.lblWInput1 = new System.Windows.Forms.Label();
             this.grbWPccommunication = new System.Windows.Forms.GroupBox();
+            this.btnConnect = new System.Windows.Forms.Button();
             this.cboWStopBits = new System.Windows.Forms.ComboBox();
             this.cboParity = new System.Windows.Forms.ComboBox();
             this.cboBaud = new System.Windows.Forms.ComboBox();
@@ -345,9 +346,9 @@ namespace VPG_DHS
             this.txtVactive = new System.Windows.Forms.TextBox();
             this.pgGraph = new System.Windows.Forms.TabPage();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.chkGcursor = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.lblGraphCursor = new System.Windows.Forms.Label();
-            this.chtGraph = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.btnGstart = new System.Windows.Forms.Button();
             this.lblGnotes = new System.Windows.Forms.Label();
             this.cboSeconds = new System.Windows.Forms.ComboBox();
@@ -361,6 +362,8 @@ namespace VPG_DHS
             this.btnHelp = new System.Windows.Forms.Button();
             this.picSyrma = new System.Windows.Forms.PictureBox();
             this.lblAddress = new System.Windows.Forms.Label();
+            this.VPGSerialPort = new System.IO.Ports.SerialPort(this.components);
+            this.btnIndicator = new System.Windows.Forms.Button();
             this.vpgMenu.SuspendLayout();
             this.tbControl.SuspendLayout();
             this.pgWeighing.SuspendLayout();
@@ -397,7 +400,7 @@ namespace VPG_DHS
             this.panel1.SuspendLayout();
             this.pgGraph.SuspendLayout();
             this.panel13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chtGraph)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSyrma)).BeginInit();
             this.SuspendLayout();
             // 
@@ -410,7 +413,7 @@ namespace VPG_DHS
             this.tlEdit});
             this.vpgMenu.Location = new System.Drawing.Point(0, 0);
             this.vpgMenu.Name = "vpgMenu";
-            this.vpgMenu.Size = new System.Drawing.Size(800, 24);
+            this.vpgMenu.Size = new System.Drawing.Size(823, 24);
             this.vpgMenu.TabIndex = 0;
             this.vpgMenu.Text = "Log File";
             // 
@@ -464,6 +467,7 @@ namespace VPG_DHS
             // pgWeighing
             // 
             this.pgWeighing.BackColor = System.Drawing.Color.AliceBlue;
+            this.pgWeighing.Controls.Add(this.btnIndicator);
             this.pgWeighing.Controls.Add(this.grbWStatusError);
             this.pgWeighing.Controls.Add(this.grbStatus);
             this.pgWeighing.Controls.Add(this.grbWPccommunication);
@@ -1074,7 +1078,8 @@ namespace VPG_DHS
             // 
             // grbWPccommunication
             // 
-            this.grbWPccommunication.BackColor = System.Drawing.Color.LightBlue;
+            this.grbWPccommunication.BackColor = System.Drawing.Color.LightGray;
+            this.grbWPccommunication.Controls.Add(this.btnConnect);
             this.grbWPccommunication.Controls.Add(this.cboWStopBits);
             this.grbWPccommunication.Controls.Add(this.cboParity);
             this.grbWPccommunication.Controls.Add(this.cboBaud);
@@ -1088,10 +1093,21 @@ namespace VPG_DHS
             this.grbWPccommunication.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbWPccommunication.Location = new System.Drawing.Point(16, 309);
             this.grbWPccommunication.Name = "grbWPccommunication";
-            this.grbWPccommunication.Size = new System.Drawing.Size(238, 126);
+            this.grbWPccommunication.Size = new System.Drawing.Size(261, 126);
             this.grbWPccommunication.TabIndex = 19;
             this.grbWPccommunication.TabStop = false;
             this.grbWPccommunication.Text = "PC Communicaion Setting";
+            // 
+            // btnConnect
+            // 
+            this.btnConnect.BackColor = System.Drawing.Color.Green;
+            this.btnConnect.Location = new System.Drawing.Point(170, 88);
+            this.btnConnect.Name = "btnConnect";
+            this.btnConnect.Size = new System.Drawing.Size(75, 30);
+            this.btnConnect.TabIndex = 20;
+            this.btnConnect.Text = "Connect";
+            this.btnConnect.UseVisualStyleBackColor = false;
+            this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
             // 
             // cboWStopBits
             // 
@@ -1230,7 +1246,6 @@ namespace VPG_DHS
             this.grbWWeighingandOperation.TabIndex = 16;
             this.grbWWeighingandOperation.TabStop = false;
             this.grbWWeighingandOperation.Text = "Weighing and Operation";
-            this.grbWWeighingandOperation.Enter += new System.EventHandler(this.grbWWeighingandOperation_Enter);
             // 
             // grbWWeight
             // 
@@ -1281,7 +1296,6 @@ namespace VPG_DHS
             this.txtWmV.Name = "txtWmV";
             this.txtWmV.Size = new System.Drawing.Size(75, 20);
             this.txtWmV.TabIndex = 18;
-            this.txtWmV.TextChanged += new System.EventHandler(this.txtWmV_TextChanged);
             // 
             // txtWPeak
             // 
@@ -1312,7 +1326,6 @@ namespace VPG_DHS
             this.lblWGrab.Size = new System.Drawing.Size(33, 15);
             this.lblWGrab.TabIndex = 17;
             this.lblWGrab.Text = "Grab";
-            this.lblWGrab.Click += new System.EventHandler(this.lblWPeak_Click);
             // 
             // label2
             // 
@@ -1323,7 +1336,6 @@ namespace VPG_DHS
             this.label2.Size = new System.Drawing.Size(33, 15);
             this.label2.TabIndex = 17;
             this.label2.Text = "Peak";
-            this.label2.Click += new System.EventHandler(this.lblWPeak_Click);
             // 
             // btnWResetPeak
             // 
@@ -1401,7 +1413,6 @@ namespace VPG_DHS
             this.lblWZeroTracking.Size = new System.Drawing.Size(78, 15);
             this.lblWZeroTracking.TabIndex = 17;
             this.lblWZeroTracking.Text = "Zero Tracking";
-            this.lblWZeroTracking.Click += new System.EventHandler(this.lblWPeak_Click);
             // 
             // lblWMotion
             // 
@@ -1412,7 +1423,6 @@ namespace VPG_DHS
             this.lblWMotion.Size = new System.Drawing.Size(47, 15);
             this.lblWMotion.TabIndex = 17;
             this.lblWMotion.Text = "Motion";
-            this.lblWMotion.Click += new System.EventHandler(this.lblWPeak_Click);
             // 
             // lblWNet
             // 
@@ -1423,7 +1433,6 @@ namespace VPG_DHS
             this.lblWNet.Size = new System.Drawing.Size(28, 15);
             this.lblWNet.TabIndex = 17;
             this.lblWNet.Text = "Net";
-            this.lblWNet.Click += new System.EventHandler(this.lblWPeak_Click);
             // 
             // lblWGross
             // 
@@ -1434,7 +1443,6 @@ namespace VPG_DHS
             this.lblWGross.Size = new System.Drawing.Size(37, 15);
             this.lblWGross.TabIndex = 17;
             this.lblWGross.Text = "Gross";
-            this.lblWGross.Click += new System.EventHandler(this.lblWPeak_Click);
             // 
             // lblWReady
             // 
@@ -1445,7 +1453,6 @@ namespace VPG_DHS
             this.lblWReady.Size = new System.Drawing.Size(40, 15);
             this.lblWReady.TabIndex = 17;
             this.lblWReady.Text = "Ready";
-            this.lblWReady.Click += new System.EventHandler(this.lblWPeak_Click);
             // 
             // chkWzeroTracking
             // 
@@ -1486,12 +1493,12 @@ namespace VPG_DHS
             // chKWReady
             // 
             this.chKWReady.AutoSize = true;
+            this.chKWReady.BackColor = System.Drawing.Color.Gainsboro;
             this.chKWReady.Location = new System.Drawing.Point(303, 42);
             this.chKWReady.Name = "chKWReady";
             this.chKWReady.Size = new System.Drawing.Size(15, 14);
             this.chKWReady.TabIndex = 18;
-            this.chKWReady.UseVisualStyleBackColor = true;
-            this.chKWReady.CheckedChanged += new System.EventHandler(this.chKWReady_CheckedChanged);
+            this.chKWReady.UseVisualStyleBackColor = false;
             // 
             // chkWActive2
             // 
@@ -1551,7 +1558,6 @@ namespace VPG_DHS
             // 
             // grpLNotes
             // 
-            this.grpLNotes.BackColor = System.Drawing.Color.LightBlue;
             this.grpLNotes.Controls.Add(this.lblLNotes);
             this.grpLNotes.Location = new System.Drawing.Point(589, 56);
             this.grpLNotes.Name = "grpLNotes";
@@ -1563,7 +1569,7 @@ namespace VPG_DHS
             // lblLNotes
             // 
             this.lblLNotes.AutoSize = true;
-            this.lblLNotes.BackColor = System.Drawing.Color.AliceBlue;
+            this.lblLNotes.BackColor = System.Drawing.Color.Gainsboro;
             this.lblLNotes.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLNotes.Location = new System.Drawing.Point(6, 22);
             this.lblLNotes.Name = "lblLNotes";
@@ -1573,7 +1579,7 @@ namespace VPG_DHS
             // 
             // btnLsavetodevice
             // 
-            this.btnLsavetodevice.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnLsavetodevice.BackColor = System.Drawing.Color.LightBlue;
             this.btnLsavetodevice.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLsavetodevice.Location = new System.Drawing.Point(598, 411);
             this.btnLsavetodevice.Name = "btnLsavetodevice";
@@ -1584,7 +1590,7 @@ namespace VPG_DHS
             // 
             // btnLsavetofile
             // 
-            this.btnLsavetofile.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnLsavetofile.BackColor = System.Drawing.Color.LightBlue;
             this.btnLsavetofile.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLsavetofile.Location = new System.Drawing.Point(595, 353);
             this.btnLsavetofile.Name = "btnLsavetofile";
@@ -1595,7 +1601,7 @@ namespace VPG_DHS
             // 
             // btnLuploadfromfile
             // 
-            this.btnLuploadfromfile.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnLuploadfromfile.BackColor = System.Drawing.Color.LightBlue;
             this.btnLuploadfromfile.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuploadfromfile.Location = new System.Drawing.Point(595, 324);
             this.btnLuploadfromfile.Name = "btnLuploadfromfile";
@@ -1606,7 +1612,7 @@ namespace VPG_DHS
             // 
             // btnLdownloadtodevie
             // 
-            this.btnLdownloadtodevie.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnLdownloadtodevie.BackColor = System.Drawing.Color.LightBlue;
             this.btnLdownloadtodevie.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLdownloadtodevie.Location = new System.Drawing.Point(595, 295);
             this.btnLdownloadtodevie.Name = "btnLdownloadtodevie";
@@ -1617,7 +1623,7 @@ namespace VPG_DHS
             // 
             // btnLupload
             // 
-            this.btnLupload.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnLupload.BackColor = System.Drawing.Color.LightBlue;
             this.btnLupload.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLupload.Location = new System.Drawing.Point(595, 266);
             this.btnLupload.Name = "btnLupload";
@@ -1703,6 +1709,7 @@ namespace VPG_DHS
             this.tbWeightformat.Size = new System.Drawing.Size(550, 389);
             this.tbWeightformat.TabIndex = 0;
             this.tbWeightformat.Text = "Weight Format/Zero/Tare/Motion ";
+            this.tbWeightformat.UseVisualStyleBackColor = true;
             // 
             // txtMotiondetectperiod
             // 
@@ -2596,12 +2603,10 @@ namespace VPG_DHS
             // 
             // lblGrab
             // 
-            this.lblGrab.Font = new System.Drawing.Font("Calibri", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGrab.Location = new System.Drawing.Point(14, 7);
+            this.lblGrab.Location = new System.Drawing.Point(0, 0);
             this.lblGrab.Name = "lblGrab";
-            this.lblGrab.Size = new System.Drawing.Size(50, 23);
+            this.lblGrab.Size = new System.Drawing.Size(100, 23);
             this.lblGrab.TabIndex = 44;
-            this.lblGrab.Text = "Grab";
             // 
             // pgCalibration
             // 
@@ -2881,7 +2886,7 @@ namespace VPG_DHS
             // 
             // grpVnotes
             // 
-            this.grpVnotes.BackColor = System.Drawing.Color.LightBlue;
+            this.grpVnotes.BackColor = System.Drawing.Color.Gainsboro;
             this.grpVnotes.Controls.Add(this.lblVnotes);
             this.grpVnotes.Location = new System.Drawing.Point(536, 36);
             this.grpVnotes.Name = "grpVnotes";
@@ -2893,9 +2898,9 @@ namespace VPG_DHS
             // lblVnotes
             // 
             this.lblVnotes.AutoSize = true;
-            this.lblVnotes.BackColor = System.Drawing.Color.AliceBlue;
+            this.lblVnotes.BackColor = System.Drawing.Color.Gainsboro;
             this.lblVnotes.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVnotes.Location = new System.Drawing.Point(12, 22);
+            this.lblVnotes.Location = new System.Drawing.Point(6, 22);
             this.lblVnotes.Name = "lblVnotes";
             this.lblVnotes.Size = new System.Drawing.Size(154, 375);
             this.lblVnotes.TabIndex = 0;
@@ -2903,7 +2908,7 @@ namespace VPG_DHS
             // 
             // panel9
             // 
-            this.panel9.BackColor = System.Drawing.Color.LightBlue;
+            this.panel9.BackColor = System.Drawing.Color.Gainsboro;
             this.panel9.Controls.Add(this.rdP12);
             this.panel9.Controls.Add(this.txtP12gross);
             this.panel9.Controls.Add(this.label20);
@@ -2928,7 +2933,6 @@ namespace VPG_DHS
             // 
             // txtP12gross
             // 
-            this.txtP12gross.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtP12gross.Location = new System.Drawing.Point(6, 64);
             this.txtP12gross.Multiline = true;
             this.txtP12gross.Name = "txtP12gross";
@@ -2957,7 +2961,6 @@ namespace VPG_DHS
             // 
             // txtP12Add
             // 
-            this.txtP12Add.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtP12Add.Location = new System.Drawing.Point(69, 17);
             this.txtP12Add.Multiline = true;
             this.txtP12Add.Name = "txtP12Add";
@@ -2966,7 +2969,7 @@ namespace VPG_DHS
             // 
             // panel10
             // 
-            this.panel10.BackColor = System.Drawing.Color.LightBlue;
+            this.panel10.BackColor = System.Drawing.Color.Gainsboro;
             this.panel10.Controls.Add(this.rdP11motion);
             this.panel10.Controls.Add(this.txtP11gross);
             this.panel10.Controls.Add(this.label22);
@@ -2991,7 +2994,6 @@ namespace VPG_DHS
             // 
             // txtP11gross
             // 
-            this.txtP11gross.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtP11gross.Location = new System.Drawing.Point(6, 64);
             this.txtP11gross.Multiline = true;
             this.txtP11gross.Name = "txtP11gross";
@@ -3020,7 +3022,6 @@ namespace VPG_DHS
             // 
             // txtP11Add
             // 
-            this.txtP11Add.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtP11Add.Location = new System.Drawing.Point(69, 17);
             this.txtP11Add.Multiline = true;
             this.txtP11Add.Name = "txtP11Add";
@@ -3029,7 +3030,7 @@ namespace VPG_DHS
             // 
             // panel11
             // 
-            this.panel11.BackColor = System.Drawing.Color.LightBlue;
+            this.panel11.BackColor = System.Drawing.Color.Gainsboro;
             this.panel11.Controls.Add(this.rdP10motion);
             this.panel11.Controls.Add(this.txtP10gross);
             this.panel11.Controls.Add(this.label24);
@@ -3054,7 +3055,6 @@ namespace VPG_DHS
             // 
             // txtP10gross
             // 
-            this.txtP10gross.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtP10gross.Location = new System.Drawing.Point(6, 64);
             this.txtP10gross.Multiline = true;
             this.txtP10gross.Name = "txtP10gross";
@@ -3083,7 +3083,6 @@ namespace VPG_DHS
             // 
             // txtP10add
             // 
-            this.txtP10add.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtP10add.Location = new System.Drawing.Point(69, 17);
             this.txtP10add.Multiline = true;
             this.txtP10add.Name = "txtP10add";
@@ -3092,7 +3091,7 @@ namespace VPG_DHS
             // 
             // panel12
             // 
-            this.panel12.BackColor = System.Drawing.Color.LightBlue;
+            this.panel12.BackColor = System.Drawing.Color.Gainsboro;
             this.panel12.Controls.Add(this.rdP9motion);
             this.panel12.Controls.Add(this.txtP9gross);
             this.panel12.Controls.Add(this.label26);
@@ -3117,7 +3116,6 @@ namespace VPG_DHS
             // 
             // txtP9gross
             // 
-            this.txtP9gross.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtP9gross.Location = new System.Drawing.Point(6, 64);
             this.txtP9gross.Multiline = true;
             this.txtP9gross.Name = "txtP9gross";
@@ -3146,7 +3144,6 @@ namespace VPG_DHS
             // 
             // txtP9add
             // 
-            this.txtP9add.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtP9add.Location = new System.Drawing.Point(69, 17);
             this.txtP9add.Multiline = true;
             this.txtP9add.Name = "txtP9add";
@@ -3407,7 +3404,7 @@ namespace VPG_DHS
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.LightBlue;
+            this.panel4.BackColor = System.Drawing.Color.Gainsboro;
             this.panel4.Controls.Add(this.rdP4motion);
             this.panel4.Controls.Add(this.txtP4Gross);
             this.panel4.Controls.Add(this.label9);
@@ -3432,7 +3429,6 @@ namespace VPG_DHS
             // 
             // txtP4Gross
             // 
-            this.txtP4Gross.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtP4Gross.Location = new System.Drawing.Point(6, 64);
             this.txtP4Gross.Multiline = true;
             this.txtP4Gross.Name = "txtP4Gross";
@@ -3461,7 +3457,6 @@ namespace VPG_DHS
             // 
             // txtP4add
             // 
-            this.txtP4add.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtP4add.Location = new System.Drawing.Point(69, 17);
             this.txtP4add.Multiline = true;
             this.txtP4add.Name = "txtP4add";
@@ -3470,7 +3465,7 @@ namespace VPG_DHS
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.LightBlue;
+            this.panel3.BackColor = System.Drawing.Color.Gainsboro;
             this.panel3.Controls.Add(this.rdP3motion);
             this.panel3.Controls.Add(this.txtP3Gross);
             this.panel3.Controls.Add(this.label7);
@@ -3495,7 +3490,6 @@ namespace VPG_DHS
             // 
             // txtP3Gross
             // 
-            this.txtP3Gross.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtP3Gross.Location = new System.Drawing.Point(6, 64);
             this.txtP3Gross.Multiline = true;
             this.txtP3Gross.Name = "txtP3Gross";
@@ -3524,7 +3518,6 @@ namespace VPG_DHS
             // 
             // txtP3Add
             // 
-            this.txtP3Add.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtP3Add.Location = new System.Drawing.Point(69, 17);
             this.txtP3Add.Multiline = true;
             this.txtP3Add.Name = "txtP3Add";
@@ -3533,7 +3526,7 @@ namespace VPG_DHS
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.LightBlue;
+            this.panel2.BackColor = System.Drawing.Color.Gainsboro;
             this.panel2.Controls.Add(this.rdP2motion);
             this.panel2.Controls.Add(this.txtP2gross);
             this.panel2.Controls.Add(this.label5);
@@ -3558,7 +3551,6 @@ namespace VPG_DHS
             // 
             // txtP2gross
             // 
-            this.txtP2gross.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtP2gross.Location = new System.Drawing.Point(6, 64);
             this.txtP2gross.Multiline = true;
             this.txtP2gross.Name = "txtP2gross";
@@ -3587,7 +3579,6 @@ namespace VPG_DHS
             // 
             // txtP2add
             // 
-            this.txtP2add.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtP2add.Location = new System.Drawing.Point(69, 17);
             this.txtP2add.Multiline = true;
             this.txtP2add.Name = "txtP2add";
@@ -3596,7 +3587,7 @@ namespace VPG_DHS
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.LightBlue;
+            this.panel1.BackColor = System.Drawing.Color.Gainsboro;
             this.panel1.Controls.Add(this.rdP1motion);
             this.panel1.Controls.Add(this.txtVp1gross);
             this.panel1.Controls.Add(this.lblP1add);
@@ -3621,7 +3612,6 @@ namespace VPG_DHS
             // 
             // txtVp1gross
             // 
-            this.txtVp1gross.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtVp1gross.Location = new System.Drawing.Point(6, 64);
             this.txtVp1gross.Multiline = true;
             this.txtVp1gross.Name = "txtVp1gross";
@@ -3650,7 +3640,6 @@ namespace VPG_DHS
             // 
             // txtVp1add
             // 
-            this.txtVp1add.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtVp1add.Location = new System.Drawing.Point(69, 17);
             this.txtVp1add.Multiline = true;
             this.txtVp1add.Name = "txtVp1add";
@@ -3669,7 +3658,6 @@ namespace VPG_DHS
             // 
             // txtVerror
             // 
-            this.txtVerror.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtVerror.Location = new System.Drawing.Point(370, 16);
             this.txtVerror.Multiline = true;
             this.txtVerror.Name = "txtVerror";
@@ -3698,7 +3686,6 @@ namespace VPG_DHS
             // 
             // txtVnotactive
             // 
-            this.txtVnotactive.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtVnotactive.Location = new System.Drawing.Point(260, 43);
             this.txtVnotactive.Multiline = true;
             this.txtVnotactive.Name = "txtVnotactive";
@@ -3707,7 +3694,6 @@ namespace VPG_DHS
             // 
             // txtVactive
             // 
-            this.txtVactive.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtVactive.Location = new System.Drawing.Point(260, 21);
             this.txtVactive.Multiline = true;
             this.txtVactive.Name = "txtVactive";
@@ -3716,20 +3702,19 @@ namespace VPG_DHS
             // 
             // pgGraph
             // 
-            this.pgGraph.BackColor = System.Drawing.Color.AliceBlue;
             this.pgGraph.Controls.Add(this.panel13);
             this.pgGraph.Location = new System.Drawing.Point(4, 27);
             this.pgGraph.Name = "pgGraph";
             this.pgGraph.Size = new System.Drawing.Size(784, 479);
             this.pgGraph.TabIndex = 4;
             this.pgGraph.Text = "Graph";
+            this.pgGraph.UseVisualStyleBackColor = true;
             // 
             // panel13
             // 
-            this.panel13.BackColor = System.Drawing.Color.LightBlue;
-            this.panel13.Controls.Add(this.chkGcursor);
+            this.panel13.Controls.Add(this.checkBox1);
             this.panel13.Controls.Add(this.lblGraphCursor);
-            this.panel13.Controls.Add(this.chtGraph);
+            this.panel13.Controls.Add(this.chart1);
             this.panel13.Controls.Add(this.btnGstart);
             this.panel13.Controls.Add(this.lblGnotes);
             this.panel13.Controls.Add(this.cboSeconds);
@@ -3741,14 +3726,14 @@ namespace VPG_DHS
             this.panel13.Size = new System.Drawing.Size(733, 448);
             this.panel13.TabIndex = 7;
             // 
-            // chkGcursor
+            // checkBox1
             // 
-            this.chkGcursor.AutoSize = true;
-            this.chkGcursor.Location = new System.Drawing.Point(344, 10);
-            this.chkGcursor.Name = "chkGcursor";
-            this.chkGcursor.Size = new System.Drawing.Size(15, 14);
-            this.chkGcursor.TabIndex = 9;
-            this.chkGcursor.UseVisualStyleBackColor = true;
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(344, 10);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(15, 14);
+            this.checkBox1.TabIndex = 9;
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // lblGraphCursor
             // 
@@ -3759,33 +3744,31 @@ namespace VPG_DHS
             this.lblGraphCursor.TabIndex = 7;
             this.lblGraphCursor.Text = "Cursor Coordinates";
             // 
-            // chtGraph
+            // chart1
             // 
-            this.chtGraph.BackColor = System.Drawing.Color.AliceBlue;
-            chartArea5.Name = "ChartArea1";
-            this.chtGraph.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.chtGraph.Legends.Add(legend5);
-            this.chtGraph.Location = new System.Drawing.Point(3, 28);
-            this.chtGraph.Name = "chtGraph";
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series5.Legend = "Legend1";
-            series5.Name = "Series1";
-            this.chtGraph.Series.Add(series5);
-            this.chtGraph.Size = new System.Drawing.Size(714, 327);
-            this.chtGraph.TabIndex = 6;
-            this.chtGraph.Text = "chart1";
+            chartArea6.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea6);
+            legend6.Name = "Legend1";
+            this.chart1.Legends.Add(legend6);
+            this.chart1.Location = new System.Drawing.Point(3, 28);
+            this.chart1.Name = "chart1";
+            series6.ChartArea = "ChartArea1";
+            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series6.Legend = "Legend1";
+            series6.Name = "Series1";
+            this.chart1.Series.Add(series6);
+            this.chart1.Size = new System.Drawing.Size(714, 327);
+            this.chart1.TabIndex = 6;
+            this.chart1.Text = "chart1";
             // 
             // btnGstart
             // 
-            this.btnGstart.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnGstart.Location = new System.Drawing.Point(611, 361);
+            this.btnGstart.Location = new System.Drawing.Point(622, 361);
             this.btnGstart.Name = "btnGstart";
-            this.btnGstart.Size = new System.Drawing.Size(65, 26);
+            this.btnGstart.Size = new System.Drawing.Size(75, 23);
             this.btnGstart.TabIndex = 4;
             this.btnGstart.Text = "Start";
-            this.btnGstart.UseVisualStyleBackColor = false;
+            this.btnGstart.UseVisualStyleBackColor = true;
             // 
             // lblGnotes
             // 
@@ -3799,9 +3782,8 @@ namespace VPG_DHS
             // 
             // cboSeconds
             // 
-            this.cboSeconds.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.cboSeconds.FormattingEnabled = true;
-            this.cboSeconds.Location = new System.Drawing.Point(476, 361);
+            this.cboSeconds.Location = new System.Drawing.Point(482, 361);
             this.cboSeconds.Name = "cboSeconds";
             this.cboSeconds.Size = new System.Drawing.Size(121, 26);
             this.cboSeconds.TabIndex = 3;
@@ -3844,7 +3826,6 @@ namespace VPG_DHS
             // 
             // txtTemp
             // 
-            this.txtTemp.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtTemp.Location = new System.Drawing.Point(475, 33);
             this.txtTemp.Name = "txtTemp";
             this.txtTemp.Size = new System.Drawing.Size(90, 20);
@@ -3854,7 +3835,6 @@ namespace VPG_DHS
             // 
             this.lblDegree.AutoSize = true;
             this.lblDegree.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDegree.ForeColor = System.Drawing.Color.Brown;
             this.lblDegree.Location = new System.Drawing.Point(565, 32);
             this.lblDegree.Name = "lblDegree";
             this.lblDegree.Size = new System.Drawing.Size(21, 25);
@@ -3865,7 +3845,6 @@ namespace VPG_DHS
             // 
             this.lblCel.AutoSize = true;
             this.lblCel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCel.ForeColor = System.Drawing.Color.Brown;
             this.lblCel.Location = new System.Drawing.Point(580, 37);
             this.lblCel.Name = "lblCel";
             this.lblCel.Size = new System.Drawing.Size(18, 16);
@@ -3874,7 +3853,7 @@ namespace VPG_DHS
             // 
             // btnHelp
             // 
-            this.btnHelp.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnHelp.BackColor = System.Drawing.Color.DarkTurquoise;
             this.btnHelp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHelp.Location = new System.Drawing.Point(605, 31);
             this.btnHelp.Name = "btnHelp";
@@ -3885,30 +3864,39 @@ namespace VPG_DHS
             // 
             // picSyrma
             // 
-            this.picSyrma.Image = ((System.Drawing.Image)(resources.GetObject("picSyrma.Image")));
-            this.picSyrma.Location = new System.Drawing.Point(692, 30);
+            this.picSyrma.Location = new System.Drawing.Point(697, 31);
             this.picSyrma.Name = "picSyrma";
-            this.picSyrma.Size = new System.Drawing.Size(100, 37);
-            this.picSyrma.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picSyrma.Size = new System.Drawing.Size(100, 50);
             this.picSyrma.TabIndex = 1;
             this.picSyrma.TabStop = false;
             // 
             // lblAddress
             // 
-            this.lblAddress.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddress.Location = new System.Drawing.Point(229, 33);
+            this.lblAddress.Location = new System.Drawing.Point(-3, 35);
             this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(104, 23);
+            this.lblAddress.Size = new System.Drawing.Size(100, 23);
             this.lblAddress.TabIndex = 0;
-            this.lblAddress.Text = "Active Address";
+            // 
+            // VPGSerialPort
+            // 
+            this.VPGSerialPort.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.VPGSerialPort_DataReceived);
+            // 
+            // btnIndicator
+            // 
+            this.btnIndicator.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnIndicator.Location = new System.Drawing.Point(580, 5);
+            this.btnIndicator.Name = "btnIndicator";
+            this.btnIndicator.Size = new System.Drawing.Size(25, 23);
+            this.btnIndicator.TabIndex = 22;
+            this.btnIndicator.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(800, 573);
+            this.BackColor = System.Drawing.Color.PowderBlue;
+            this.ClientSize = new System.Drawing.Size(823, 573);
             this.Controls.Add(this.lblAddress);
             this.Controls.Add(this.picSyrma);
             this.Controls.Add(this.btnHelp);
@@ -3991,7 +3979,7 @@ namespace VPG_DHS
             this.pgGraph.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
             this.panel13.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chtGraph)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSyrma)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -4327,7 +4315,9 @@ namespace VPG_DHS
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.CheckBox chkGcursor;
         private System.Windows.Forms.Label lblGraphCursor;
-        private System.Windows.Forms.Panel panel14;
+        private System.IO.Ports.SerialPort VPGSerialPort;
+        private System.Windows.Forms.Button btnConnect;
+        private System.Windows.Forms.Button btnIndicator;
     }
 }
 
