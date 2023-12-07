@@ -423,7 +423,7 @@ namespace VPG_DHS
             this.vpgMenu.Size = new System.Drawing.Size(1283, 24);
             this.vpgMenu.TabIndex = 0;
             this.vpgMenu.Text = "Log File";
-            this.vpgMenu.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.vpgMenu_ItemClicked);
+         //   this.vpgMenu.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.vpgMenu_ItemClicked);
             // 
             // tlLogfile
             // 
@@ -432,7 +432,7 @@ namespace VPG_DHS
             this.tlLogfile.Name = "tlLogfile";
             this.tlLogfile.Size = new System.Drawing.Size(76, 20);
             this.tlLogfile.Text = "Log File";
-            this.tlLogfile.Click += new System.EventHandler(this.tlLogfile_Click);
+         //   this.tlLogfile.Click += new System.EventHandler(this.tlLogfile_Click);
             // 
             // tlAbout
             // 
@@ -441,7 +441,7 @@ namespace VPG_DHS
             this.tlAbout.Name = "tlAbout";
             this.tlAbout.Size = new System.Drawing.Size(68, 20);
             this.tlAbout.Text = "About";
-            this.tlAbout.Click += new System.EventHandler(this.tlAbout_Click);
+         //   this.tlAbout.Click += new System.EventHandler(this.tlAbout_Click);
             // 
             // tlEdit
             // 
@@ -450,7 +450,7 @@ namespace VPG_DHS
             this.tlEdit.Name = "tlEdit";
             this.tlEdit.Size = new System.Drawing.Size(55, 20);
             this.tlEdit.Text = "Edit";
-            this.tlEdit.Click += new System.EventHandler(this.tlEdit_Click);
+         //   this.tlEdit.Click += new System.EventHandler(this.tlEdit_Click);
             // 
             // cboAddress
             // 
@@ -460,7 +460,7 @@ namespace VPG_DHS
             this.cboAddress.Name = "cboAddress";
             this.cboAddress.Size = new System.Drawing.Size(40, 21);
             this.cboAddress.TabIndex = 2;
-            this.cboAddress.SelectedIndexChanged += new System.EventHandler(this.cboAddress_SelectedIndexChanged);
+         //   this.cboAddress.SelectedIndexChanged += new System.EventHandler(this.cboAddress_SelectedIndexChanged);
             // 
             // tbControl
             // 
@@ -475,7 +475,7 @@ namespace VPG_DHS
             this.tbControl.SelectedIndex = 0;
             this.tbControl.Size = new System.Drawing.Size(1296, 510);
             this.tbControl.TabIndex = 3;
-            this.tbControl.SelectedIndexChanged += new System.EventHandler(this.tbControl_SelectedIndexChanged);
+         //   this.tbControl.SelectedIndexChanged += new System.EventHandler(this.tbControl_SelectedIndexChanged);
             // 
             // pgWeighing
             // 
@@ -527,7 +527,7 @@ namespace VPG_DHS
             this.grbWStatusError.TabIndex = 21;
             this.grbWStatusError.TabStop = false;
             this.grbWStatusError.Text = "Status Error";
-            this.grbWStatusError.Enter += new System.EventHandler(this.grbWStatusError_Enter);
+         //   this.grbWStatusError.Enter += new System.EventHandler(this.grbWStatusError_Enter);
             // 
             // chkWOvertemperature
             // 
@@ -537,7 +537,7 @@ namespace VPG_DHS
             this.chkWOvertemperature.Size = new System.Drawing.Size(15, 14);
             this.chkWOvertemperature.TabIndex = 18;
             this.chkWOvertemperature.UseVisualStyleBackColor = true;
-            this.chkWOvertemperature.CheckedChanged += new System.EventHandler(this.chkWOvertemperature_CheckedChanged);
+         //   this.chkWOvertemperature.CheckedChanged += new System.EventHandler(this.chkWOvertemperature_CheckedChanged);
             // 
             // chkWNonVolatile
             // 
@@ -547,7 +547,7 @@ namespace VPG_DHS
             this.chkWNonVolatile.Size = new System.Drawing.Size(15, 14);
             this.chkWNonVolatile.TabIndex = 18;
             this.chkWNonVolatile.UseVisualStyleBackColor = true;
-            this.chkWNonVolatile.CheckedChanged += new System.EventHandler(this.chkWNonVolatile_CheckedChanged);
+         //   this.chkWNonVolatile.CheckedChanged += new System.EventHandler(this.chkWNonVolatile_CheckedChanged);
             // 
             // chkWVolatile
             // 
@@ -557,7 +557,7 @@ namespace VPG_DHS
             this.chkWVolatile.Size = new System.Drawing.Size(15, 14);
             this.chkWVolatile.TabIndex = 18;
             this.chkWVolatile.UseVisualStyleBackColor = true;
-            this.chkWVolatile.CheckedChanged += new System.EventHandler(this.chkWVolatile_CheckedChanged);
+         //   this.chkWVolatile.CheckedChanged += new System.EventHandler(this.chkWVolatile_CheckedChanged);
             // 
             // chkWNoUser
             // 
@@ -567,7 +567,7 @@ namespace VPG_DHS
             this.chkWNoUser.Size = new System.Drawing.Size(15, 14);
             this.chkWNoUser.TabIndex = 18;
             this.chkWNoUser.UseVisualStyleBackColor = true;
-            this.chkWNoUser.CheckedChanged += new System.EventHandler(this.chkWNoUser_CheckedChanged);
+         //   this.chkWNoUser.CheckedChanged += new System.EventHandler(this.chkWNoUser_CheckedChanged);
             // 
             // chkWInvaild
             // 
@@ -577,7 +577,7 @@ namespace VPG_DHS
             this.chkWInvaild.Size = new System.Drawing.Size(15, 14);
             this.chkWInvaild.TabIndex = 18;
             this.chkWInvaild.UseVisualStyleBackColor = true;
-            this.chkWInvaild.CheckedChanged += new System.EventHandler(this.chkWInvaild_CheckedChanged);
+         //   this.chkWInvaild.CheckedChanged += new System.EventHandler(this.chkWInvaild_CheckedChanged);
             // 
             // chkWatchDot
             // 
@@ -587,7 +587,7 @@ namespace VPG_DHS
             this.chkWatchDot.Size = new System.Drawing.Size(15, 14);
             this.chkWatchDot.TabIndex = 18;
             this.chkWatchDot.UseVisualStyleBackColor = true;
-            this.chkWatchDot.CheckedChanged += new System.EventHandler(this.chkWatchDot_CheckedChanged);
+         //   this.chkWatchDot.CheckedChanged += new System.EventHandler(this.chkWatchDot_CheckedChanged);
             // 
             // chkUnderTemp
             // 
@@ -597,7 +597,7 @@ namespace VPG_DHS
             this.chkUnderTemp.Size = new System.Drawing.Size(15, 14);
             this.chkUnderTemp.TabIndex = 18;
             this.chkUnderTemp.UseVisualStyleBackColor = true;
-            this.chkUnderTemp.CheckedChanged += new System.EventHandler(this.chkUnderTemp_CheckedChanged);
+          //  this.chkUnderTemp.CheckedChanged += new System.EventHandler(this.chkUnderTemp_CheckedChanged);
             // 
             // chkLoadcelloverload
             // 
@@ -607,7 +607,7 @@ namespace VPG_DHS
             this.chkLoadcelloverload.Size = new System.Drawing.Size(15, 14);
             this.chkLoadcelloverload.TabIndex = 18;
             this.chkLoadcelloverload.UseVisualStyleBackColor = true;
-            this.chkLoadcelloverload.CheckedChanged += new System.EventHandler(this.chkLoadcelloverload_CheckedChanged);
+         //   this.chkLoadcelloverload.CheckedChanged += new System.EventHandler(this.chkLoadcelloverload_CheckedChanged);
             // 
             // chkWEprom
             // 
@@ -617,7 +617,7 @@ namespace VPG_DHS
             this.chkWEprom.Size = new System.Drawing.Size(15, 14);
             this.chkWEprom.TabIndex = 18;
             this.chkWEprom.UseVisualStyleBackColor = true;
-            this.chkWEprom.CheckedChanged += new System.EventHandler(this.chkWEprom_CheckedChanged);
+         //   this.chkWEprom.CheckedChanged += new System.EventHandler(this.chkWEprom_CheckedChanged);
             // 
             // lblWNouser
             // 
@@ -628,7 +628,7 @@ namespace VPG_DHS
             this.lblWNouser.Size = new System.Drawing.Size(132, 23);
             this.lblWNouser.TabIndex = 17;
             this.lblWNouser.Text = "9 - No user data";
-            this.lblWNouser.Click += new System.EventHandler(this.lblWNouser_Click);
+          //  this.lblWNouser.Click += new System.EventHandler(this.lblWNouser_Click);
             // 
             // lblWInvalid
             // 
@@ -639,7 +639,7 @@ namespace VPG_DHS
             this.lblWInvalid.Size = new System.Drawing.Size(162, 23);
             this.lblWInvalid.TabIndex = 17;
             this.lblWInvalid.Text = "8 - Invalid user data";
-            this.lblWInvalid.Click += new System.EventHandler(this.lblWInvalid_Click);
+         //   this.lblWInvalid.Click += new System.EventHandler(this.lblWInvalid_Click);
             // 
             // lblWWatch
             // 
@@ -650,7 +650,7 @@ namespace VPG_DHS
             this.lblWWatch.Size = new System.Drawing.Size(184, 23);
             this.lblWWatch.TabIndex = 17;
             this.lblWWatch.Text = "7 - Watch dot time-out";
-            this.lblWWatch.Click += new System.EventHandler(this.lblWWatch_Click);
+         //   this.lblWWatch.Click += new System.EventHandler(this.lblWWatch_Click);
             // 
             // lblWUnder
             // 
@@ -661,7 +661,7 @@ namespace VPG_DHS
             this.lblWUnder.Size = new System.Drawing.Size(232, 23);
             this.lblWUnder.TabIndex = 17;
             this.lblWUnder.Text = "6 - Under temperature limits ";
-            this.lblWUnder.Click += new System.EventHandler(this.lblWUnder_Click);
+         //   this.lblWUnder.Click += new System.EventHandler(this.lblWUnder_Click);
             // 
             // lblWLoad
             // 
@@ -672,7 +672,7 @@ namespace VPG_DHS
             this.lblWLoad.Size = new System.Drawing.Size(168, 23);
             this.lblWLoad.TabIndex = 17;
             this.lblWLoad.Text = "5 - Loadcell overload";
-            this.lblWLoad.Click += new System.EventHandler(this.lblWLoad_Click);
+         //   this.lblWLoad.Click += new System.EventHandler(this.lblWLoad_Click);
             // 
             // lblWOver
             // 
@@ -683,7 +683,7 @@ namespace VPG_DHS
             this.lblWOver.Size = new System.Drawing.Size(218, 23);
             this.lblWOver.TabIndex = 17;
             this.lblWOver.Text = "4 - Over temperature limits";
-            this.lblWOver.Click += new System.EventHandler(this.lblWOver_Click);
+         //   this.lblWOver.Click += new System.EventHandler(this.lblWOver_Click);
             // 
             // lblWNonVolatile
             // 
@@ -694,7 +694,7 @@ namespace VPG_DHS
             this.lblWNonVolatile.Size = new System.Drawing.Size(260, 23);
             this.lblWNonVolatile.TabIndex = 17;
             this.lblWNonVolatile.Text = "3 - Non-volatile write ram failure";
-            this.lblWNonVolatile.Click += new System.EventHandler(this.lblWNonVolatile_Click);
+         //   this.lblWNonVolatile.Click += new System.EventHandler(this.lblWNonVolatile_Click);
             // 
             // lblWVolatile
             // 
@@ -705,7 +705,7 @@ namespace VPG_DHS
             this.lblWVolatile.Size = new System.Drawing.Size(223, 23);
             this.lblWVolatile.TabIndex = 17;
             this.lblWVolatile.Text = "2 - Volatile write ram failure";
-            this.lblWVolatile.Click += new System.EventHandler(this.lblWVolatile_Click);
+         //   this.lblWVolatile.Click += new System.EventHandler(this.lblWVolatile_Click);
             // 
             // lblWEprom
             // 
@@ -716,7 +716,7 @@ namespace VPG_DHS
             this.lblWEprom.Size = new System.Drawing.Size(145, 23);
             this.lblWEprom.TabIndex = 17;
             this.lblWEprom.Text = "1 - EPROM failure";
-            this.lblWEprom.Click += new System.EventHandler(this.lblWEprom_Click);
+         //   this.lblWEprom.Click += new System.EventHandler(this.lblWEprom_Click);
             // 
             // grbStatus
             // 
@@ -744,7 +744,7 @@ namespace VPG_DHS
             this.grbStatus.TabIndex = 20;
             this.grbStatus.TabStop = false;
             this.grbStatus.Text = "Status I/O";
-            this.grbStatus.Enter += new System.EventHandler(this.grbStatus_Enter);
+         //   this.grbStatus.Enter += new System.EventHandler(this.grbStatus_Enter);
             // 
             // chkWInput4
             // 
@@ -754,7 +754,7 @@ namespace VPG_DHS
             this.chkWInput4.Size = new System.Drawing.Size(15, 14);
             this.chkWInput4.TabIndex = 18;
             this.chkWInput4.UseVisualStyleBackColor = true;
-            this.chkWInput4.CheckedChanged += new System.EventHandler(this.chkWInput4_CheckedChanged);
+         //   this.chkWInput4.CheckedChanged += new System.EventHandler(this.chkWInput4_CheckedChanged);
             // 
             // chkWInput3
             // 
@@ -764,7 +764,7 @@ namespace VPG_DHS
             this.chkWInput3.Size = new System.Drawing.Size(15, 14);
             this.chkWInput3.TabIndex = 18;
             this.chkWInput3.UseVisualStyleBackColor = true;
-            this.chkWInput3.CheckedChanged += new System.EventHandler(this.chkWInput3_CheckedChanged);
+         //   this.chkWInput3.CheckedChanged += new System.EventHandler(this.chkWInput3_CheckedChanged);
             // 
             // chkWInput2
             // 
@@ -774,7 +774,7 @@ namespace VPG_DHS
             this.chkWInput2.Size = new System.Drawing.Size(15, 14);
             this.chkWInput2.TabIndex = 18;
             this.chkWInput2.UseVisualStyleBackColor = true;
-            this.chkWInput2.CheckedChanged += new System.EventHandler(this.chkWInput2_CheckedChanged);
+         //   this.chkWInput2.CheckedChanged += new System.EventHandler(this.chkWInput2_CheckedChanged);
             // 
             // chkWSet4
             // 
@@ -784,7 +784,7 @@ namespace VPG_DHS
             this.chkWSet4.Size = new System.Drawing.Size(15, 14);
             this.chkWSet4.TabIndex = 18;
             this.chkWSet4.UseVisualStyleBackColor = true;
-            this.chkWSet4.CheckedChanged += new System.EventHandler(this.chkWSet4_CheckedChanged);
+         //   this.chkWSet4.CheckedChanged += new System.EventHandler(this.chkWSet4_CheckedChanged);
             // 
             // chKWSet3
             // 
@@ -794,7 +794,7 @@ namespace VPG_DHS
             this.chKWSet3.Size = new System.Drawing.Size(15, 14);
             this.chKWSet3.TabIndex = 18;
             this.chKWSet3.UseVisualStyleBackColor = true;
-            this.chKWSet3.CheckedChanged += new System.EventHandler(this.chKWSet3_CheckedChanged);
+         //   this.chKWSet3.CheckedChanged += new System.EventHandler(this.chKWSet3_CheckedChanged);
             // 
             // chkWSet2
             // 
@@ -804,7 +804,7 @@ namespace VPG_DHS
             this.chkWSet2.Size = new System.Drawing.Size(15, 14);
             this.chkWSet2.TabIndex = 18;
             this.chkWSet2.UseVisualStyleBackColor = true;
-            this.chkWSet2.CheckedChanged += new System.EventHandler(this.chkWSet2_CheckedChanged);
+         //   this.chkWSet2.CheckedChanged += new System.EventHandler(this.chkWSet2_CheckedChanged);
             // 
             // chkWSet1
             // 
@@ -814,7 +814,7 @@ namespace VPG_DHS
             this.chkWSet1.Size = new System.Drawing.Size(15, 14);
             this.chkWSet1.TabIndex = 18;
             this.chkWSet1.UseVisualStyleBackColor = true;
-            this.chkWSet1.CheckedChanged += new System.EventHandler(this.chkWSet1_CheckedChanged);
+         //   this.chkWSet1.CheckedChanged += new System.EventHandler(this.chkWSet1_CheckedChanged);
             // 
             // chkWInput1
             // 
@@ -824,7 +824,7 @@ namespace VPG_DHS
             this.chkWInput1.Size = new System.Drawing.Size(15, 14);
             this.chkWInput1.TabIndex = 18;
             this.chkWInput1.UseVisualStyleBackColor = true;
-            this.chkWInput1.CheckedChanged += new System.EventHandler(this.chkWInput1_CheckedChanged);
+         //   this.chkWInput1.CheckedChanged += new System.EventHandler(this.chkWInput1_CheckedChanged);
             // 
             // lblWInput4
             // 
@@ -835,7 +835,7 @@ namespace VPG_DHS
             this.lblWInput4.Size = new System.Drawing.Size(58, 18);
             this.lblWInput4.TabIndex = 17;
             this.lblWInput4.Text = "Input #4";
-            this.lblWInput4.Click += new System.EventHandler(this.lblWInput4_Click);
+         //   this.lblWInput4.Click += new System.EventHandler(this.lblWInput4_Click);
             // 
             // lblWInput3
             // 
@@ -846,7 +846,7 @@ namespace VPG_DHS
             this.lblWInput3.Size = new System.Drawing.Size(58, 18);
             this.lblWInput3.TabIndex = 17;
             this.lblWInput3.Text = "Input #3";
-            this.lblWInput3.Click += new System.EventHandler(this.lblWInput3_Click);
+         //   this.lblWInput3.Click += new System.EventHandler(this.lblWInput3_Click);
             // 
             // lblWInput2
             // 
@@ -857,7 +857,7 @@ namespace VPG_DHS
             this.lblWInput2.Size = new System.Drawing.Size(58, 18);
             this.lblWInput2.TabIndex = 17;
             this.lblWInput2.Text = "Input #2";
-            this.lblWInput2.Click += new System.EventHandler(this.lblWInput2_Click);
+         //   this.lblWInput2.Click += new System.EventHandler(this.lblWInput2_Click);
             // 
             // lblWSet4
             // 
@@ -868,7 +868,7 @@ namespace VPG_DHS
             this.lblWSet4.Size = new System.Drawing.Size(81, 18);
             this.lblWSet4.TabIndex = 17;
             this.lblWSet4.Text = "Set Point #4";
-            this.lblWSet4.Click += new System.EventHandler(this.lblWSet4_Click);
+         //   this.lblWSet4.Click += new System.EventHandler(this.lblWSet4_Click);
             // 
             // lblWSet3
             // 
@@ -879,7 +879,7 @@ namespace VPG_DHS
             this.lblWSet3.Size = new System.Drawing.Size(81, 18);
             this.lblWSet3.TabIndex = 17;
             this.lblWSet3.Text = "Set Point #3";
-            this.lblWSet3.Click += new System.EventHandler(this.lblWSet3_Click);
+         //   this.lblWSet3.Click += new System.EventHandler(this.lblWSet3_Click);
             // 
             // lblWSet2
             // 
@@ -890,7 +890,7 @@ namespace VPG_DHS
             this.lblWSet2.Size = new System.Drawing.Size(81, 18);
             this.lblWSet2.TabIndex = 17;
             this.lblWSet2.Text = "Set Point #2";
-            this.lblWSet2.Click += new System.EventHandler(this.lblWSet2_Click);
+         //   this.lblWSet2.Click += new System.EventHandler(this.lblWSet2_Click);
             // 
             // lblWSetpoint
             // 
@@ -901,7 +901,7 @@ namespace VPG_DHS
             this.lblWSetpoint.Size = new System.Drawing.Size(78, 18);
             this.lblWSetpoint.TabIndex = 17;
             this.lblWSetpoint.Text = "Set Point#1";
-            this.lblWSetpoint.Click += new System.EventHandler(this.lblWSetpoint_Click);
+         //   this.lblWSetpoint.Click += new System.EventHandler(this.lblWSetpoint_Click);
             // 
             // lblWInput1
             // 
@@ -912,7 +912,7 @@ namespace VPG_DHS
             this.lblWInput1.Size = new System.Drawing.Size(58, 18);
             this.lblWInput1.TabIndex = 17;
             this.lblWInput1.Text = "Input #1";
-            this.lblWInput1.Click += new System.EventHandler(this.lblWInput1_Click);
+         //   this.lblWInput1.Click += new System.EventHandler(this.lblWInput1_Click);
             // 
             // grbWPccommunication
             // 
@@ -935,7 +935,7 @@ namespace VPG_DHS
             this.grbWPccommunication.TabIndex = 19;
             this.grbWPccommunication.TabStop = false;
             this.grbWPccommunication.Text = "PC Communication Setting";
-            this.grbWPccommunication.Enter += new System.EventHandler(this.grbWPccommunication_Enter);
+         //   this.grbWPccommunication.Enter += new System.EventHandler(this.grbWPccommunication_Enter);
             // 
             // btnConnect
             // 
@@ -956,7 +956,7 @@ namespace VPG_DHS
             this.cboWStopBits.Name = "cboWStopBits";
             this.cboWStopBits.Size = new System.Drawing.Size(56, 26);
             this.cboWStopBits.TabIndex = 19;
-            this.cboWStopBits.SelectedIndexChanged += new System.EventHandler(this.cboWStopBits_SelectedIndexChanged);
+          //  this.cboWStopBits.SelectedIndexChanged += new System.EventHandler(this.cboWStopBits_SelectedIndexChanged);
             // 
             // cboParity
             // 
@@ -966,7 +966,7 @@ namespace VPG_DHS
             this.cboParity.Name = "cboParity";
             this.cboParity.Size = new System.Drawing.Size(67, 26);
             this.cboParity.TabIndex = 19;
-            this.cboParity.SelectedIndexChanged += new System.EventHandler(this.cboParity_SelectedIndexChanged);
+          //  this.cboParity.SelectedIndexChanged += new System.EventHandler(this.cboParity_SelectedIndexChanged);
             // 
             // cboBaud
             // 
@@ -976,7 +976,7 @@ namespace VPG_DHS
             this.cboBaud.Name = "cboBaud";
             this.cboBaud.Size = new System.Drawing.Size(50, 26);
             this.cboBaud.TabIndex = 19;
-            this.cboBaud.SelectedIndexChanged += new System.EventHandler(this.cboBaud_SelectedIndexChanged);
+         //   this.cboBaud.SelectedIndexChanged += new System.EventHandler(this.cboBaud_SelectedIndexChanged);
             // 
             // cboWDataBits
             // 
@@ -986,7 +986,7 @@ namespace VPG_DHS
             this.cboWDataBits.Name = "cboWDataBits";
             this.cboWDataBits.Size = new System.Drawing.Size(56, 26);
             this.cboWDataBits.TabIndex = 19;
-            this.cboWDataBits.SelectedIndexChanged += new System.EventHandler(this.cboWDataBits_SelectedIndexChanged);
+         //   this.cboWDataBits.SelectedIndexChanged += new System.EventHandler(this.cboWDataBits_SelectedIndexChanged);
             // 
             // cboPortNumber
             // 
@@ -996,7 +996,7 @@ namespace VPG_DHS
             this.cboPortNumber.Name = "cboPortNumber";
             this.cboPortNumber.Size = new System.Drawing.Size(67, 26);
             this.cboPortNumber.TabIndex = 19;
-            this.cboPortNumber.SelectedIndexChanged += new System.EventHandler(this.cboPortNumber_SelectedIndexChanged);
+         //   this.cboPortNumber.SelectedIndexChanged += new System.EventHandler(this.cboPortNumber_SelectedIndexChanged);
             // 
             // lblWParity
             // 
@@ -1007,7 +1007,7 @@ namespace VPG_DHS
             this.lblWParity.Size = new System.Drawing.Size(39, 15);
             this.lblWParity.TabIndex = 18;
             this.lblWParity.Text = "Parity";
-            this.lblWParity.Click += new System.EventHandler(this.lblWParity_Click);
+         //   this.lblWParity.Click += new System.EventHandler(this.lblWParity_Click);
             // 
             // lablWBaud
             // 
@@ -1018,7 +1018,7 @@ namespace VPG_DHS
             this.lablWBaud.Size = new System.Drawing.Size(70, 18);
             this.lablWBaud.TabIndex = 18;
             this.lablWBaud.Text = "Baud Rate";
-            this.lablWBaud.Click += new System.EventHandler(this.lablWBaud_Click);
+         //   this.lablWBaud.Click += new System.EventHandler(this.lablWBaud_Click);
             // 
             // lblWDataBits
             // 
@@ -1029,7 +1029,7 @@ namespace VPG_DHS
             this.lblWDataBits.Size = new System.Drawing.Size(62, 18);
             this.lblWDataBits.TabIndex = 18;
             this.lblWDataBits.Text = "Data Bits";
-            this.lblWDataBits.Click += new System.EventHandler(this.lblWDataBits_Click);
+         //   this.lblWDataBits.Click += new System.EventHandler(this.lblWDataBits_Click);
             // 
             // lblWStopBit
             // 
@@ -1040,7 +1040,7 @@ namespace VPG_DHS
             this.lblWStopBit.Size = new System.Drawing.Size(55, 15);
             this.lblWStopBit.TabIndex = 17;
             this.lblWStopBit.Text = "Stop Bits";
-            this.lblWStopBit.Click += new System.EventHandler(this.lblWStopBit_Click);
+          //  this.lblWStopBit.Click += new System.EventHandler(this.lblWStopBit_Click);
             // 
             // lblPortNumber
             // 
@@ -1051,7 +1051,7 @@ namespace VPG_DHS
             this.lblPortNumber.Size = new System.Drawing.Size(88, 18);
             this.lblPortNumber.TabIndex = 17;
             this.lblPortNumber.Text = "Port Number";
-            this.lblPortNumber.Click += new System.EventHandler(this.lblPortNumber_Click);
+         //   this.lblPortNumber.Click += new System.EventHandler(this.lblPortNumber_Click);
             // 
             // lblWActive
             // 
@@ -1062,7 +1062,7 @@ namespace VPG_DHS
             this.lblWActive.Size = new System.Drawing.Size(55, 18);
             this.lblWActive.TabIndex = 18;
             this.lblWActive.Text = "- Active";
-            this.lblWActive.Click += new System.EventHandler(this.lblWActive_Click);
+          //  this.lblWActive.Click += new System.EventHandler(this.lblWActive_Click);
             // 
             // lblWNotActive
             // 
@@ -1073,7 +1073,7 @@ namespace VPG_DHS
             this.lblWNotActive.Size = new System.Drawing.Size(81, 18);
             this.lblWNotActive.TabIndex = 18;
             this.lblWNotActive.Text = "- Not Active";
-            this.lblWNotActive.Click += new System.EventHandler(this.lblWNotActive_Click);
+         //   this.lblWNotActive.Click += new System.EventHandler(this.lblWNotActive_Click);
             // 
             // grbWWeighingandOperation
             // 
@@ -1097,7 +1097,7 @@ namespace VPG_DHS
             this.grbWWeighingandOperation.TabIndex = 16;
             this.grbWWeighingandOperation.TabStop = false;
             this.grbWWeighingandOperation.Text = "Weighing and Operation";
-            this.grbWWeighingandOperation.Enter += new System.EventHandler(this.grbWWeighingandOperation_Enter);
+         //   this.grbWWeighingandOperation.Enter += new System.EventHandler(this.grbWWeighingandOperation_Enter);
             // 
             // grbWWeight
             // 
@@ -1113,7 +1113,7 @@ namespace VPG_DHS
             this.grbWWeight.TabIndex = 17;
             this.grbWWeight.TabStop = false;
             this.grbWWeight.Text = "Weight";
-            this.grbWWeight.Enter += new System.EventHandler(this.grbWWeight_Enter);
+         //   this.grbWWeight.Enter += new System.EventHandler(this.grbWWeight_Enter);
             // 
             // grbWAdditional
             // 
@@ -1131,7 +1131,7 @@ namespace VPG_DHS
             this.grbWAdditional.TabIndex = 18;
             this.grbWAdditional.TabStop = false;
             this.grbWAdditional.Text = "Additional";
-            this.grbWAdditional.Enter += new System.EventHandler(this.grbWAdditional_Enter);
+         //   this.grbWAdditional.Enter += new System.EventHandler(this.grbWAdditional_Enter);
             // 
             // txtWGrab
             // 
@@ -1141,7 +1141,7 @@ namespace VPG_DHS
             this.txtWGrab.Name = "txtWGrab";
             this.txtWGrab.Size = new System.Drawing.Size(82, 26);
             this.txtWGrab.TabIndex = 18;
-            this.txtWGrab.TextChanged += new System.EventHandler(this.txtWGrab_TextChanged);
+          //  this.txtWGrab.TextChanged += new System.EventHandler(this.txtWGrab_TextChanged);
             // 
             // txtWmV
             // 
@@ -1151,7 +1151,7 @@ namespace VPG_DHS
             this.txtWmV.Name = "txtWmV";
             this.txtWmV.Size = new System.Drawing.Size(82, 26);
             this.txtWmV.TabIndex = 18;
-            this.txtWmV.TextChanged += new System.EventHandler(this.txtWmV_TextChanged);
+         //   this.txtWmV.TextChanged += new System.EventHandler(this.txtWmV_TextChanged);
             // 
             // txtWPeak
             // 
@@ -1161,7 +1161,7 @@ namespace VPG_DHS
             this.txtWPeak.Name = "txtWPeak";
             this.txtWPeak.Size = new System.Drawing.Size(82, 26);
             this.txtWPeak.TabIndex = 18;
-            this.txtWPeak.TextChanged += new System.EventHandler(this.txtWPeak_TextChanged);
+         //   this.txtWPeak.TextChanged += new System.EventHandler(this.txtWPeak_TextChanged);
             // 
             // label4
             // 
@@ -1173,7 +1173,7 @@ namespace VPG_DHS
             this.label4.Size = new System.Drawing.Size(39, 15);
             this.label4.TabIndex = 18;
             this.label4.Text = "mV/V";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+         //   this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // lblWGrab
             // 
@@ -1184,7 +1184,7 @@ namespace VPG_DHS
             this.lblWGrab.Size = new System.Drawing.Size(33, 15);
             this.lblWGrab.TabIndex = 17;
             this.lblWGrab.Text = "Grab";
-            this.lblWGrab.Click += new System.EventHandler(this.lblWGrab_Click);
+          //  this.lblWGrab.Click += new System.EventHandler(this.lblWGrab_Click);
             // 
             // label2
             // 
@@ -1195,7 +1195,7 @@ namespace VPG_DHS
             this.label2.Size = new System.Drawing.Size(33, 15);
             this.label2.TabIndex = 17;
             this.label2.Text = "Peak";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+         //   this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // btnWResetPeak
             // 
@@ -1207,7 +1207,7 @@ namespace VPG_DHS
             this.btnWResetPeak.TabIndex = 15;
             this.btnWResetPeak.Text = "Reset Peak";
             this.btnWResetPeak.UseVisualStyleBackColor = false;
-            this.btnWResetPeak.Click += new System.EventHandler(this.btnWResetPeak_Click);
+         //   this.btnWResetPeak.Click += new System.EventHandler(this.btnWResetPeak_Click);
             // 
             // btnWTare
             // 
@@ -1219,7 +1219,7 @@ namespace VPG_DHS
             this.btnWTare.TabIndex = 16;
             this.btnWTare.Text = "Tare";
             this.btnWTare.UseVisualStyleBackColor = false;
-            this.btnWTare.Click += new System.EventHandler(this.btnWTare_Click);
+         //   this.btnWTare.Click += new System.EventHandler(this.btnWTare_Click);
             // 
             // btnWZero
             // 
@@ -1231,7 +1231,7 @@ namespace VPG_DHS
             this.btnWZero.TabIndex = 15;
             this.btnWZero.Text = "Zero";
             this.btnWZero.UseVisualStyleBackColor = false;
-            this.btnWZero.Click += new System.EventHandler(this.btnWZero_Click);
+         //   this.btnWZero.Click += new System.EventHandler(this.btnWZero_Click);
             // 
             // txtWWeight
             // 
@@ -1241,7 +1241,7 @@ namespace VPG_DHS
             this.txtWWeight.Name = "txtWWeight";
             this.txtWWeight.Size = new System.Drawing.Size(152, 26);
             this.txtWWeight.TabIndex = 8;
-            this.txtWWeight.TextChanged += new System.EventHandler(this.txtWWeight_TextChanged);
+         //   this.txtWWeight.TextChanged += new System.EventHandler(this.txtWWeight_TextChanged);
             // 
             // lblWKg
             // 
@@ -1253,7 +1253,7 @@ namespace VPG_DHS
             this.lblWKg.Size = new System.Drawing.Size(26, 19);
             this.lblWKg.TabIndex = 0;
             this.lblWKg.Text = "Kg";
-            this.lblWKg.Click += new System.EventHandler(this.lblWKg_Click);
+         //   this.lblWKg.Click += new System.EventHandler(this.lblWKg_Click);
             // 
             // btnWResetDevice
             // 
@@ -1268,7 +1268,7 @@ namespace VPG_DHS
             this.btnWResetDevice.Text = "Reset Device";
             this.btnWResetDevice.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnWResetDevice.UseVisualStyleBackColor = false;
-            this.btnWResetDevice.Click += new System.EventHandler(this.btnWResetDevice_Click);
+          //  this.btnWResetDevice.Click += new System.EventHandler(this.btnWResetDevice_Click);
             // 
             // lblWZeroTracking
             // 
@@ -1279,7 +1279,7 @@ namespace VPG_DHS
             this.lblWZeroTracking.Size = new System.Drawing.Size(89, 18);
             this.lblWZeroTracking.TabIndex = 17;
             this.lblWZeroTracking.Text = "Zero Tracking";
-            this.lblWZeroTracking.Click += new System.EventHandler(this.lblWZeroTracking_Click);
+         //   this.lblWZeroTracking.Click += new System.EventHandler(this.lblWZeroTracking_Click);
             // 
             // lblWMotion
             // 
@@ -1290,7 +1290,7 @@ namespace VPG_DHS
             this.lblWMotion.Size = new System.Drawing.Size(54, 18);
             this.lblWMotion.TabIndex = 17;
             this.lblWMotion.Text = "Motion";
-            this.lblWMotion.Click += new System.EventHandler(this.lblWMotion_Click);
+          //  this.lblWMotion.Click += new System.EventHandler(this.lblWMotion_Click);
             // 
             // lblWNet
             // 
@@ -1301,7 +1301,7 @@ namespace VPG_DHS
             this.lblWNet.Size = new System.Drawing.Size(31, 18);
             this.lblWNet.TabIndex = 17;
             this.lblWNet.Text = "Net";
-            this.lblWNet.Click += new System.EventHandler(this.lblWNet_Click);
+          //  this.lblWNet.Click += new System.EventHandler(this.lblWNet_Click);
             // 
             // lblWGross
             // 
@@ -1312,7 +1312,7 @@ namespace VPG_DHS
             this.lblWGross.Size = new System.Drawing.Size(43, 18);
             this.lblWGross.TabIndex = 17;
             this.lblWGross.Text = "Gross";
-            this.lblWGross.Click += new System.EventHandler(this.lblWGross_Click);
+         //   this.lblWGross.Click += new System.EventHandler(this.lblWGross_Click);
             // 
             // lblWReady
             // 
@@ -1323,7 +1323,7 @@ namespace VPG_DHS
             this.lblWReady.Size = new System.Drawing.Size(46, 18);
             this.lblWReady.TabIndex = 17;
             this.lblWReady.Text = "Ready";
-            this.lblWReady.Click += new System.EventHandler(this.lblWReady_Click);
+         //   this.lblWReady.Click += new System.EventHandler(this.lblWReady_Click);
             // 
             // chkWzeroTracking
             // 
@@ -1333,7 +1333,7 @@ namespace VPG_DHS
             this.chkWzeroTracking.Size = new System.Drawing.Size(15, 14);
             this.chkWzeroTracking.TabIndex = 18;
             this.chkWzeroTracking.UseVisualStyleBackColor = true;
-            this.chkWzeroTracking.CheckedChanged += new System.EventHandler(this.chkWzeroTracking_CheckedChanged);
+          //  this.chkWzeroTracking.CheckedChanged += new System.EventHandler(this.chkWzeroTracking_CheckedChanged);
             // 
             // chkWMotion
             // 
@@ -1343,7 +1343,7 @@ namespace VPG_DHS
             this.chkWMotion.Size = new System.Drawing.Size(15, 14);
             this.chkWMotion.TabIndex = 18;
             this.chkWMotion.UseVisualStyleBackColor = true;
-            this.chkWMotion.CheckedChanged += new System.EventHandler(this.chkWMotion_CheckedChanged);
+          //  this.chkWMotion.CheckedChanged += new System.EventHandler(this.chkWMotion_CheckedChanged);
             // 
             // chkWNet
             // 
@@ -1353,7 +1353,7 @@ namespace VPG_DHS
             this.chkWNet.Size = new System.Drawing.Size(15, 14);
             this.chkWNet.TabIndex = 18;
             this.chkWNet.UseVisualStyleBackColor = true;
-            this.chkWNet.CheckedChanged += new System.EventHandler(this.chkWNet_CheckedChanged);
+         //   this.chkWNet.CheckedChanged += new System.EventHandler(this.chkWNet_CheckedChanged);
             // 
             // chkWGross
             // 
@@ -1363,7 +1363,7 @@ namespace VPG_DHS
             this.chkWGross.Size = new System.Drawing.Size(15, 14);
             this.chkWGross.TabIndex = 18;
             this.chkWGross.UseVisualStyleBackColor = true;
-            this.chkWGross.CheckedChanged += new System.EventHandler(this.chkWGross_CheckedChanged);
+         //   this.chkWGross.CheckedChanged += new System.EventHandler(this.chkWGross_CheckedChanged);
             // 
             // chKWReady
             // 
@@ -1374,7 +1374,7 @@ namespace VPG_DHS
             this.chKWReady.Size = new System.Drawing.Size(15, 14);
             this.chKWReady.TabIndex = 18;
             this.chKWReady.UseVisualStyleBackColor = false;
-            this.chKWReady.CheckedChanged += new System.EventHandler(this.chKWReady_CheckedChanged);
+         //   this.chKWReady.CheckedChanged += new System.EventHandler(this.chKWReady_CheckedChanged);
             // 
             // chkWActive2
             // 
@@ -1384,7 +1384,7 @@ namespace VPG_DHS
             this.chkWActive2.Size = new System.Drawing.Size(15, 14);
             this.chkWActive2.TabIndex = 18;
             this.chkWActive2.UseVisualStyleBackColor = true;
-            this.chkWActive2.CheckedChanged += new System.EventHandler(this.chkWActive2_CheckedChanged);
+         //   this.chkWActive2.CheckedChanged += new System.EventHandler(this.chkWActive2_CheckedChanged);
             // 
             // chkWActive
             // 
@@ -1394,7 +1394,7 @@ namespace VPG_DHS
             this.chkWActive.Size = new System.Drawing.Size(15, 14);
             this.chkWActive.TabIndex = 18;
             this.chkWActive.UseVisualStyleBackColor = true;
-            this.chkWActive.CheckedChanged += new System.EventHandler(this.chkWActive_CheckedChanged);
+         //   this.chkWActive.CheckedChanged += new System.EventHandler(this.chkWActive_CheckedChanged);
             // 
             // chkWNotActive2
             // 
@@ -1404,7 +1404,7 @@ namespace VPG_DHS
             this.chkWNotActive2.Size = new System.Drawing.Size(15, 14);
             this.chkWNotActive2.TabIndex = 18;
             this.chkWNotActive2.UseVisualStyleBackColor = true;
-            this.chkWNotActive2.CheckedChanged += new System.EventHandler(this.chkWNotActive2_CheckedChanged);
+         //   this.chkWNotActive2.CheckedChanged += new System.EventHandler(this.chkWNotActive2_CheckedChanged);
             // 
             // chkWNotActive
             // 
@@ -1414,7 +1414,7 @@ namespace VPG_DHS
             this.chkWNotActive.Size = new System.Drawing.Size(15, 14);
             this.chkWNotActive.TabIndex = 18;
             this.chkWNotActive.UseVisualStyleBackColor = true;
-            this.chkWNotActive.CheckedChanged += new System.EventHandler(this.chkWNotActive_CheckedChanged);
+         //   this.chkWNotActive.CheckedChanged += new System.EventHandler(this.chkWNotActive_CheckedChanged);
             // 
             // pgLoadcell
             // 
@@ -1435,7 +1435,7 @@ namespace VPG_DHS
             this.pgLoadcell.Size = new System.Drawing.Size(1288, 479);
             this.pgLoadcell.TabIndex = 1;
             this.pgLoadcell.Text = "LoadCell Setup";
-            this.pgLoadcell.Click += new System.EventHandler(this.pgLoadcell_Click);
+         //   this.pgLoadcell.Click += new System.EventHandler(this.pgLoadcell_Click);
             // 
             // grpLNotes
             // 
@@ -1447,7 +1447,7 @@ namespace VPG_DHS
             this.grpLNotes.TabIndex = 21;
             this.grpLNotes.TabStop = false;
             this.grpLNotes.Text = "Notes";
-            this.grpLNotes.Enter += new System.EventHandler(this.grpLNotes_Enter);
+         //   this.grpLNotes.Enter += new System.EventHandler(this.grpLNotes_Enter);
             // 
             // lblLNotes
             // 
@@ -1459,7 +1459,7 @@ namespace VPG_DHS
             this.lblLNotes.Size = new System.Drawing.Size(135, 165);
             this.lblLNotes.TabIndex = 22;
             this.lblLNotes.Text = resources.GetString("lblLNotes.Text");
-            this.lblLNotes.Click += new System.EventHandler(this.lblLNotes_Click);
+         //   this.lblLNotes.Click += new System.EventHandler(this.lblLNotes_Click);
             // 
             // btnLsavetodevice
             // 
@@ -1471,7 +1471,7 @@ namespace VPG_DHS
             this.btnLsavetodevice.TabIndex = 20;
             this.btnLsavetodevice.Text = "Save To Device";
             this.btnLsavetodevice.UseVisualStyleBackColor = false;
-            this.btnLsavetodevice.Click += new System.EventHandler(this.btnLsavetodevice_Click);
+         //   this.btnLsavetodevice.Click += new System.EventHandler(this.btnLsavetodevice_Click);
             // 
             // btnLsavetofile
             // 
@@ -1483,7 +1483,7 @@ namespace VPG_DHS
             this.btnLsavetofile.TabIndex = 19;
             this.btnLsavetofile.Text = "Save To a File";
             this.btnLsavetofile.UseVisualStyleBackColor = false;
-            this.btnLsavetofile.Click += new System.EventHandler(this.btnLsavetofile_Click);
+         //   this.btnLsavetofile.Click += new System.EventHandler(this.btnLsavetofile_Click);
             // 
             // btnLuploadfromfile
             // 
@@ -1495,7 +1495,7 @@ namespace VPG_DHS
             this.btnLuploadfromfile.TabIndex = 18;
             this.btnLuploadfromfile.Text = "Upload From a File";
             this.btnLuploadfromfile.UseVisualStyleBackColor = false;
-            this.btnLuploadfromfile.Click += new System.EventHandler(this.btnLuploadfromfile_Click);
+          //  this.btnLuploadfromfile.Click += new System.EventHandler(this.btnLuploadfromfile_Click);
             // 
             // btnLdownloadtodevie
             // 
@@ -1507,7 +1507,7 @@ namespace VPG_DHS
             this.btnLdownloadtodevie.TabIndex = 17;
             this.btnLdownloadtodevie.Text = "Download To Device";
             this.btnLdownloadtodevie.UseVisualStyleBackColor = false;
-            this.btnLdownloadtodevie.Click += new System.EventHandler(this.btnLdownloadtodevie_Click);
+         //   this.btnLdownloadtodevie.Click += new System.EventHandler(this.btnLdownloadtodevie_Click);
             // 
             // btnLupload
             // 
@@ -1519,7 +1519,7 @@ namespace VPG_DHS
             this.btnLupload.TabIndex = 16;
             this.btnLupload.Text = "Upload From device";
             this.btnLupload.UseVisualStyleBackColor = false;
-            this.btnLupload.Click += new System.EventHandler(this.btnLupload_Click);
+         //   this.btnLupload.Click += new System.EventHandler(this.btnLupload_Click);
             // 
             // lblweightkg
             // 
@@ -1530,7 +1530,7 @@ namespace VPG_DHS
             this.lblweightkg.Size = new System.Drawing.Size(53, 18);
             this.lblweightkg.TabIndex = 15;
             this.lblweightkg.Text = "Weight";
-            this.lblweightkg.Click += new System.EventHandler(this.lblweightkg_Click);
+          //  this.lblweightkg.Click += new System.EventHandler(this.lblweightkg_Click);
             // 
             // lblkg
             // 
@@ -1540,7 +1540,7 @@ namespace VPG_DHS
             this.lblkg.Size = new System.Drawing.Size(22, 18);
             this.lblkg.TabIndex = 3;
             this.lblkg.Text = "kg";
-            this.lblkg.Click += new System.EventHandler(this.lblkg_Click);
+         //   this.lblkg.Click += new System.EventHandler(this.lblkg_Click);
             // 
             // txtWeightkg
             // 
@@ -1549,7 +1549,7 @@ namespace VPG_DHS
             this.txtWeightkg.Name = "txtWeightkg";
             this.txtWeightkg.Size = new System.Drawing.Size(84, 26);
             this.txtWeightkg.TabIndex = 2;
-            this.txtWeightkg.TextChanged += new System.EventHandler(this.txtWeightkg_TextChanged);
+         //   this.txtWeightkg.TextChanged += new System.EventHandler(this.txtWeightkg_TextChanged);
             // 
             // tbWeightfilter
             // 
@@ -1562,7 +1562,7 @@ namespace VPG_DHS
             this.tbWeightfilter.SelectedIndex = 0;
             this.tbWeightfilter.Size = new System.Drawing.Size(849, 420);
             this.tbWeightfilter.TabIndex = 0;
-            this.tbWeightfilter.SelectedIndexChanged += new System.EventHandler(this.tbWeightfilter_SelectedIndexChanged);
+         //   this.tbWeightfilter.SelectedIndexChanged += new System.EventHandler(this.tbWeightfilter_SelectedIndexChanged);
             // 
             // tbWeightformat
             // 
@@ -1605,7 +1605,7 @@ namespace VPG_DHS
             this.tbWeightformat.Size = new System.Drawing.Size(841, 389);
             this.tbWeightformat.TabIndex = 0;
             this.tbWeightformat.Text = "Weight Format/Zero/Tare/Motion ";
-            this.tbWeightformat.Click += new System.EventHandler(this.tbWeightformat_Click);
+         //   this.tbWeightformat.Click += new System.EventHandler(this.tbWeightformat_Click);
             // 
             // textBox6
             // 
@@ -1634,7 +1634,7 @@ namespace VPG_DHS
             this.txtMotiondetectperiod.Name = "txtMotiondetectperiod";
             this.txtMotiondetectperiod.Size = new System.Drawing.Size(90, 20);
             this.txtMotiondetectperiod.TabIndex = 29;
-            this.txtMotiondetectperiod.TextChanged += new System.EventHandler(this.txtMotiondetectperiod_TextChanged);
+          //  this.txtMotiondetectperiod.TextChanged += new System.EventHandler(this.txtMotiondetectperiod_TextChanged);
             // 
             // txtMotiondetectband
             // 
@@ -1644,7 +1644,7 @@ namespace VPG_DHS
             this.txtMotiondetectband.Name = "txtMotiondetectband";
             this.txtMotiondetectband.Size = new System.Drawing.Size(90, 20);
             this.txtMotiondetectband.TabIndex = 28;
-            this.txtMotiondetectband.TextChanged += new System.EventHandler(this.txtMotiondetectband_TextChanged);
+         //   this.txtMotiondetectband.TextChanged += new System.EventHandler(this.txtMotiondetectband_TextChanged);
             // 
             // cboMotionDetect
             // 
@@ -1654,7 +1654,7 @@ namespace VPG_DHS
             this.cboMotionDetect.Name = "cboMotionDetect";
             this.cboMotionDetect.Size = new System.Drawing.Size(90, 26);
             this.cboMotionDetect.TabIndex = 27;
-            this.cboMotionDetect.SelectedIndexChanged += new System.EventHandler(this.cboMotionDetect_SelectedIndexChanged);
+         //   this.cboMotionDetect.SelectedIndexChanged += new System.EventHandler(this.cboMotionDetect_SelectedIndexChanged);
             // 
             // lblMotiondetectperiod
             // 
@@ -1665,7 +1665,7 @@ namespace VPG_DHS
             this.lblMotiondetectperiod.Size = new System.Drawing.Size(142, 18);
             this.lblMotiondetectperiod.TabIndex = 26;
             this.lblMotiondetectperiod.Text = "Motion Detect Period";
-            this.lblMotiondetectperiod.Click += new System.EventHandler(this.lblMotiondetectperiod_Click);
+         //   this.lblMotiondetectperiod.Click += new System.EventHandler(this.lblMotiondetectperiod_Click);
             // 
             // lblMotiondetectband
             // 
@@ -1676,8 +1676,8 @@ namespace VPG_DHS
             this.lblMotiondetectband.Size = new System.Drawing.Size(152, 18);
             this.lblMotiondetectband.TabIndex = 25;
             this.lblMotiondetectband.Text = "Motion Detection Band";
-            this.lblMotiondetectband.Click += new System.EventHandler(this.lblMotiondetectband_Click);
-            // 
+         //   this.lblMotiondetectband.Click += new System.EventHandler(this.lblMotiondetectband_Click);
+            //
             // lblMotionDetect
             // 
             this.lblMotionDetect.AutoSize = true;
@@ -1687,7 +1687,7 @@ namespace VPG_DHS
             this.lblMotionDetect.Size = new System.Drawing.Size(118, 18);
             this.lblMotionDetect.TabIndex = 24;
             this.lblMotionDetect.Text = "Motion Detection";
-            this.lblMotionDetect.Click += new System.EventHandler(this.lblMotionDetect_Click);
+         //   this.lblMotionDetect.Click += new System.EventHandler(this.lblMotionDetect_Click);
             // 
             // lblMotion
             // 
@@ -1698,7 +1698,7 @@ namespace VPG_DHS
             this.lblMotion.Size = new System.Drawing.Size(54, 18);
             this.lblMotion.TabIndex = 23;
             this.lblMotion.Text = "Motion";
-            this.lblMotion.Click += new System.EventHandler(this.lblMotion_Click);
+         //   this.lblMotion.Click += new System.EventHandler(this.lblMotion_Click);
             // 
             // label1
             // 
@@ -1708,7 +1708,7 @@ namespace VPG_DHS
             this.label1.Size = new System.Drawing.Size(46, 18);
             this.label1.TabIndex = 22;
             this.label1.Text = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+         //   this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // textBox1
             // 
@@ -1718,7 +1718,7 @@ namespace VPG_DHS
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(90, 20);
             this.textBox1.TabIndex = 21;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+         //   this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // cboWeightunit
             // 
@@ -1728,7 +1728,7 @@ namespace VPG_DHS
             this.cboWeightunit.Name = "cboWeightunit";
             this.cboWeightunit.Size = new System.Drawing.Size(90, 26);
             this.cboWeightunit.TabIndex = 20;
-            this.cboWeightunit.SelectedIndexChanged += new System.EventHandler(this.cboWeightunit_SelectedIndexChanged);
+         //   this.cboWeightunit.SelectedIndexChanged += new System.EventHandler(this.cboWeightunit_SelectedIndexChanged);
             // 
             // lblWeightres
             // 
@@ -1739,7 +1739,7 @@ namespace VPG_DHS
             this.lblWeightres.Size = new System.Drawing.Size(123, 18);
             this.lblWeightres.TabIndex = 19;
             this.lblWeightres.Text = "Weight Resolution";
-            this.lblWeightres.Click += new System.EventHandler(this.lblWeightres_Click);
+         //   this.lblWeightres.Click += new System.EventHandler(this.lblWeightres_Click);
             // 
             // lblWeightuni
             // 
@@ -1750,7 +1750,7 @@ namespace VPG_DHS
             this.lblWeightuni.Size = new System.Drawing.Size(83, 18);
             this.lblWeightuni.TabIndex = 18;
             this.lblWeightuni.Text = "Weight Unit";
-            this.lblWeightuni.Click += new System.EventHandler(this.lblWeightuni_Click);
+         //   this.lblWeightuni.Click += new System.EventHandler(this.lblWeightuni_Click);
             // 
             // lblWeightformat
             // 
@@ -1761,7 +1761,7 @@ namespace VPG_DHS
             this.lblWeightformat.Size = new System.Drawing.Size(100, 18);
             this.lblWeightformat.TabIndex = 17;
             this.lblWeightformat.Text = "Weight Format";
-            this.lblWeightformat.Click += new System.EventHandler(this.lblWeightformat_Click);
+         //   this.lblWeightformat.Click += new System.EventHandler(this.lblWeightformat_Click);
             // 
             // grpTare
             // 
@@ -1773,7 +1773,7 @@ namespace VPG_DHS
             this.grpTare.TabIndex = 16;
             this.grpTare.TabStop = false;
             this.grpTare.Text = "Tare";
-            this.grpTare.Enter += new System.EventHandler(this.grpTare_Enter);
+         //   this.grpTare.Enter += new System.EventHandler(this.grpTare_Enter);
             // 
             // lblTraegroup
             // 
@@ -1786,7 +1786,7 @@ namespace VPG_DHS
             this.lblTraegroup.TabIndex = 0;
             this.lblTraegroup.Text = "Fixed Tare will be downloaded individually and\r\nonly if the device is in Net mode" +
     ". In addition tare \r\nwill be cancelled in power cycle (reset).\r\n";
-            this.lblTraegroup.Click += new System.EventHandler(this.lblTraegroup_Click);
+         //   this.lblTraegroup.Click += new System.EventHandler(this.lblTraegroup_Click);
             // 
             // grpMeasure
             // 
@@ -1798,7 +1798,7 @@ namespace VPG_DHS
             this.grpMeasure.TabIndex = 15;
             this.grpMeasure.TabStop = false;
             this.grpMeasure.Text = "Measuring Units";
-            this.grpMeasure.Enter += new System.EventHandler(this.grpMeasure_Enter);
+         //   this.grpMeasure.Enter += new System.EventHandler(this.grpMeasure_Enter);
             // 
             // lblPeriodbandtare
             // 
@@ -1810,7 +1810,7 @@ namespace VPG_DHS
             this.lblPeriodbandtare.Size = new System.Drawing.Size(135, 45);
             this.lblPeriodbandtare.TabIndex = 0;
             this.lblPeriodbandtare.Text = "Period - In milliseconds.\r\nBand - In Weight Unit.\r\nTare - In Weight Unit.\r\n";
-            this.lblPeriodbandtare.Click += new System.EventHandler(this.lblPeriodbandtare_Click);
+         //   this.lblPeriodbandtare.Click += new System.EventHandler(this.lblPeriodbandtare_Click);
             // 
             // btnDownload
             // 
@@ -1823,7 +1823,7 @@ namespace VPG_DHS
             this.btnDownload.TabIndex = 14;
             this.btnDownload.Text = "Download";
             this.btnDownload.UseVisualStyleBackColor = false;
-            this.btnDownload.Click += new System.EventHandler(this.btnDownload_Click);
+         //   this.btnDownload.Click += new System.EventHandler(this.btnDownload_Click);
             // 
             // txtFixedtare
             // 
@@ -1833,7 +1833,7 @@ namespace VPG_DHS
             this.txtFixedtare.Name = "txtFixedtare";
             this.txtFixedtare.Size = new System.Drawing.Size(91, 20);
             this.txtFixedtare.TabIndex = 13;
-            this.txtFixedtare.TextChanged += new System.EventHandler(this.txtFixedtare_TextChanged);
+         //   this.txtFixedtare.TextChanged += new System.EventHandler(this.txtFixedtare_TextChanged);
             // 
             // lblFixedtare
             // 
@@ -1844,7 +1844,7 @@ namespace VPG_DHS
             this.lblFixedtare.Size = new System.Drawing.Size(71, 18);
             this.lblFixedtare.TabIndex = 12;
             this.lblFixedtare.Text = "Fixed Tare";
-            this.lblFixedtare.Click += new System.EventHandler(this.lblFixedtare_Click);
+         //   this.lblFixedtare.Click += new System.EventHandler(this.lblFixedtare_Click);
             // 
             // lblTare
             // 
@@ -1855,7 +1855,7 @@ namespace VPG_DHS
             this.lblTare.Size = new System.Drawing.Size(34, 18);
             this.lblTare.TabIndex = 11;
             this.lblTare.Text = "Tare";
-            this.lblTare.Click += new System.EventHandler(this.lblTare_Click);
+         //   this.lblTare.Click += new System.EventHandler(this.lblTare_Click);
             // 
             // cboZtrack
             // 
@@ -1865,7 +1865,7 @@ namespace VPG_DHS
             this.cboZtrack.Name = "cboZtrack";
             this.cboZtrack.Size = new System.Drawing.Size(92, 26);
             this.cboZtrack.TabIndex = 10;
-            this.cboZtrack.SelectedIndexChanged += new System.EventHandler(this.cboZtrack_SelectedIndexChanged);
+         //   this.cboZtrack.SelectedIndexChanged += new System.EventHandler(this.cboZtrack_SelectedIndexChanged);
             // 
             // txtZtrackperiod
             // 
@@ -1875,7 +1875,7 @@ namespace VPG_DHS
             this.txtZtrackperiod.Name = "txtZtrackperiod";
             this.txtZtrackperiod.Size = new System.Drawing.Size(92, 20);
             this.txtZtrackperiod.TabIndex = 9;
-            this.txtZtrackperiod.TextChanged += new System.EventHandler(this.txtZtrackperiod_TextChanged);
+         //   this.txtZtrackperiod.TextChanged += new System.EventHandler(this.txtZtrackperiod_TextChanged);
             // 
             // txtZtrackband
             // 
@@ -1885,7 +1885,7 @@ namespace VPG_DHS
             this.txtZtrackband.Name = "txtZtrackband";
             this.txtZtrackband.Size = new System.Drawing.Size(92, 20);
             this.txtZtrackband.TabIndex = 8;
-            this.txtZtrackband.TextChanged += new System.EventHandler(this.txtZtrackband_TextChanged);
+          //  this.txtZtrackband.TextChanged += new System.EventHandler(this.txtZtrackband_TextChanged);
             // 
             // txtPOZB
             // 
@@ -1895,7 +1895,7 @@ namespace VPG_DHS
             this.txtPOZB.Name = "txtPOZB";
             this.txtPOZB.Size = new System.Drawing.Size(92, 20);
             this.txtPOZB.TabIndex = 7;
-            this.txtPOZB.TextChanged += new System.EventHandler(this.txtPOZB_TextChanged);
+         //   this.txtPOZB.TextChanged += new System.EventHandler(this.txtPOZB_TextChanged);
             // 
             // cboPOZ
             // 
@@ -1905,7 +1905,7 @@ namespace VPG_DHS
             this.cboPOZ.Name = "cboPOZ";
             this.cboPOZ.Size = new System.Drawing.Size(92, 26);
             this.cboPOZ.TabIndex = 6;
-            this.cboPOZ.SelectedIndexChanged += new System.EventHandler(this.cboPOZ_SelectedIndexChanged);
+         //   this.cboPOZ.SelectedIndexChanged += new System.EventHandler(this.cboPOZ_SelectedIndexChanged);
             // 
             // lblZtrackperiod
             // 
@@ -1916,7 +1916,7 @@ namespace VPG_DHS
             this.lblZtrackperiod.Size = new System.Drawing.Size(133, 18);
             this.lblZtrackperiod.TabIndex = 5;
             this.lblZtrackperiod.Text = "Zero Tracking Period";
-            this.lblZtrackperiod.Click += new System.EventHandler(this.lblZtrackperiod_Click);
+          //  this.lblZtrackperiod.Click += new System.EventHandler(this.lblZtrackperiod_Click);
             // 
             // lblZtrackband
             // 
@@ -1927,7 +1927,7 @@ namespace VPG_DHS
             this.lblZtrackband.Size = new System.Drawing.Size(123, 18);
             this.lblZtrackband.TabIndex = 4;
             this.lblZtrackband.Text = "Zero Tracking Band";
-            this.lblZtrackband.Click += new System.EventHandler(this.lblZtrackband_Click);
+         //   this.lblZtrackband.Click += new System.EventHandler(this.lblZtrackband_Click);
             // 
             // lblZtrack
             // 
@@ -1938,7 +1938,7 @@ namespace VPG_DHS
             this.lblZtrack.Size = new System.Drawing.Size(89, 18);
             this.lblZtrack.TabIndex = 3;
             this.lblZtrack.Text = "Zero Tracking";
-            this.lblZtrack.Click += new System.EventHandler(this.lblZtrack_Click);
+         //   this.lblZtrack.Click += new System.EventHandler(this.lblZtrack_Click);
             // 
             // lblPOZB
             // 
@@ -1949,7 +1949,7 @@ namespace VPG_DHS
             this.lblPOZB.Size = new System.Drawing.Size(134, 18);
             this.lblPOZB.TabIndex = 2;
             this.lblPOZB.Text = "Power On Zero Band";
-            this.lblPOZB.Click += new System.EventHandler(this.lblPOZB_Click);
+         //   this.lblPOZB.Click += new System.EventHandler(this.lblPOZB_Click);
             // 
             // lblPOZ
             // 
@@ -1960,7 +1960,7 @@ namespace VPG_DHS
             this.lblPOZ.Size = new System.Drawing.Size(100, 18);
             this.lblPOZ.TabIndex = 1;
             this.lblPOZ.Text = "Power On Zero";
-            this.lblPOZ.Click += new System.EventHandler(this.lblPOZ_Click);
+         //   this.lblPOZ.Click += new System.EventHandler(this.lblPOZ_Click);
             // 
             // lblZero
             // 
@@ -1971,7 +1971,7 @@ namespace VPG_DHS
             this.lblZero.Size = new System.Drawing.Size(36, 18);
             this.lblZero.TabIndex = 0;
             this.lblZero.Text = "Zero";
-            this.lblZero.Click += new System.EventHandler(this.lblZero_Click);
+         //   this.lblZero.Click += new System.EventHandler(this.lblZero_Click);
             // 
             // tbFilters
             // 
@@ -2032,7 +2032,7 @@ namespace VPG_DHS
             this.tbFilters.Size = new System.Drawing.Size(841, 389);
             this.tbFilters.TabIndex = 1;
             this.tbFilters.Text = "Filters/Peak/Grab/Setpoints";
-            this.tbFilters.Click += new System.EventHandler(this.tbFilters_Click);
+         //   this.tbFilters.Click += new System.EventHandler(this.tbFilters_Click);
             // 
             // grpMeasuring
             // 
@@ -2047,7 +2047,7 @@ namespace VPG_DHS
             this.grpMeasuring.TabIndex = 43;
             this.grpMeasuring.TabStop = false;
             this.grpMeasuring.Text = "Measuring Units";
-            this.grpMeasuring.Enter += new System.EventHandler(this.grpMeasuring_Enter);
+         //   this.grpMeasuring.Enter += new System.EventHandler(this.grpMeasuring_Enter);
             // 
             // lblMax2per
             // 
@@ -2058,7 +2058,7 @@ namespace VPG_DHS
             this.lblMax2per.Size = new System.Drawing.Size(147, 15);
             this.lblMax2per.TabIndex = 0;
             this.lblMax2per.Text = "maximum 2% of full scale.";
-            this.lblMax2per.Click += new System.EventHandler(this.lblMax2per_Click);
+         //   this.lblMax2per.Click += new System.EventHandler(this.lblMax2per_Click);
             // 
             // lblHysteresisweightunit
             // 
@@ -2069,7 +2069,7 @@ namespace VPG_DHS
             this.lblHysteresisweightunit.Size = new System.Drawing.Size(155, 15);
             this.lblHysteresisweightunit.TabIndex = 0;
             this.lblHysteresisweightunit.Text = "Hysteresis - In Weight Unit.";
-            this.lblHysteresisweightunit.Click += new System.EventHandler(this.lblHysteresisweightunit_Click);
+         //   this.lblHysteresisweightunit.Click += new System.EventHandler(this.lblHysteresisweightunit_Click);
             // 
             // lblWeightunit
             // 
@@ -2080,7 +2080,7 @@ namespace VPG_DHS
             this.lblWeightunit.Size = new System.Drawing.Size(125, 15);
             this.lblWeightunit.TabIndex = 0;
             this.lblWeightunit.Text = "Level- In Weight Unit.";
-            this.lblWeightunit.Click += new System.EventHandler(this.lblWeightunit_Click);
+         //   this.lblWeightunit.Click += new System.EventHandler(this.lblWeightunit_Click);
             // 
             // lblMilli
             // 
@@ -2091,7 +2091,7 @@ namespace VPG_DHS
             this.lblMilli.Size = new System.Drawing.Size(123, 15);
             this.lblMilli.TabIndex = 0;
             this.lblMilli.Text = "Delay-In milliseconds.";
-            this.lblMilli.Click += new System.EventHandler(this.lblMilli_Click);
+         //   this.lblMilli.Click += new System.EventHandler(this.lblMilli_Click);
             // 
             // cboPeak
             // 
@@ -2101,7 +2101,7 @@ namespace VPG_DHS
             this.cboPeak.Name = "cboPeak";
             this.cboPeak.Size = new System.Drawing.Size(82, 26);
             this.cboPeak.TabIndex = 42;
-            this.cboPeak.SelectedIndexChanged += new System.EventHandler(this.cboPeak_SelectedIndexChanged);
+         //   this.cboPeak.SelectedIndexChanged += new System.EventHandler(this.cboPeak_SelectedIndexChanged);
             // 
             // cboMeasure
             // 
@@ -2111,7 +2111,7 @@ namespace VPG_DHS
             this.cboMeasure.Name = "cboMeasure";
             this.cboMeasure.Size = new System.Drawing.Size(82, 26);
             this.cboMeasure.TabIndex = 41;
-            this.cboMeasure.SelectedIndexChanged += new System.EventHandler(this.cboMeasure_SelectedIndexChanged);
+         //   this.cboMeasure.SelectedIndexChanged += new System.EventHandler(this.cboMeasure_SelectedIndexChanged);
             // 
             // lblPeaktrough
             // 
@@ -2122,7 +2122,7 @@ namespace VPG_DHS
             this.lblPeaktrough.Size = new System.Drawing.Size(86, 36);
             this.lblPeaktrough.TabIndex = 40;
             this.lblPeaktrough.Text = "Peak Trough \r\nSource";
-            this.lblPeaktrough.Click += new System.EventHandler(this.lblPeaktrough_Click);
+         //   this.lblPeaktrough.Click += new System.EventHandler(this.lblPeaktrough_Click);
             // 
             // lblPeak
             // 
@@ -2133,7 +2133,7 @@ namespace VPG_DHS
             this.lblPeak.Size = new System.Drawing.Size(38, 18);
             this.lblPeak.TabIndex = 39;
             this.lblPeak.Text = "Peak";
-            this.lblPeak.Click += new System.EventHandler(this.lblPeak_Click);
+         //   this.lblPeak.Click += new System.EventHandler(this.lblPeak_Click);
             // 
             // lblMeasurate
             // 
@@ -2144,7 +2144,7 @@ namespace VPG_DHS
             this.lblMeasurate.Size = new System.Drawing.Size(99, 36);
             this.lblMeasurate.TabIndex = 38;
             this.lblMeasurate.Text = "Measurement \r\nRate";
-            this.lblMeasurate.Click += new System.EventHandler(this.lblMeasurate_Click);
+         //   this.lblMeasurate.Click += new System.EventHandler(this.lblMeasurate_Click);
             // 
             // txtNo4hysteresis
             // 
@@ -2154,7 +2154,7 @@ namespace VPG_DHS
             this.txtNo4hysteresis.Name = "txtNo4hysteresis";
             this.txtNo4hysteresis.Size = new System.Drawing.Size(84, 20);
             this.txtNo4hysteresis.TabIndex = 37;
-            this.txtNo4hysteresis.TextChanged += new System.EventHandler(this.txtNo4hysteresis_TextChanged);
+         //   this.txtNo4hysteresis.TextChanged += new System.EventHandler(this.txtNo4hysteresis_TextChanged);
             // 
             // txtNo4level
             // 
@@ -2164,7 +2164,7 @@ namespace VPG_DHS
             this.txtNo4level.Name = "txtNo4level";
             this.txtNo4level.Size = new System.Drawing.Size(84, 20);
             this.txtNo4level.TabIndex = 36;
-            this.txtNo4level.TextChanged += new System.EventHandler(this.txtNo4level_TextChanged);
+         //   this.txtNo4level.TextChanged += new System.EventHandler(this.txtNo4level_TextChanged);
             // 
             // txtNo3hysteresis
             // 
@@ -2174,7 +2174,7 @@ namespace VPG_DHS
             this.txtNo3hysteresis.Name = "txtNo3hysteresis";
             this.txtNo3hysteresis.Size = new System.Drawing.Size(84, 20);
             this.txtNo3hysteresis.TabIndex = 35;
-            this.txtNo3hysteresis.TextChanged += new System.EventHandler(this.txtNo3hysteresis_TextChanged);
+         //   this.txtNo3hysteresis.TextChanged += new System.EventHandler(this.txtNo3hysteresis_TextChanged);
             // 
             // txtNo3level
             // 
@@ -2184,7 +2184,7 @@ namespace VPG_DHS
             this.txtNo3level.Name = "txtNo3level";
             this.txtNo3level.Size = new System.Drawing.Size(84, 20);
             this.txtNo3level.TabIndex = 34;
-            this.txtNo3level.TextChanged += new System.EventHandler(this.txtNo3level_TextChanged);
+         //   this.txtNo3level.TextChanged += new System.EventHandler(this.txtNo3level_TextChanged);
             // 
             // txtNo2hysteresis
             // 
@@ -2194,7 +2194,7 @@ namespace VPG_DHS
             this.txtNo2hysteresis.Name = "txtNo2hysteresis";
             this.txtNo2hysteresis.Size = new System.Drawing.Size(84, 20);
             this.txtNo2hysteresis.TabIndex = 33;
-            this.txtNo2hysteresis.TextChanged += new System.EventHandler(this.txtNo2hysteresis_TextChanged);
+         //   this.txtNo2hysteresis.TextChanged += new System.EventHandler(this.txtNo2hysteresis_TextChanged);
             // 
             // txtNo2level
             // 
@@ -2204,7 +2204,7 @@ namespace VPG_DHS
             this.txtNo2level.Name = "txtNo2level";
             this.txtNo2level.Size = new System.Drawing.Size(84, 20);
             this.txtNo2level.TabIndex = 32;
-            this.txtNo2level.TextChanged += new System.EventHandler(this.txtNo2level_TextChanged);
+          //  this.txtNo2level.TextChanged += new System.EventHandler(this.txtNo2level_TextChanged);
             // 
             // txtNo1hysteresis
             // 
@@ -2214,7 +2214,7 @@ namespace VPG_DHS
             this.txtNo1hysteresis.Name = "txtNo1hysteresis";
             this.txtNo1hysteresis.Size = new System.Drawing.Size(84, 20);
             this.txtNo1hysteresis.TabIndex = 31;
-            this.txtNo1hysteresis.TextChanged += new System.EventHandler(this.txtNo1hysteresis_TextChanged);
+          //  this.txtNo1hysteresis.TextChanged += new System.EventHandler(this.txtNo1hysteresis_TextChanged);
             // 
             // txtNo1level
             // 
@@ -2224,7 +2224,7 @@ namespace VPG_DHS
             this.txtNo1level.Name = "txtNo1level";
             this.txtNo1level.Size = new System.Drawing.Size(84, 20);
             this.txtNo1level.TabIndex = 30;
-            this.txtNo1level.TextChanged += new System.EventHandler(this.txtNo1level_TextChanged);
+            //this.txtNo1level.TextChanged += new System.EventHandler(this.txtNo1level_TextChanged);
             // 
             // cboNo4source
             // 
@@ -2234,7 +2234,7 @@ namespace VPG_DHS
             this.cboNo4source.Name = "cboNo4source";
             this.cboNo4source.Size = new System.Drawing.Size(84, 26);
             this.cboNo4source.TabIndex = 29;
-            this.cboNo4source.SelectedIndexChanged += new System.EventHandler(this.cboNo4source_SelectedIndexChanged);
+          //  this.cboNo4source.SelectedIndexChanged += new System.EventHandler(this.cboNo4source_SelectedIndexChanged);
             // 
             // cboNo3source
             // 
@@ -2244,7 +2244,7 @@ namespace VPG_DHS
             this.cboNo3source.Name = "cboNo3source";
             this.cboNo3source.Size = new System.Drawing.Size(84, 26);
             this.cboNo3source.TabIndex = 28;
-            this.cboNo3source.SelectedIndexChanged += new System.EventHandler(this.cboNo3source_SelectedIndexChanged);
+         //   this.cboNo3source.SelectedIndexChanged += new System.EventHandler(this.cboNo3source_SelectedIndexChanged);
             // 
             // cboNo2source
             // 
@@ -2255,7 +2255,7 @@ namespace VPG_DHS
             this.cboNo2source.Name = "cboNo2source";
             this.cboNo2source.Size = new System.Drawing.Size(84, 23);
             this.cboNo2source.TabIndex = 27;
-            this.cboNo2source.SelectedIndexChanged += new System.EventHandler(this.cboNo2source_SelectedIndexChanged);
+         //   this.cboNo2source.SelectedIndexChanged += new System.EventHandler(this.cboNo2source_SelectedIndexChanged);
             // 
             // cboSource
             // 
@@ -2266,7 +2266,7 @@ namespace VPG_DHS
             this.cboSource.Name = "cboSource";
             this.cboSource.Size = new System.Drawing.Size(84, 23);
             this.cboSource.TabIndex = 26;
-            this.cboSource.SelectedIndexChanged += new System.EventHandler(this.cboSource_SelectedIndexChanged);
+         //   this.cboSource.SelectedIndexChanged += new System.EventHandler(this.cboSource_SelectedIndexChanged);
             // 
             // lblNo4level
             // 
@@ -2277,7 +2277,7 @@ namespace VPG_DHS
             this.lblNo4level.Size = new System.Drawing.Size(58, 18);
             this.lblNo4level.TabIndex = 25;
             this.lblNo4level.Text = "#4 Level";
-            this.lblNo4level.Click += new System.EventHandler(this.lblNo4level_Click);
+         //   this.lblNo4level.Click += new System.EventHandler(this.lblNo4level_Click);
             // 
             // lblNo2level
             // 
@@ -2288,7 +2288,7 @@ namespace VPG_DHS
             this.lblNo2level.Size = new System.Drawing.Size(58, 18);
             this.lblNo2level.TabIndex = 25;
             this.lblNo2level.Text = "#2 Level";
-            this.lblNo2level.Click += new System.EventHandler(this.lblNo2level_Click);
+          //  this.lblNo2level.Click += new System.EventHandler(this.lblNo2level_Click);
             // 
             // lblNo4hysteresis
             // 
@@ -2299,7 +2299,7 @@ namespace VPG_DHS
             this.lblNo4hysteresis.Size = new System.Drawing.Size(89, 18);
             this.lblNo4hysteresis.TabIndex = 24;
             this.lblNo4hysteresis.Text = "#4 Hysteresis";
-            this.lblNo4hysteresis.Click += new System.EventHandler(this.lblNo4hysteresis_Click);
+        //    this.lblNo4hysteresis.Click += new System.EventHandler(this.lblNo4hysteresis_Click);
             // 
             // lblNo2Hysteresis
             // 
@@ -2310,7 +2310,7 @@ namespace VPG_DHS
             this.lblNo2Hysteresis.Size = new System.Drawing.Size(89, 18);
             this.lblNo2Hysteresis.TabIndex = 24;
             this.lblNo2Hysteresis.Text = "#2 Hysteresis";
-            this.lblNo2Hysteresis.Click += new System.EventHandler(this.lblNo2Hysteresis_Click);
+         //   this.lblNo2Hysteresis.Click += new System.EventHandler(this.lblNo2Hysteresis_Click);
             // 
             // lblNo3source
             // 
@@ -2321,7 +2321,7 @@ namespace VPG_DHS
             this.lblNo3source.Size = new System.Drawing.Size(67, 18);
             this.lblNo3source.TabIndex = 23;
             this.lblNo3source.Text = "#3 Source";
-            this.lblNo3source.Click += new System.EventHandler(this.lblNo3source_Click);
+         //   this.lblNo3source.Click += new System.EventHandler(this.lblNo3source_Click);
             // 
             // label18
             // 
@@ -2332,7 +2332,7 @@ namespace VPG_DHS
             this.label18.Size = new System.Drawing.Size(60, 15);
             this.label18.TabIndex = 23;
             this.label18.Text = "#1 Source";
-            this.label18.Click += new System.EventHandler(this.label18_Click);
+         //   this.label18.Click += new System.EventHandler(this.label18_Click);
             // 
             // lblNo4source
             // 
@@ -2343,7 +2343,7 @@ namespace VPG_DHS
             this.lblNo4source.Size = new System.Drawing.Size(67, 18);
             this.lblNo4source.TabIndex = 23;
             this.lblNo4source.Text = "#4 Source";
-            this.lblNo4source.Click += new System.EventHandler(this.lblNo4source_Click);
+          //  this.lblNo4source.Click += new System.EventHandler(this.lblNo4source_Click);
             // 
             // lblNo2source
             // 
@@ -2354,7 +2354,7 @@ namespace VPG_DHS
             this.lblNo2source.Size = new System.Drawing.Size(67, 18);
             this.lblNo2source.TabIndex = 23;
             this.lblNo2source.Text = "#2 Source";
-            this.lblNo2source.Click += new System.EventHandler(this.lblNo2source_Click);
+         //   this.lblNo2source.Click += new System.EventHandler(this.lblNo2source_Click);
             // 
             // lblNo3level
             // 
@@ -2365,7 +2365,7 @@ namespace VPG_DHS
             this.lblNo3level.Size = new System.Drawing.Size(58, 18);
             this.lblNo3level.TabIndex = 20;
             this.lblNo3level.Text = "#3 Level";
-            this.lblNo3level.Click += new System.EventHandler(this.lblNo3level_Click);
+         //   this.lblNo3level.Click += new System.EventHandler(this.lblNo3level_Click);
             // 
             // lblNo3hysteresis
             // 
@@ -2376,7 +2376,7 @@ namespace VPG_DHS
             this.lblNo3hysteresis.Size = new System.Drawing.Size(89, 18);
             this.lblNo3hysteresis.TabIndex = 21;
             this.lblNo3hysteresis.Text = "#3 Hysteresis";
-            this.lblNo3hysteresis.Click += new System.EventHandler(this.lblNo3hysteresis_Click);
+         //   this.lblNo3hysteresis.Click += new System.EventHandler(this.lblNo3hysteresis_Click);
             // 
             // lblNo1Hysteresis
             // 
@@ -2387,7 +2387,7 @@ namespace VPG_DHS
             this.lblNo1Hysteresis.Size = new System.Drawing.Size(89, 18);
             this.lblNo1Hysteresis.TabIndex = 21;
             this.lblNo1Hysteresis.Text = "#1 Hysteresis";
-            this.lblNo1Hysteresis.Click += new System.EventHandler(this.lblNo1Hysteresis_Click);
+          //  this.lblNo1Hysteresis.Click += new System.EventHandler(this.lblNo1Hysteresis_Click);
             // 
             // lblNo1level
             // 
@@ -2398,7 +2398,7 @@ namespace VPG_DHS
             this.lblNo1level.Size = new System.Drawing.Size(58, 18);
             this.lblNo1level.TabIndex = 20;
             this.lblNo1level.Text = "#1 Level";
-            this.lblNo1level.Click += new System.EventHandler(this.lblNo1level_Click);
+         //   this.lblNo1level.Click += new System.EventHandler(this.lblNo1level_Click);
             // 
             // lblNo1source
             // 
@@ -2409,7 +2409,7 @@ namespace VPG_DHS
             this.lblNo1source.Size = new System.Drawing.Size(67, 18);
             this.lblNo1source.TabIndex = 19;
             this.lblNo1source.Text = "#1 Source";
-            this.lblNo1source.Click += new System.EventHandler(this.lblNo1source_Click);
+         //   this.lblNo1source.Click += new System.EventHandler(this.lblNo1source_Click);
             // 
             // lblSetpoints
             // 
@@ -2420,7 +2420,7 @@ namespace VPG_DHS
             this.lblSetpoints.Size = new System.Drawing.Size(67, 18);
             this.lblSetpoints.TabIndex = 18;
             this.lblSetpoints.Text = "SetPoints";
-            this.lblSetpoints.Click += new System.EventHandler(this.lblSetpoints_Click);
+          //  this.lblSetpoints.Click += new System.EventHandler(this.lblSetpoints_Click);
             // 
             // cboFir
             // 
@@ -2430,7 +2430,7 @@ namespace VPG_DHS
             this.cboFir.Name = "cboFir";
             this.cboFir.Size = new System.Drawing.Size(71, 26);
             this.cboFir.TabIndex = 17;
-            this.cboFir.SelectedIndexChanged += new System.EventHandler(this.cboFir_SelectedIndexChanged);
+         //   this.cboFir.SelectedIndexChanged += new System.EventHandler(this.cboFir_SelectedIndexChanged);
             // 
             // cboRecursive
             // 
@@ -2440,7 +2440,7 @@ namespace VPG_DHS
             this.cboRecursive.Name = "cboRecursive";
             this.cboRecursive.Size = new System.Drawing.Size(71, 26);
             this.cboRecursive.TabIndex = 16;
-            this.cboRecursive.SelectedIndexChanged += new System.EventHandler(this.cboRecursive_SelectedIndexChanged);
+          //  this.cboRecursive.SelectedIndexChanged += new System.EventHandler(this.cboRecursive_SelectedIndexChanged);
             // 
             // cboFiltertype
             // 
@@ -2450,7 +2450,7 @@ namespace VPG_DHS
             this.cboFiltertype.Name = "cboFiltertype";
             this.cboFiltertype.Size = new System.Drawing.Size(71, 26);
             this.cboFiltertype.TabIndex = 15;
-            this.cboFiltertype.SelectedIndexChanged += new System.EventHandler(this.cboFiltertype_SelectedIndexChanged);
+         //   this.cboFiltertype.SelectedIndexChanged += new System.EventHandler(this.cboFiltertype_SelectedIndexChanged);
             // 
             // lblRecursive
             // 
@@ -2461,7 +2461,7 @@ namespace VPG_DHS
             this.lblRecursive.Size = new System.Drawing.Size(73, 36);
             this.lblRecursive.TabIndex = 14;
             this.lblRecursive.Text = "Recursive\r\nFrequency";
-            this.lblRecursive.Click += new System.EventHandler(this.lblRecursive_Click);
+         //   this.lblRecursive.Click += new System.EventHandler(this.lblRecursive_Click);
             // 
             // lblFir
             // 
@@ -2472,7 +2472,7 @@ namespace VPG_DHS
             this.lblFir.Size = new System.Drawing.Size(73, 36);
             this.lblFir.TabIndex = 13;
             this.lblFir.Text = "FIR \r\nFrequency";
-            this.lblFir.Click += new System.EventHandler(this.lblFir_Click);
+          //  this.lblFir.Click += new System.EventHandler(this.lblFir_Click);
             // 
             // lblFiltertype
             // 
@@ -2483,7 +2483,7 @@ namespace VPG_DHS
             this.lblFiltertype.Size = new System.Drawing.Size(74, 18);
             this.lblFiltertype.TabIndex = 12;
             this.lblFiltertype.Text = "Filter Type";
-            this.lblFiltertype.Click += new System.EventHandler(this.lblFiltertype_Click);
+         //   this.lblFiltertype.Click += new System.EventHandler(this.lblFiltertype_Click);
             // 
             // lblFiltering
             // 
@@ -2494,7 +2494,7 @@ namespace VPG_DHS
             this.lblFiltering.Size = new System.Drawing.Size(60, 18);
             this.lblFiltering.TabIndex = 11;
             this.lblFiltering.Text = "Filtering";
-            this.lblFiltering.Click += new System.EventHandler(this.lblFiltering_Click);
+         //   this.lblFiltering.Click += new System.EventHandler(this.lblFiltering_Click);
             // 
             // txtHysteresis
             // 
@@ -2504,7 +2504,7 @@ namespace VPG_DHS
             this.txtHysteresis.Name = "txtHysteresis";
             this.txtHysteresis.Size = new System.Drawing.Size(71, 20);
             this.txtHysteresis.TabIndex = 10;
-            this.txtHysteresis.TextChanged += new System.EventHandler(this.txtHysteresis_TextChanged);
+         //   this.txtHysteresis.TextChanged += new System.EventHandler(this.txtHysteresis_TextChanged);
             // 
             // txtLevel
             // 
@@ -2514,7 +2514,7 @@ namespace VPG_DHS
             this.txtLevel.Name = "txtLevel";
             this.txtLevel.Size = new System.Drawing.Size(71, 20);
             this.txtLevel.TabIndex = 9;
-            this.txtLevel.TextChanged += new System.EventHandler(this.txtLevel_TextChanged);
+         //   this.txtLevel.TextChanged += new System.EventHandler(this.txtLevel_TextChanged);
             // 
             // txtDelay
             // 
@@ -2524,7 +2524,7 @@ namespace VPG_DHS
             this.txtDelay.Name = "txtDelay";
             this.txtDelay.Size = new System.Drawing.Size(71, 20);
             this.txtDelay.TabIndex = 8;
-            this.txtDelay.TextChanged += new System.EventHandler(this.txtDelay_TextChanged);
+         //   this.txtDelay.TextChanged += new System.EventHandler(this.txtDelay_TextChanged);
             // 
             // cboTrigger
             // 
@@ -2534,7 +2534,7 @@ namespace VPG_DHS
             this.cboTrigger.Name = "cboTrigger";
             this.cboTrigger.Size = new System.Drawing.Size(71, 26);
             this.cboTrigger.TabIndex = 7;
-            this.cboTrigger.SelectedIndexChanged += new System.EventHandler(this.cboTrigger_SelectedIndexChanged);
+         //   this.cboTrigger.SelectedIndexChanged += new System.EventHandler(this.cboTrigger_SelectedIndexChanged);
             // 
             // cboMode
             // 
@@ -2545,7 +2545,7 @@ namespace VPG_DHS
             this.cboMode.Name = "cboMode";
             this.cboMode.Size = new System.Drawing.Size(71, 26);
             this.cboMode.TabIndex = 6;
-            this.cboMode.SelectedIndexChanged += new System.EventHandler(this.cboMode_SelectedIndexChanged);
+         //   this.cboMode.SelectedIndexChanged += new System.EventHandler(this.cboMode_SelectedIndexChanged);
             // 
             // lblTrigger
             // 
@@ -2556,7 +2556,7 @@ namespace VPG_DHS
             this.lblTrigger.Size = new System.Drawing.Size(50, 18);
             this.lblTrigger.TabIndex = 5;
             this.lblTrigger.Text = "Trigger";
-            this.lblTrigger.Click += new System.EventHandler(this.lblTrigger_Click);
+         //   this.lblTrigger.Click += new System.EventHandler(this.lblTrigger_Click);
             // 
             // lblHysteresis
             // 
@@ -2567,7 +2567,7 @@ namespace VPG_DHS
             this.lblHysteresis.Size = new System.Drawing.Size(72, 18);
             this.lblHysteresis.TabIndex = 4;
             this.lblHysteresis.Text = "Hysteresis";
-            this.lblHysteresis.Click += new System.EventHandler(this.lblHysteresis_Click);
+          //  this.lblHysteresis.Click += new System.EventHandler(this.lblHysteresis_Click);
             // 
             // lblLevel
             // 
@@ -2578,7 +2578,7 @@ namespace VPG_DHS
             this.lblLevel.Size = new System.Drawing.Size(41, 18);
             this.lblLevel.TabIndex = 3;
             this.lblLevel.Text = "Level";
-            this.lblLevel.Click += new System.EventHandler(this.lblLevel_Click);
+         //   this.lblLevel.Click += new System.EventHandler(this.lblLevel_Click);
             // 
             // lblDelay
             // 
@@ -2589,7 +2589,7 @@ namespace VPG_DHS
             this.lblDelay.Size = new System.Drawing.Size(43, 18);
             this.lblDelay.TabIndex = 2;
             this.lblDelay.Text = "Delay";
-            this.lblDelay.Click += new System.EventHandler(this.lblDelay_Click);
+         //   this.lblDelay.Click += new System.EventHandler(this.lblDelay_Click);
             // 
             // lblMode
             // 
@@ -2600,7 +2600,7 @@ namespace VPG_DHS
             this.lblMode.Size = new System.Drawing.Size(45, 18);
             this.lblMode.TabIndex = 1;
             this.lblMode.Text = "Mode";
-            this.lblMode.Click += new System.EventHandler(this.lblMode_Click);
+         //   this.lblMode.Click += new System.EventHandler(this.lblMode_Click);
             // 
             // lblGrab
             // 
@@ -2610,7 +2610,7 @@ namespace VPG_DHS
             this.lblGrab.Size = new System.Drawing.Size(50, 23);
             this.lblGrab.TabIndex = 44;
             this.lblGrab.Text = "Grab";
-            this.lblGrab.Click += new System.EventHandler(this.lblGrab_Click);
+          //  this.lblGrab.Click += new System.EventHandler(this.lblGrab_Click);
             // 
             // tabPage1
             // 
@@ -2683,7 +2683,7 @@ namespace VPG_DHS
             this.pgCalibration.Size = new System.Drawing.Size(1288, 479);
             this.pgCalibration.TabIndex = 2;
             this.pgCalibration.Text = "Calibration";
-            this.pgCalibration.Click += new System.EventHandler(this.pgCalibration_Click);
+        //    this.pgCalibration.Click += new System.EventHandler(this.pgCalibration_Click);
             // 
             // pnlCalibration
             // 
@@ -2906,7 +2906,7 @@ namespace VPG_DHS
             this.grpCalipro.TabIndex = 19;
             this.grpCalipro.TabStop = false;
             this.grpCalipro.Text = "Calibration Process";
-            this.grpCalipro.Enter += new System.EventHandler(this.grpCalipro_Enter);
+           // this.grpCalipro.Enter += new System.EventHandler(this.grpCalipro_Enter);
             // 
             // label3
             // 
@@ -2918,7 +2918,7 @@ namespace VPG_DHS
             this.label3.Size = new System.Drawing.Size(223, 345);
             this.label3.TabIndex = 0;
             this.label3.Text = resources.GetString("label3.Text");
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            //this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // pgView
             // 
@@ -2948,7 +2948,7 @@ namespace VPG_DHS
             this.pgView.Size = new System.Drawing.Size(1288, 479);
             this.pgView.TabIndex = 3;
             this.pgView.Text = "View All";
-            this.pgView.Click += new System.EventHandler(this.pgView_Click);
+           // this.pgView.Click += new System.EventHandler(this.pgView_Click);
             // 
             // btnFinddevice
             // 
@@ -2959,7 +2959,7 @@ namespace VPG_DHS
             this.btnFinddevice.TabIndex = 20;
             this.btnFinddevice.Text = "Find Device/s";
             this.btnFinddevice.UseVisualStyleBackColor = false;
-            this.btnFinddevice.Click += new System.EventHandler(this.btnFinddevice_Click);
+           // this.btnFinddevice.Click += new System.EventHandler(this.btnFinddevice_Click);
             // 
             // grpVnotes
             // 
@@ -2971,7 +2971,7 @@ namespace VPG_DHS
             this.grpVnotes.TabIndex = 19;
             this.grpVnotes.TabStop = false;
             this.grpVnotes.Text = "Notes";
-            this.grpVnotes.Enter += new System.EventHandler(this.grpVnotes_Enter);
+           // this.grpVnotes.Enter += new System.EventHandler(this.grpVnotes_Enter);
             // 
             // lblVnotes
             // 
@@ -2983,7 +2983,7 @@ namespace VPG_DHS
             this.lblVnotes.Size = new System.Drawing.Size(154, 375);
             this.lblVnotes.TabIndex = 0;
             this.lblVnotes.Text = resources.GetString("lblVnotes.Text");
-            this.lblVnotes.Click += new System.EventHandler(this.lblVnotes_Click);
+            //this.lblVnotes.Click += new System.EventHandler(this.lblVnotes_Click);
             // 
             // panel9
             // 
@@ -2997,7 +2997,7 @@ namespace VPG_DHS
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(151, 109);
             this.panel9.TabIndex = 18;
-            this.panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.panel9_Paint);
+            //this.panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.panel9_Paint);
             // 
             // rdP12
             // 
@@ -3010,7 +3010,7 @@ namespace VPG_DHS
             this.rdP12.TabStop = true;
             this.rdP12.Text = "Motion";
             this.rdP12.UseVisualStyleBackColor = true;
-            this.rdP12.CheckedChanged += new System.EventHandler(this.rdP12_CheckedChanged);
+            //this.rdP12.CheckedChanged += new System.EventHandler(this.rdP12_CheckedChanged);
             // 
             // txtP12gross
             // 
@@ -3020,7 +3020,7 @@ namespace VPG_DHS
             this.txtP12gross.Name = "txtP12gross";
             this.txtP12gross.Size = new System.Drawing.Size(56, 20);
             this.txtP12gross.TabIndex = 9;
-            this.txtP12gross.TextChanged += new System.EventHandler(this.txtP12gross_TextChanged);
+           // this.txtP12gross.TextChanged += new System.EventHandler(this.txtP12gross_TextChanged);
             // 
             // label20
             // 
@@ -3031,7 +3031,7 @@ namespace VPG_DHS
             this.label20.Size = new System.Drawing.Size(51, 15);
             this.label20.TabIndex = 9;
             this.label20.Text = "Address";
-            this.label20.Click += new System.EventHandler(this.label20_Click);
+           // this.label20.Click += new System.EventHandler(this.label20_Click);
             // 
             // label21
             // 
@@ -3042,7 +3042,7 @@ namespace VPG_DHS
             this.label21.Size = new System.Drawing.Size(37, 15);
             this.label21.TabIndex = 8;
             this.label21.Text = "Gross";
-            this.label21.Click += new System.EventHandler(this.label21_Click);
+           // this.label21.Click += new System.EventHandler(this.label21_Click);
             // 
             // txtP12Add
             // 
@@ -3052,7 +3052,7 @@ namespace VPG_DHS
             this.txtP12Add.Name = "txtP12Add";
             this.txtP12Add.Size = new System.Drawing.Size(25, 22);
             this.txtP12Add.TabIndex = 8;
-            this.txtP12Add.TextChanged += new System.EventHandler(this.txtP12Add_TextChanged);
+            //this.txtP12Add.TextChanged += new System.EventHandler(this.txtP12Add_TextChanged);
             // 
             // panel10
             // 
@@ -3066,7 +3066,7 @@ namespace VPG_DHS
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(151, 109);
             this.panel10.TabIndex = 17;
-            this.panel10.Paint += new System.Windows.Forms.PaintEventHandler(this.panel10_Paint);
+           // this.panel10.Paint += new System.Windows.Forms.PaintEventHandler(this.panel10_Paint);
             // 
             // rdP11motion
             // 
@@ -3079,7 +3079,7 @@ namespace VPG_DHS
             this.rdP11motion.TabStop = true;
             this.rdP11motion.Text = "Motion";
             this.rdP11motion.UseVisualStyleBackColor = true;
-            this.rdP11motion.CheckedChanged += new System.EventHandler(this.rdP11motion_CheckedChanged);
+           // this.rdP11motion.CheckedChanged += new System.EventHandler(this.rdP11motion_CheckedChanged);
             // 
             // txtP11gross
             // 
@@ -3089,7 +3089,7 @@ namespace VPG_DHS
             this.txtP11gross.Name = "txtP11gross";
             this.txtP11gross.Size = new System.Drawing.Size(56, 20);
             this.txtP11gross.TabIndex = 9;
-            this.txtP11gross.TextChanged += new System.EventHandler(this.txtP11gross_TextChanged);
+           // this.txtP11gross.TextChanged += new System.EventHandler(this.txtP11gross_TextChanged);
             // 
             // label22
             // 
@@ -3100,7 +3100,7 @@ namespace VPG_DHS
             this.label22.Size = new System.Drawing.Size(51, 15);
             this.label22.TabIndex = 9;
             this.label22.Text = "Address";
-            this.label22.Click += new System.EventHandler(this.label22_Click);
+           // this.label22.Click += new System.EventHandler(this.label22_Click);
             // 
             // label23
             // 
@@ -3111,7 +3111,7 @@ namespace VPG_DHS
             this.label23.Size = new System.Drawing.Size(37, 15);
             this.label23.TabIndex = 8;
             this.label23.Text = "Gross";
-            this.label23.Click += new System.EventHandler(this.label23_Click);
+           // this.label23.Click += new System.EventHandler(this.label23_Click);
             // 
             // txtP11Add
             // 
@@ -3121,7 +3121,7 @@ namespace VPG_DHS
             this.txtP11Add.Name = "txtP11Add";
             this.txtP11Add.Size = new System.Drawing.Size(25, 22);
             this.txtP11Add.TabIndex = 8;
-            this.txtP11Add.TextChanged += new System.EventHandler(this.txtP11Add_TextChanged);
+           // this.txtP11Add.TextChanged += new System.EventHandler(this.txtP11Add_TextChanged);
             // 
             // panel11
             // 
@@ -3135,7 +3135,7 @@ namespace VPG_DHS
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(151, 109);
             this.panel11.TabIndex = 16;
-            this.panel11.Paint += new System.Windows.Forms.PaintEventHandler(this.panel11_Paint);
+           // this.panel11.Paint += new System.Windows.Forms.PaintEventHandler(this.panel11_Paint);
             // 
             // rdP10motion
             // 
@@ -3148,17 +3148,17 @@ namespace VPG_DHS
             this.rdP10motion.TabStop = true;
             this.rdP10motion.Text = "Motion";
             this.rdP10motion.UseVisualStyleBackColor = true;
-            this.rdP10motion.CheckedChanged += new System.EventHandler(this.rdP10motion_CheckedChanged);
+           // this.rdP10motion.CheckedChanged += new System.EventHandler(this.rdP10motion_CheckedChanged);
             // 
             // txtP10gross
             // 
             this.txtP10gross.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtP10gross.Location = new System.Drawing.Point(6, 64);
-            this.txtP10gross.Multiline = true;
+            this.txtP10gross.Multiline = true;//
             this.txtP10gross.Name = "txtP10gross";
             this.txtP10gross.Size = new System.Drawing.Size(56, 20);
             this.txtP10gross.TabIndex = 9;
-            this.txtP10gross.TextChanged += new System.EventHandler(this.txtP10gross_TextChanged);
+          //  this.txtP10gross.TextChanged += new System.EventHandler(this.txtP10gross_TextChanged);
             // 
             // label24
             // 
@@ -3169,7 +3169,7 @@ namespace VPG_DHS
             this.label24.Size = new System.Drawing.Size(51, 15);
             this.label24.TabIndex = 9;
             this.label24.Text = "Address";
-            this.label24.Click += new System.EventHandler(this.label24_Click);
+          //  this.label24.Click += new System.EventHandler(this.label24_Click);
             // 
             // label25
             // 
@@ -3180,7 +3180,7 @@ namespace VPG_DHS
             this.label25.Size = new System.Drawing.Size(37, 15);
             this.label25.TabIndex = 8;
             this.label25.Text = "Gross";
-            this.label25.Click += new System.EventHandler(this.label25_Click);
+           // this.label25.Click += new System.EventHandler(this.label25_Click);
             // 
             // txtP10add
             // 
@@ -3190,7 +3190,7 @@ namespace VPG_DHS
             this.txtP10add.Name = "txtP10add";
             this.txtP10add.Size = new System.Drawing.Size(25, 22);
             this.txtP10add.TabIndex = 8;
-            this.txtP10add.TextChanged += new System.EventHandler(this.txtP10add_TextChanged);
+           // this.txtP10add.TextChanged += new System.EventHandler(this.txtP10add_TextChanged);
             // 
             // panel12
             // 
@@ -3204,7 +3204,7 @@ namespace VPG_DHS
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(151, 109);
             this.panel12.TabIndex = 15;
-            this.panel12.Paint += new System.Windows.Forms.PaintEventHandler(this.panel12_Paint);
+           // this.panel12.Paint += new System.Windows.Forms.PaintEventHandler(this.panel12_Paint);
             // 
             // rdP9motion
             // 
@@ -3217,7 +3217,7 @@ namespace VPG_DHS
             this.rdP9motion.TabStop = true;
             this.rdP9motion.Text = "Motion";
             this.rdP9motion.UseVisualStyleBackColor = true;
-            this.rdP9motion.CheckedChanged += new System.EventHandler(this.rdP9motion_CheckedChanged);
+          //  this.rdP9motion.CheckedChanged += new System.EventHandler(this.rdP9motion_CheckedChanged);
             // 
             // txtP9gross
             // 
@@ -3227,7 +3227,7 @@ namespace VPG_DHS
             this.txtP9gross.Name = "txtP9gross";
             this.txtP9gross.Size = new System.Drawing.Size(56, 20);
             this.txtP9gross.TabIndex = 9;
-            this.txtP9gross.TextChanged += new System.EventHandler(this.txtP9gross_TextChanged);
+           // this.txtP9gross.TextChanged += new System.EventHandler(this.txtP9gross_TextChanged);
             // 
             // label26
             // 
@@ -3238,7 +3238,7 @@ namespace VPG_DHS
             this.label26.Size = new System.Drawing.Size(51, 15);
             this.label26.TabIndex = 9;
             this.label26.Text = "Address";
-            this.label26.Click += new System.EventHandler(this.label26_Click);
+           // this.label26.Click += new System.EventHandler(this.label26_Click);
             // 
             // label27
             // 
@@ -3249,7 +3249,7 @@ namespace VPG_DHS
             this.label27.Size = new System.Drawing.Size(37, 15);
             this.label27.TabIndex = 8;
             this.label27.Text = "Gross";
-            this.label27.Click += new System.EventHandler(this.label27_Click);
+          //  this.label27.Click += new System.EventHandler(this.label27_Click);
             // 
             // txtP9add
             // 
@@ -3259,7 +3259,7 @@ namespace VPG_DHS
             this.txtP9add.Name = "txtP9add";
             this.txtP9add.Size = new System.Drawing.Size(25, 22);
             this.txtP9add.TabIndex = 8;
-            this.txtP9add.TextChanged += new System.EventHandler(this.txtP9add_TextChanged);
+           // this.txtP9add.TextChanged += new System.EventHandler(this.txtP9add_TextChanged);
             // 
             // panel5
             // 
@@ -3273,7 +3273,7 @@ namespace VPG_DHS
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(151, 109);
             this.panel5.TabIndex = 14;
-            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
+           // this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // rdP8motion
             // 
@@ -3286,7 +3286,7 @@ namespace VPG_DHS
             this.rdP8motion.TabStop = true;
             this.rdP8motion.Text = "Motion";
             this.rdP8motion.UseVisualStyleBackColor = true;
-            this.rdP8motion.CheckedChanged += new System.EventHandler(this.rdP8motion_CheckedChanged);
+           // this.rdP8motion.CheckedChanged += new System.EventHandler(this.rdP8motion_CheckedChanged);
             // 
             // txtP8gross
             // 
@@ -3296,7 +3296,7 @@ namespace VPG_DHS
             this.txtP8gross.Name = "txtP8gross";
             this.txtP8gross.Size = new System.Drawing.Size(56, 20);
             this.txtP8gross.TabIndex = 9;
-            this.txtP8gross.TextChanged += new System.EventHandler(this.txtP8gross_TextChanged);
+           // this.txtP8gross.TextChanged += new System.EventHandler(this.txtP8gross_TextChanged);
             // 
             // label11
             // 
@@ -3307,7 +3307,7 @@ namespace VPG_DHS
             this.label11.Size = new System.Drawing.Size(51, 15);
             this.label11.TabIndex = 9;
             this.label11.Text = "Address";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
+           // this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // label12
             // 
@@ -3318,7 +3318,7 @@ namespace VPG_DHS
             this.label12.Size = new System.Drawing.Size(37, 15);
             this.label12.TabIndex = 8;
             this.label12.Text = "Gross";
-            this.label12.Click += new System.EventHandler(this.label12_Click);
+           // this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // txtP8Add
             // 
@@ -3328,7 +3328,7 @@ namespace VPG_DHS
             this.txtP8Add.Name = "txtP8Add";
             this.txtP8Add.Size = new System.Drawing.Size(25, 22);
             this.txtP8Add.TabIndex = 8;
-            this.txtP8Add.TextChanged += new System.EventHandler(this.txtP8Add_TextChanged);
+           // this.txtP8Add.TextChanged += new System.EventHandler(this.txtP8Add_TextChanged);
             // 
             // panel6
             // 
@@ -3342,7 +3342,7 @@ namespace VPG_DHS
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(151, 109);
             this.panel6.TabIndex = 13;
-            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
+           // this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
             // rdP7motion
             // 
@@ -3355,7 +3355,7 @@ namespace VPG_DHS
             this.rdP7motion.TabStop = true;
             this.rdP7motion.Text = "Motion";
             this.rdP7motion.UseVisualStyleBackColor = true;
-            this.rdP7motion.CheckedChanged += new System.EventHandler(this.rdP7motion_CheckedChanged);
+           // this.rdP7motion.CheckedChanged += new System.EventHandler(this.rdP7motion_CheckedChanged);
             // 
             // txtP7gross
             // 
@@ -3365,7 +3365,7 @@ namespace VPG_DHS
             this.txtP7gross.Name = "txtP7gross";
             this.txtP7gross.Size = new System.Drawing.Size(56, 20);
             this.txtP7gross.TabIndex = 9;
-            this.txtP7gross.TextChanged += new System.EventHandler(this.txtP7gross_TextChanged);
+          //  this.txtP7gross.TextChanged += new System.EventHandler(this.txtP7gross_TextChanged);
             // 
             // label13
             // 
@@ -3376,7 +3376,7 @@ namespace VPG_DHS
             this.label13.Size = new System.Drawing.Size(51, 15);
             this.label13.TabIndex = 9;
             this.label13.Text = "Address";
-            this.label13.Click += new System.EventHandler(this.label13_Click);
+           // this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // label14
             // 
@@ -3387,7 +3387,7 @@ namespace VPG_DHS
             this.label14.Size = new System.Drawing.Size(37, 15);
             this.label14.TabIndex = 8;
             this.label14.Text = "Gross";
-            this.label14.Click += new System.EventHandler(this.label14_Click);
+          //  this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
             // txtP7Add
             // 
@@ -3397,7 +3397,7 @@ namespace VPG_DHS
             this.txtP7Add.Name = "txtP7Add";
             this.txtP7Add.Size = new System.Drawing.Size(25, 22);
             this.txtP7Add.TabIndex = 8;
-            this.txtP7Add.TextChanged += new System.EventHandler(this.txtP7Add_TextChanged);
+           // this.txtP7Add.TextChanged += new System.EventHandler(this.txtP7Add_TextChanged);
             // 
             // panel7
             // 
@@ -3411,8 +3411,8 @@ namespace VPG_DHS
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(151, 109);
             this.panel7.TabIndex = 12;
-            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
-            // 
+          //  this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
+            //
             // rdP6motion
             // 
             this.rdP6motion.AutoSize = true;
@@ -3424,7 +3424,7 @@ namespace VPG_DHS
             this.rdP6motion.TabStop = true;
             this.rdP6motion.Text = "Motion";
             this.rdP6motion.UseVisualStyleBackColor = true;
-            this.rdP6motion.CheckedChanged += new System.EventHandler(this.rdP6motion_CheckedChanged);
+          //  this.rdP6motion.CheckedChanged += new System.EventHandler(this.rdP6motion_CheckedChanged);
             // 
             // txtP6gross
             // 
@@ -3434,7 +3434,7 @@ namespace VPG_DHS
             this.txtP6gross.Name = "txtP6gross";
             this.txtP6gross.Size = new System.Drawing.Size(56, 20);
             this.txtP6gross.TabIndex = 9;
-            this.txtP6gross.TextChanged += new System.EventHandler(this.txtP6gross_TextChanged);
+         //   this.txtP6gross.TextChanged += new System.EventHandler(this.txtP6gross_TextChanged);
             // 
             // label15
             // 
@@ -3445,7 +3445,7 @@ namespace VPG_DHS
             this.label15.Size = new System.Drawing.Size(51, 15);
             this.label15.TabIndex = 9;
             this.label15.Text = "Address";
-            this.label15.Click += new System.EventHandler(this.label15_Click);
+         //   this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
             // label16
             // 
@@ -3456,7 +3456,7 @@ namespace VPG_DHS
             this.label16.Size = new System.Drawing.Size(37, 15);
             this.label16.TabIndex = 8;
             this.label16.Text = "Gross";
-            this.label16.Click += new System.EventHandler(this.label16_Click);
+         //   this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // txtP6add
             // 
@@ -3466,7 +3466,7 @@ namespace VPG_DHS
             this.txtP6add.Name = "txtP6add";
             this.txtP6add.Size = new System.Drawing.Size(25, 22);
             this.txtP6add.TabIndex = 8;
-            this.txtP6add.TextChanged += new System.EventHandler(this.txtP6add_TextChanged);
+         //   this.txtP6add.TextChanged += new System.EventHandler(this.txtP6add_TextChanged);
             // 
             // panel8
             // 
@@ -3480,7 +3480,7 @@ namespace VPG_DHS
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(151, 109);
             this.panel8.TabIndex = 11;
-            this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
+         //   this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
             // 
             // rdP5motion
             // 
@@ -3493,7 +3493,7 @@ namespace VPG_DHS
             this.rdP5motion.TabStop = true;
             this.rdP5motion.Text = "Motion";
             this.rdP5motion.UseVisualStyleBackColor = true;
-            this.rdP5motion.CheckedChanged += new System.EventHandler(this.rdP5motion_CheckedChanged);
+         //   this.rdP5motion.CheckedChanged += new System.EventHandler(this.rdP5motion_CheckedChanged);
             // 
             // txtP5gross
             // 
@@ -3503,7 +3503,7 @@ namespace VPG_DHS
             this.txtP5gross.Name = "txtP5gross";
             this.txtP5gross.Size = new System.Drawing.Size(56, 20);
             this.txtP5gross.TabIndex = 9;
-            this.txtP5gross.TextChanged += new System.EventHandler(this.txtP5gross_TextChanged);
+         //   this.txtP5gross.TextChanged += new System.EventHandler(this.txtP5gross_TextChanged);
             // 
             // label17
             // 
@@ -3514,7 +3514,7 @@ namespace VPG_DHS
             this.label17.Size = new System.Drawing.Size(51, 15);
             this.label17.TabIndex = 9;
             this.label17.Text = "Address";
-            this.label17.Click += new System.EventHandler(this.label17_Click);
+         //   this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
             // label19
             // 
@@ -3525,7 +3525,7 @@ namespace VPG_DHS
             this.label19.Size = new System.Drawing.Size(37, 15);
             this.label19.TabIndex = 8;
             this.label19.Text = "Gross";
-            this.label19.Click += new System.EventHandler(this.label19_Click);
+           // this.label19.Click += new System.EventHandler(this.label19_Click);
             // 
             // txtP5add
             // 
@@ -3535,7 +3535,7 @@ namespace VPG_DHS
             this.txtP5add.Name = "txtP5add";
             this.txtP5add.Size = new System.Drawing.Size(25, 22);
             this.txtP5add.TabIndex = 8;
-            this.txtP5add.TextChanged += new System.EventHandler(this.txtP5add_TextChanged);
+           // this.txtP5add.TextChanged += new System.EventHandler(this.txtP5add_TextChanged);
             // 
             // panel4
             // 
@@ -3549,7 +3549,7 @@ namespace VPG_DHS
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(151, 109);
             this.panel4.TabIndex = 10;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
+          //  this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // rdP4motion
             // 
@@ -3562,7 +3562,7 @@ namespace VPG_DHS
             this.rdP4motion.TabStop = true;
             this.rdP4motion.Text = "Motion";
             this.rdP4motion.UseVisualStyleBackColor = true;
-            this.rdP4motion.CheckedChanged += new System.EventHandler(this.rdP4motion_CheckedChanged);
+          //  this.rdP4motion.CheckedChanged += new System.EventHandler(this.rdP4motion_CheckedChanged);
             // 
             // txtP4Gross
             // 
@@ -3572,7 +3572,7 @@ namespace VPG_DHS
             this.txtP4Gross.Name = "txtP4Gross";
             this.txtP4Gross.Size = new System.Drawing.Size(56, 20);
             this.txtP4Gross.TabIndex = 9;
-            this.txtP4Gross.TextChanged += new System.EventHandler(this.txtP4Gross_TextChanged);
+          //  this.txtP4Gross.TextChanged += new System.EventHandler(this.txtP4Gross_TextChanged);
             // 
             // label9
             // 
@@ -3583,7 +3583,7 @@ namespace VPG_DHS
             this.label9.Size = new System.Drawing.Size(51, 15);
             this.label9.TabIndex = 9;
             this.label9.Text = "Address";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
+         //   this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label10
             // 
@@ -3594,7 +3594,7 @@ namespace VPG_DHS
             this.label10.Size = new System.Drawing.Size(37, 15);
             this.label10.TabIndex = 8;
             this.label10.Text = "Gross";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
+         //   this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // txtP4add
             // 
@@ -3604,7 +3604,7 @@ namespace VPG_DHS
             this.txtP4add.Name = "txtP4add";
             this.txtP4add.Size = new System.Drawing.Size(25, 22);
             this.txtP4add.TabIndex = 8;
-            this.txtP4add.TextChanged += new System.EventHandler(this.txtP4add_TextChanged);
+          //  this.txtP4add.TextChanged += new System.EventHandler(this.txtP4add_TextChanged);
             // 
             // panel3
             // 
@@ -3618,7 +3618,7 @@ namespace VPG_DHS
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(151, 109);
             this.panel3.TabIndex = 9;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+         //   this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // rdP3motion
             // 
@@ -3631,7 +3631,7 @@ namespace VPG_DHS
             this.rdP3motion.TabStop = true;
             this.rdP3motion.Text = "Motion";
             this.rdP3motion.UseVisualStyleBackColor = true;
-            this.rdP3motion.CheckedChanged += new System.EventHandler(this.rdP3motion_CheckedChanged);
+         //   this.rdP3motion.CheckedChanged += new System.EventHandler(this.rdP3motion_CheckedChanged);
             // 
             // txtP3Gross
             // 
@@ -3641,7 +3641,7 @@ namespace VPG_DHS
             this.txtP3Gross.Name = "txtP3Gross";
             this.txtP3Gross.Size = new System.Drawing.Size(56, 20);
             this.txtP3Gross.TabIndex = 9;
-            this.txtP3Gross.TextChanged += new System.EventHandler(this.txtP3Gross_TextChanged);
+            //this.txtP3Gross.TextChanged += new System.EventHandler(this.txtP3Gross_TextChanged);
             // 
             // label7
             // 
@@ -3652,7 +3652,7 @@ namespace VPG_DHS
             this.label7.Size = new System.Drawing.Size(51, 15);
             this.label7.TabIndex = 9;
             this.label7.Text = "Address";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
+          //  this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label8
             // 
@@ -3663,7 +3663,7 @@ namespace VPG_DHS
             this.label8.Size = new System.Drawing.Size(37, 15);
             this.label8.TabIndex = 8;
             this.label8.Text = "Gross";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
+          //  this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // txtP3Add
             // 
@@ -3673,7 +3673,7 @@ namespace VPG_DHS
             this.txtP3Add.Name = "txtP3Add";
             this.txtP3Add.Size = new System.Drawing.Size(25, 22);
             this.txtP3Add.TabIndex = 8;
-            this.txtP3Add.TextChanged += new System.EventHandler(this.txtP3Add_TextChanged);
+          //  this.txtP3Add.TextChanged += new System.EventHandler(this.txtP3Add_TextChanged);
             // 
             // panel2
             // 
@@ -3687,7 +3687,7 @@ namespace VPG_DHS
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(151, 109);
             this.panel2.TabIndex = 8;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+          //  this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // rdP2motion
             // 
@@ -3700,7 +3700,7 @@ namespace VPG_DHS
             this.rdP2motion.TabStop = true;
             this.rdP2motion.Text = "Motion";
             this.rdP2motion.UseVisualStyleBackColor = true;
-            this.rdP2motion.CheckedChanged += new System.EventHandler(this.rdP2motion_CheckedChanged);
+         //   this.rdP2motion.CheckedChanged += new System.EventHandler(this.rdP2motion_CheckedChanged);
             // 
             // txtP2gross
             // 
@@ -3710,7 +3710,7 @@ namespace VPG_DHS
             this.txtP2gross.Name = "txtP2gross";
             this.txtP2gross.Size = new System.Drawing.Size(56, 20);
             this.txtP2gross.TabIndex = 9;
-            this.txtP2gross.TextChanged += new System.EventHandler(this.txtP2gross_TextChanged);
+         //   this.txtP2gross.TextChanged += new System.EventHandler(this.txtP2gross_TextChanged);
             // 
             // label5
             // 
@@ -3721,7 +3721,7 @@ namespace VPG_DHS
             this.label5.Size = new System.Drawing.Size(51, 15);
             this.label5.TabIndex = 9;
             this.label5.Text = "Address";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+         //   this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -3732,7 +3732,7 @@ namespace VPG_DHS
             this.label6.Size = new System.Drawing.Size(37, 15);
             this.label6.TabIndex = 8;
             this.label6.Text = "Gross";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+          //  this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // txtP2add
             // 
@@ -3742,7 +3742,7 @@ namespace VPG_DHS
             this.txtP2add.Name = "txtP2add";
             this.txtP2add.Size = new System.Drawing.Size(25, 22);
             this.txtP2add.TabIndex = 8;
-            this.txtP2add.TextChanged += new System.EventHandler(this.txtP2add_TextChanged);
+           // this.txtP2add.TextChanged += new System.EventHandler(this.txtP2add_TextChanged);
             // 
             // panel1
             // 
@@ -3756,7 +3756,7 @@ namespace VPG_DHS
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(151, 109);
             this.panel1.TabIndex = 7;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+           // this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // rdP1motion
             // 
@@ -3769,7 +3769,7 @@ namespace VPG_DHS
             this.rdP1motion.TabStop = true;
             this.rdP1motion.Text = "Motion";
             this.rdP1motion.UseVisualStyleBackColor = true;
-            this.rdP1motion.CheckedChanged += new System.EventHandler(this.rdP1motion_CheckedChanged);
+          //  this.rdP1motion.CheckedChanged += new System.EventHandler(this.rdP1motion_CheckedChanged);
             // 
             // txtVp1gross
             // 
@@ -3779,7 +3779,7 @@ namespace VPG_DHS
             this.txtVp1gross.Name = "txtVp1gross";
             this.txtVp1gross.Size = new System.Drawing.Size(56, 20);
             this.txtVp1gross.TabIndex = 9;
-            this.txtVp1gross.TextChanged += new System.EventHandler(this.txtVp1gross_TextChanged);
+           // this.txtVp1gross.TextChanged += new System.EventHandler(this.txtVp1gross_TextChanged);
             // 
             // lblP1add
             // 
@@ -3790,7 +3790,7 @@ namespace VPG_DHS
             this.lblP1add.Size = new System.Drawing.Size(51, 15);
             this.lblP1add.TabIndex = 9;
             this.lblP1add.Text = "Address";
-            this.lblP1add.Click += new System.EventHandler(this.lblP1add_Click);
+           // this.lblP1add.Click += new System.EventHandler(this.lblP1add_Click);
             // 
             // lblP1gross
             // 
@@ -3801,7 +3801,7 @@ namespace VPG_DHS
             this.lblP1gross.Size = new System.Drawing.Size(37, 15);
             this.lblP1gross.TabIndex = 8;
             this.lblP1gross.Text = "Gross";
-            this.lblP1gross.Click += new System.EventHandler(this.lblP1gross_Click);
+          //  this.lblP1gross.Click += new System.EventHandler(this.lblP1gross_Click);
             // 
             // txtVp1add
             // 
@@ -3811,7 +3811,7 @@ namespace VPG_DHS
             this.txtVp1add.Name = "txtVp1add";
             this.txtVp1add.Size = new System.Drawing.Size(25, 22);
             this.txtVp1add.TabIndex = 8;
-            this.txtVp1add.TextChanged += new System.EventHandler(this.txtVp1add_TextChanged);
+         //   this.txtVp1add.TextChanged += new System.EventHandler(this.txtVp1add_TextChanged);
             // 
             // lblVerror
             // 
@@ -3822,7 +3822,7 @@ namespace VPG_DHS
             this.lblVerror.Size = new System.Drawing.Size(39, 15);
             this.lblVerror.TabIndex = 6;
             this.lblVerror.Text = "-Error";
-            this.lblVerror.Click += new System.EventHandler(this.lblVerror_Click);
+         //   this.lblVerror.Click += new System.EventHandler(this.lblVerror_Click);
             // 
             // txtVerror
             // 
@@ -3832,7 +3832,7 @@ namespace VPG_DHS
             this.txtVerror.Name = "txtVerror";
             this.txtVerror.Size = new System.Drawing.Size(55, 15);
             this.txtVerror.TabIndex = 5;
-            this.txtVerror.TextChanged += new System.EventHandler(this.txtVerror_TextChanged);
+         //   this.txtVerror.TextChanged += new System.EventHandler(this.txtVerror_TextChanged);
             // 
             // lblVnotactive
             // 
@@ -3843,7 +3843,7 @@ namespace VPG_DHS
             this.lblVnotactive.Size = new System.Drawing.Size(69, 15);
             this.lblVnotactive.TabIndex = 4;
             this.lblVnotactive.Text = "-Not Active";
-            this.lblVnotactive.Click += new System.EventHandler(this.lblVnotactive_Click);
+          //  this.lblVnotactive.Click += new System.EventHandler(this.lblVnotactive_Click);
             // 
             // lblVactive
             // 
@@ -3854,7 +3854,7 @@ namespace VPG_DHS
             this.lblVactive.Size = new System.Drawing.Size(45, 15);
             this.lblVactive.TabIndex = 3;
             this.lblVactive.Text = "-Active";
-            this.lblVactive.Click += new System.EventHandler(this.lblVactive_Click);
+          //  this.lblVactive.Click += new System.EventHandler(this.lblVactive_Click);
             // 
             // txtVnotactive
             // 
@@ -3864,7 +3864,7 @@ namespace VPG_DHS
             this.txtVnotactive.Name = "txtVnotactive";
             this.txtVnotactive.Size = new System.Drawing.Size(12, 10);
             this.txtVnotactive.TabIndex = 2;
-            this.txtVnotactive.TextChanged += new System.EventHandler(this.txtVnotactive_TextChanged);
+         //   this.txtVnotactive.TextChanged += new System.EventHandler(this.txtVnotactive_TextChanged);
             // 
             // txtVactive
             // 
@@ -3874,7 +3874,7 @@ namespace VPG_DHS
             this.txtVactive.Name = "txtVactive";
             this.txtVactive.Size = new System.Drawing.Size(12, 10);
             this.txtVactive.TabIndex = 1;
-            this.txtVactive.TextChanged += new System.EventHandler(this.txtVactive_TextChanged);
+         //   this.txtVactive.TextChanged += new System.EventHandler(this.txtVactive_TextChanged);
             // 
             // pgGraph
             // 
@@ -3885,7 +3885,7 @@ namespace VPG_DHS
             this.pgGraph.TabIndex = 4;
             this.pgGraph.Text = "Graph";
             this.pgGraph.UseVisualStyleBackColor = true;
-            this.pgGraph.Click += new System.EventHandler(this.pgGraph_Click);
+          //  this.pgGraph.Click += new System.EventHandler(this.pgGraph_Click);
             // 
             // panel13
             // 
@@ -3903,7 +3903,7 @@ namespace VPG_DHS
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(1161, 448);
             this.panel13.TabIndex = 7;
-            this.panel13.Paint += new System.Windows.Forms.PaintEventHandler(this.panel13_Paint);
+         //   this.panel13.Paint += new System.Windows.Forms.PaintEventHandler(this.panel13_Paint);
             // 
             // chtGraphy
             // 
@@ -3931,7 +3931,7 @@ namespace VPG_DHS
             this.chkGcursor.Size = new System.Drawing.Size(15, 14);
             this.chkGcursor.TabIndex = 9;
             this.chkGcursor.UseVisualStyleBackColor = true;
-            this.chkGcursor.CheckedChanged += new System.EventHandler(this.chkGcursor_CheckedChanged);
+          //  this.chkGcursor.CheckedChanged += new System.EventHandler(this.chkGcursor_CheckedChanged);
             // 
             // lblGraphCursor
             // 
@@ -3941,7 +3941,7 @@ namespace VPG_DHS
             this.lblGraphCursor.Size = new System.Drawing.Size(126, 18);
             this.lblGraphCursor.TabIndex = 7;
             this.lblGraphCursor.Text = "Cursor Coordinates";
-            this.lblGraphCursor.Click += new System.EventHandler(this.lblGraphCursor_Click);
+         //   this.lblGraphCursor.Click += new System.EventHandler(this.lblGraphCursor_Click);
             // 
             // btnGstart
             // 
@@ -3952,7 +3952,7 @@ namespace VPG_DHS
             this.btnGstart.TabIndex = 4;
             this.btnGstart.Text = "Start";
             this.btnGstart.UseVisualStyleBackColor = false;
-            this.btnGstart.Click += new System.EventHandler(this.btnGstart_Click);
+         //   this.btnGstart.Click += new System.EventHandler(this.btnGstart_Click);
             // 
             // lblGnotes
             // 
@@ -3963,7 +3963,7 @@ namespace VPG_DHS
             this.lblGnotes.Size = new System.Drawing.Size(328, 14);
             this.lblGnotes.TabIndex = 5;
             this.lblGnotes.Text = "Note: Manipulating the Graph requires minimum baud rate 9600.";
-            this.lblGnotes.Click += new System.EventHandler(this.lblGnotes_Click);
+         //   this.lblGnotes.Click += new System.EventHandler(this.lblGnotes_Click);
             // 
             // cboSeconds
             // 
@@ -3973,7 +3973,7 @@ namespace VPG_DHS
             this.cboSeconds.Name = "cboSeconds";
             this.cboSeconds.Size = new System.Drawing.Size(121, 26);
             this.cboSeconds.TabIndex = 3;
-            this.cboSeconds.SelectedIndexChanged += new System.EventHandler(this.cboSeconds_SelectedIndexChanged);
+          //  this.cboSeconds.SelectedIndexChanged += new System.EventHandler(this.cboSeconds_SelectedIndexChanged);
             // 
             // lblGweightUnit
             // 
@@ -3983,7 +3983,7 @@ namespace VPG_DHS
             this.lblGweightUnit.Size = new System.Drawing.Size(80, 18);
             this.lblGweightUnit.TabIndex = 0;
             this.lblGweightUnit.Text = "WeightUnit";
-            this.lblGweightUnit.Click += new System.EventHandler(this.lblGweightUnit_Click);
+          //  this.lblGweightUnit.Click += new System.EventHandler(this.lblGweightUnit_Click);
             // 
             // llbGbuffersize
             // 
@@ -3993,7 +3993,7 @@ namespace VPG_DHS
             this.llbGbuffersize.Size = new System.Drawing.Size(74, 18);
             this.llbGbuffersize.TabIndex = 1;
             this.llbGbuffersize.Text = "Buffer Size";
-            this.llbGbuffersize.Click += new System.EventHandler(this.llbGbuffersize_Click);
+          //  this.llbGbuffersize.Click += new System.EventHandler(this.llbGbuffersize_Click);
             // 
             // txtGweightunit
             // 
@@ -4002,7 +4002,7 @@ namespace VPG_DHS
             this.txtGweightunit.Name = "txtGweightunit";
             this.txtGweightunit.Size = new System.Drawing.Size(100, 26);
             this.txtGweightunit.TabIndex = 2;
-            this.txtGweightunit.TextChanged += new System.EventHandler(this.txtGweightunit_TextChanged);
+          //  this.txtGweightunit.TextChanged += new System.EventHandler(this.txtGweightunit_TextChanged);
             // 
             // textBox4
             // 
@@ -4012,7 +4012,7 @@ namespace VPG_DHS
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(81, 20);
             this.textBox4.TabIndex = 12;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+           // this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // lblCweight
             // 
@@ -4023,7 +4023,7 @@ namespace VPG_DHS
             this.lblCweight.Size = new System.Drawing.Size(53, 18);
             this.lblCweight.TabIndex = 0;
             this.lblCweight.Text = "Weight";
-            this.lblCweight.Click += new System.EventHandler(this.lblCweight_Click);
+          //  this.lblCweight.Click += new System.EventHandler(this.lblCweight_Click);
             // 
             // btnCalisave
             // 
@@ -4034,7 +4034,7 @@ namespace VPG_DHS
             this.btnCalisave.TabIndex = 18;
             this.btnCalisave.Text = "Save";
             this.btnCalisave.UseVisualStyleBackColor = false;
-            this.btnCalisave.Click += new System.EventHandler(this.btnCalisave_Click);
+          //  this.btnCalisave.Click += new System.EventHandler(this.btnCalisave_Click);
             // 
             // txtCweight
             // 
@@ -4044,7 +4044,7 @@ namespace VPG_DHS
             this.txtCweight.Name = "txtCweight";
             this.txtCweight.Size = new System.Drawing.Size(81, 20);
             this.txtCweight.TabIndex = 1;
-            this.txtCweight.TextChanged += new System.EventHandler(this.txtCweight_TextChanged);
+         //   this.txtCweight.TextChanged += new System.EventHandler(this.txtCweight_TextChanged);
             // 
             // txtCweightres
             // 
@@ -4053,7 +4053,7 @@ namespace VPG_DHS
             this.txtCweightres.Name = "txtCweightres";
             this.txtCweightres.Size = new System.Drawing.Size(81, 20);
             this.txtCweightres.TabIndex = 17;
-            this.txtCweightres.TextChanged += new System.EventHandler(this.txtCweightres_TextChanged);
+          //  this.txtCweightres.TextChanged += new System.EventHandler(this.txtCweightres_TextChanged);
             // 
             // lblCmv
             // 
@@ -4064,7 +4064,7 @@ namespace VPG_DHS
             this.lblCmv.Size = new System.Drawing.Size(43, 18);
             this.lblCmv.TabIndex = 2;
             this.lblCmv.Text = "mV/V";
-            this.lblCmv.Click += new System.EventHandler(this.lblCmv_Click);
+         //   this.lblCmv.Click += new System.EventHandler(this.lblCmv_Click);
             // 
             // txtCweightunit
             // 
@@ -4073,7 +4073,7 @@ namespace VPG_DHS
             this.txtCweightunit.Name = "txtCweightunit";
             this.txtCweightunit.Size = new System.Drawing.Size(81, 20);
             this.txtCweightunit.TabIndex = 16;
-            this.txtCweightunit.TextChanged += new System.EventHandler(this.txtCweightunit_TextChanged);
+          //  this.txtCweightunit.TextChanged += new System.EventHandler(this.txtCweightunit_TextChanged);
             // 
             // txtCmv
             // 
@@ -4083,7 +4083,7 @@ namespace VPG_DHS
             this.txtCmv.Name = "txtCmv";
             this.txtCmv.Size = new System.Drawing.Size(81, 20);
             this.txtCmv.TabIndex = 3;
-            this.txtCmv.TextChanged += new System.EventHandler(this.txtCmv_TextChanged);
+         //   this.txtCmv.TextChanged += new System.EventHandler(this.txtCmv_TextChanged);
             // 
             // lblCweightres
             // 
@@ -4093,7 +4093,7 @@ namespace VPG_DHS
             this.lblCweightres.Size = new System.Drawing.Size(108, 15);
             this.lblCweightres.TabIndex = 15;
             this.lblCweightres.Text = "Weight Resolution";
-            this.lblCweightres.Click += new System.EventHandler(this.lblCweightres_Click);
+           // this.lblCweightres.Click += new System.EventHandler(this.lblCweightres_Click);
             // 
             // btnCacquire
             // 
@@ -4104,7 +4104,7 @@ namespace VPG_DHS
             this.btnCacquire.TabIndex = 4;
             this.btnCacquire.Text = "Aquire Deadload";
             this.btnCacquire.UseVisualStyleBackColor = false;
-            this.btnCacquire.Click += new System.EventHandler(this.btnCacquire_Click);
+          //  this.btnCacquire.Click += new System.EventHandler(this.btnCacquire_Click);
             // 
             // lblCweightunit
             // 
@@ -4114,7 +4114,7 @@ namespace VPG_DHS
             this.lblCweightunit.Size = new System.Drawing.Size(73, 15);
             this.lblCweightunit.TabIndex = 14;
             this.lblCweightunit.Text = "Weight Unit";
-            this.lblCweightunit.Click += new System.EventHandler(this.lblCweightunit_Click);
+          //  this.lblCweightunit.Click += new System.EventHandler(this.lblCweightunit_Click);
             // 
             // btnCAcspan
             // 
@@ -4125,7 +4125,7 @@ namespace VPG_DHS
             this.btnCAcspan.TabIndex = 5;
             this.btnCAcspan.Text = "Acquire Span";
             this.btnCAcspan.UseVisualStyleBackColor = false;
-            this.btnCAcspan.Click += new System.EventHandler(this.btnCAcspan_Click);
+          //  this.btnCAcspan.Click += new System.EventHandler(this.btnCAcspan_Click);
             // 
             // textBox5
             // 
@@ -4135,7 +4135,7 @@ namespace VPG_DHS
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(77, 20);
             this.textBox5.TabIndex = 13;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+         //   this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // lblCweightlow
             // 
@@ -4145,7 +4145,7 @@ namespace VPG_DHS
             this.lblCweightlow.Size = new System.Drawing.Size(73, 15);
             this.lblCweightlow.TabIndex = 6;
             this.lblCweightlow.Text = "Weight Low";
-            this.lblCweightlow.Click += new System.EventHandler(this.lblCweightlow_Click);
+          //  this.lblCweightlow.Click += new System.EventHandler(this.lblCweightlow_Click);
             // 
             // lblCmvv
             // 
@@ -4155,7 +4155,7 @@ namespace VPG_DHS
             this.lblCmvv.Size = new System.Drawing.Size(65, 15);
             this.lblCmvv.TabIndex = 7;
             this.lblCmvv.Text = "mV/V Low";
-            this.lblCmvv.Click += new System.EventHandler(this.lblCmvv_Click);
+         //   this.lblCmvv.Click += new System.EventHandler(this.lblCmvv_Click);
             // 
             // textBox3
             // 
@@ -4165,7 +4165,7 @@ namespace VPG_DHS
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(77, 20);
             this.textBox3.TabIndex = 11;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+          //  this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // lblCweighthigh
             // 
@@ -4175,7 +4175,7 @@ namespace VPG_DHS
             this.lblCweighthigh.Size = new System.Drawing.Size(74, 15);
             this.lblCweighthigh.TabIndex = 8;
             this.lblCweighthigh.Text = "Weight High";
-            this.lblCweighthigh.Click += new System.EventHandler(this.lblCweighthigh_Click);
+         //   this.lblCweighthigh.Click += new System.EventHandler(this.lblCweighthigh_Click);
             // 
             // textBox2
             // 
@@ -4185,7 +4185,7 @@ namespace VPG_DHS
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(81, 20);
             this.textBox2.TabIndex = 10;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+         //   this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // lblCmvvhigh
             // 
@@ -4195,7 +4195,7 @@ namespace VPG_DHS
             this.lblCmvvhigh.Size = new System.Drawing.Size(66, 15);
             this.lblCmvvhigh.TabIndex = 9;
             this.lblCmvvhigh.Text = "mV/V High";
-            this.lblCmvvhigh.Click += new System.EventHandler(this.lblCmvvhigh_Click);
+         //   this.lblCmvvhigh.Click += new System.EventHandler(this.lblCmvvhigh_Click);
             // 
             // lblTemp
             // 
@@ -4206,7 +4206,7 @@ namespace VPG_DHS
             this.lblTemp.Size = new System.Drawing.Size(97, 19);
             this.lblTemp.TabIndex = 4;
             this.lblTemp.Text = "Temperature";
-            this.lblTemp.Click += new System.EventHandler(this.lblTemp_Click);
+         //   this.lblTemp.Click += new System.EventHandler(this.lblTemp_Click);
             // 
             // txtTemp
             // 
@@ -4215,7 +4215,7 @@ namespace VPG_DHS
             this.txtTemp.Name = "txtTemp";
             this.txtTemp.Size = new System.Drawing.Size(103, 22);
             this.txtTemp.TabIndex = 5;
-            this.txtTemp.TextChanged += new System.EventHandler(this.txtTemp_TextChanged);
+          //  this.txtTemp.TextChanged += new System.EventHandler(this.txtTemp_TextChanged);
             // 
             // lblDegree
             // 
@@ -4226,7 +4226,7 @@ namespace VPG_DHS
             this.lblDegree.Size = new System.Drawing.Size(21, 25);
             this.lblDegree.TabIndex = 6;
             this.lblDegree.Text = "°";
-            this.lblDegree.Click += new System.EventHandler(this.lblDegree_Click);
+          //  this.lblDegree.Click += new System.EventHandler(this.lblDegree_Click);
             // 
             // lblCel
             // 
@@ -4237,7 +4237,7 @@ namespace VPG_DHS
             this.lblCel.Size = new System.Drawing.Size(18, 16);
             this.lblCel.TabIndex = 7;
             this.lblCel.Text = "C";
-            this.lblCel.Click += new System.EventHandler(this.lblCel_Click);
+         //   this.lblCel.Click += new System.EventHandler(this.lblCel_Click);
             // 
             // btnHelp
             // 
@@ -4249,7 +4249,7 @@ namespace VPG_DHS
             this.btnHelp.TabIndex = 8;
             this.btnHelp.Text = "Help";
             this.btnHelp.UseVisualStyleBackColor = false;
-            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
+         //   this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
             // picSyrma
             // 
@@ -4260,7 +4260,7 @@ namespace VPG_DHS
             this.picSyrma.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picSyrma.TabIndex = 1;
             this.picSyrma.TabStop = false;
-            this.picSyrma.Click += new System.EventHandler(this.picSyrma_Click);
+         //   this.picSyrma.Click += new System.EventHandler(this.picSyrma_Click);
             // 
             // lblAddress
             // 
@@ -4268,7 +4268,7 @@ namespace VPG_DHS
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(100, 23);
             this.lblAddress.TabIndex = 0;
-            this.lblAddress.Click += new System.EventHandler(this.lblAddress_Click);
+          //  this.lblAddress.Click += new System.EventHandler(this.lblAddress_Click);
             // 
             // lblActiveadd
             // 
