@@ -29,10 +29,8 @@ namespace VPG_DHS
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.vpgMenu = new System.Windows.Forms.MenuStrip();
             this.tlLogfile = new System.Windows.Forms.ToolStripMenuItem();
             this.tlAbout = new System.Windows.Forms.ToolStripMenuItem();
@@ -40,6 +38,7 @@ namespace VPG_DHS
             this.cboAddress = new System.Windows.Forms.ComboBox();
             this.tbControl = new System.Windows.Forms.TabControl();
             this.pgWeighing = new System.Windows.Forms.TabPage();
+            this.btnIndicator = new System.Windows.Forms.Button();
             this.grbWStatusError = new System.Windows.Forms.GroupBox();
             this.chkWOvertemperature = new System.Windows.Forms.CheckBox();
             this.chkWLoadcellIntegrity = new System.Windows.Forms.CheckBox();
@@ -240,26 +239,6 @@ namespace VPG_DHS
             this.lblMode = new System.Windows.Forms.Label();
             this.lblGrab = new System.Windows.Forms.Label();
             this.pgCalibration = new System.Windows.Forms.TabPage();
-            //this.panel14 = new System.Windows.Forms.Panel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.lblCweight = new System.Windows.Forms.Label();
-            this.btnCalisave = new System.Windows.Forms.Button();
-            this.txtCweight = new System.Windows.Forms.TextBox();
-            this.txtCweightres = new System.Windows.Forms.TextBox();
-            this.lblCmv = new System.Windows.Forms.Label();
-            this.txtCweightunit = new System.Windows.Forms.TextBox();
-            this.txtCmv = new System.Windows.Forms.TextBox();
-            this.lblCweightres = new System.Windows.Forms.Label();
-            this.btnCacquire = new System.Windows.Forms.Button();
-            this.lblCweightunit = new System.Windows.Forms.Label();
-            this.btnCAcspan = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.lblCweightlow = new System.Windows.Forms.Label();
-            this.lblCmvv = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.lblCweighthigh = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.lblCmvvhigh = new System.Windows.Forms.Label();
             this.grpCalipro = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.pgView = new System.Windows.Forms.TabPage();
@@ -346,15 +325,32 @@ namespace VPG_DHS
             this.txtVactive = new System.Windows.Forms.TextBox();
             this.pgGraph = new System.Windows.Forms.TabPage();
             this.panel13 = new System.Windows.Forms.Panel();
-           // this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.lblGraphCursor = new System.Windows.Forms.Label();
-           // this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.btnGstart = new System.Windows.Forms.Button();
             this.lblGnotes = new System.Windows.Forms.Label();
             this.cboSeconds = new System.Windows.Forms.ComboBox();
             this.lblGweightUnit = new System.Windows.Forms.Label();
             this.llbGbuffersize = new System.Windows.Forms.Label();
             this.txtGweightunit = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.lblCweight = new System.Windows.Forms.Label();
+            this.btnCalisave = new System.Windows.Forms.Button();
+            this.txtCweight = new System.Windows.Forms.TextBox();
+            this.txtCweightres = new System.Windows.Forms.TextBox();
+            this.lblCmv = new System.Windows.Forms.Label();
+            this.txtCweightunit = new System.Windows.Forms.TextBox();
+            this.txtCmv = new System.Windows.Forms.TextBox();
+            this.lblCweightres = new System.Windows.Forms.Label();
+            this.btnCacquire = new System.Windows.Forms.Button();
+            this.lblCweightunit = new System.Windows.Forms.Label();
+            this.btnCAcspan = new System.Windows.Forms.Button();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.lblCweightlow = new System.Windows.Forms.Label();
+            this.lblCmvv = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.lblCweighthigh = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.lblCmvvhigh = new System.Windows.Forms.Label();
             this.lblTemp = new System.Windows.Forms.Label();
             this.txtTemp = new System.Windows.Forms.TextBox();
             this.lblDegree = new System.Windows.Forms.Label();
@@ -362,8 +358,7 @@ namespace VPG_DHS
             this.btnHelp = new System.Windows.Forms.Button();
             this.picSyrma = new System.Windows.Forms.PictureBox();
             this.lblAddress = new System.Windows.Forms.Label();
-          //  this.VPGSerialPort = new System.IO.Ports.SerialPort(this.components);
-            this.btnIndicator = new System.Windows.Forms.Button();
+            this.VPGSerialPort = new System.IO.Ports.SerialPort(this.components);
             this.vpgMenu.SuspendLayout();
             this.tbControl.SuspendLayout();
             this.pgWeighing.SuspendLayout();
@@ -382,7 +377,6 @@ namespace VPG_DHS
             this.tbFilters.SuspendLayout();
             this.grpMeasuring.SuspendLayout();
             this.pgCalibration.SuspendLayout();
-            //this.panel14.SuspendLayout();
             this.grpCalipro.SuspendLayout();
             this.pgView.SuspendLayout();
             this.grpVnotes.SuspendLayout();
@@ -400,7 +394,6 @@ namespace VPG_DHS
             this.panel1.SuspendLayout();
             this.pgGraph.SuspendLayout();
             this.panel13.SuspendLayout();
-            //((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSyrma)).BeginInit();
             this.SuspendLayout();
             // 
@@ -486,6 +479,15 @@ namespace VPG_DHS
             this.pgWeighing.TabIndex = 0;
             this.pgWeighing.Text = "Weighing Display & Status";
             this.pgWeighing.Click += new System.EventHandler(this.pgWeighing_Click);
+            // 
+            // btnIndicator
+            // 
+            this.btnIndicator.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnIndicator.Location = new System.Drawing.Point(580, 5);
+            this.btnIndicator.Name = "btnIndicator";
+            this.btnIndicator.Size = new System.Drawing.Size(25, 23);
+            this.btnIndicator.TabIndex = 22;
+            this.btnIndicator.UseVisualStyleBackColor = false;
             // 
             // grbWStatusError
             // 
@@ -2611,7 +2613,6 @@ namespace VPG_DHS
             // pgCalibration
             // 
             this.pgCalibration.BackColor = System.Drawing.Color.AliceBlue;
-           // this.pgCalibration.Controls.Add(this.panel14);
             this.pgCalibration.Controls.Add(this.grpCalipro);
             this.pgCalibration.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pgCalibration.Location = new System.Drawing.Point(4, 27);
@@ -2619,208 +2620,6 @@ namespace VPG_DHS
             this.pgCalibration.Size = new System.Drawing.Size(784, 479);
             this.pgCalibration.TabIndex = 2;
             this.pgCalibration.Text = "Calibration";
-            // 
-            // panel14
-            // 
-            //this.panel14.BackColor = System.Drawing.Color.LightBlue;
-            //this.panel14.Controls.Add(this.textBox4);
-            //this.panel14.Controls.Add(this.lblCweight);
-            //this.panel14.Controls.Add(this.btnCalisave);
-            //this.panel14.Controls.Add(this.txtCweight);
-            //this.panel14.Controls.Add(this.txtCweightres);
-            //this.panel14.Controls.Add(this.lblCmv);
-            //this.panel14.Controls.Add(this.txtCweightunit);
-            //this.panel14.Controls.Add(this.txtCmv);
-            //this.panel14.Controls.Add(this.lblCweightres);
-            //this.panel14.Controls.Add(this.btnCacquire);
-            //this.panel14.Controls.Add(this.lblCweightunit);
-            //this.panel14.Controls.Add(this.btnCAcspan);
-            //this.panel14.Controls.Add(this.textBox5);
-            //this.panel14.Controls.Add(this.lblCweightlow);
-            //this.panel14.Controls.Add(this.lblCmvv);
-            //this.panel14.Controls.Add(this.textBox3);
-            //this.panel14.Controls.Add(this.lblCweighthigh);
-            //this.panel14.Controls.Add(this.textBox2);
-            //this.panel14.Controls.Add(this.lblCmvvhigh);
-            //this.panel14.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            //this.panel14.Location = new System.Drawing.Point(17, 36);
-            //this.panel14.Name = "panel14";
-            //this.panel14.Size = new System.Drawing.Size(425, 389);
-            //this.panel14.TabIndex = 20;
-            // 
-            // textBox4
-            // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.textBox4.Location = new System.Drawing.Point(197, 190);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(81, 20);
-            this.textBox4.TabIndex = 12;
-            // 
-            // lblCweight
-            // 
-            this.lblCweight.AutoSize = true;
-            this.lblCweight.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCweight.Location = new System.Drawing.Point(138, 25);
-            this.lblCweight.Name = "lblCweight";
-            this.lblCweight.Size = new System.Drawing.Size(53, 18);
-            this.lblCweight.TabIndex = 0;
-            this.lblCweight.Text = "Weight";
-            // 
-            // btnCalisave
-            // 
-            this.btnCalisave.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnCalisave.Location = new System.Drawing.Point(197, 309);
-            this.btnCalisave.Name = "btnCalisave";
-            this.btnCalisave.Size = new System.Drawing.Size(75, 23);
-            this.btnCalisave.TabIndex = 18;
-            this.btnCalisave.Text = "Save";
-            this.btnCalisave.UseVisualStyleBackColor = false;
-            // 
-            // txtCweight
-            // 
-            this.txtCweight.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.txtCweight.Location = new System.Drawing.Point(197, 26);
-            this.txtCweight.Multiline = true;
-            this.txtCweight.Name = "txtCweight";
-            this.txtCweight.Size = new System.Drawing.Size(81, 20);
-            this.txtCweight.TabIndex = 1;
-            // 
-            // txtCweightres
-            // 
-            this.txtCweightres.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.txtCweightres.Location = new System.Drawing.Point(197, 271);
-            this.txtCweightres.Name = "txtCweightres";
-            this.txtCweightres.Size = new System.Drawing.Size(81, 23);
-            this.txtCweightres.TabIndex = 17;
-            // 
-            // lblCmv
-            // 
-            this.lblCmv.AutoSize = true;
-            this.lblCmv.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCmv.Location = new System.Drawing.Point(138, 68);
-            this.lblCmv.Name = "lblCmv";
-            this.lblCmv.Size = new System.Drawing.Size(43, 18);
-            this.lblCmv.TabIndex = 2;
-            this.lblCmv.Text = "mV/V";
-            // 
-            // txtCweightunit
-            // 
-            this.txtCweightunit.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.txtCweightunit.Location = new System.Drawing.Point(197, 240);
-            this.txtCweightunit.Name = "txtCweightunit";
-            this.txtCweightunit.Size = new System.Drawing.Size(81, 23);
-            this.txtCweightunit.TabIndex = 16;
-            // 
-            // txtCmv
-            // 
-            this.txtCmv.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.txtCmv.Location = new System.Drawing.Point(197, 68);
-            this.txtCmv.Multiline = true;
-            this.txtCmv.Name = "txtCmv";
-            this.txtCmv.Size = new System.Drawing.Size(81, 20);
-            this.txtCmv.TabIndex = 3;
-            // 
-            // lblCweightres
-            // 
-            this.lblCweightres.AutoSize = true;
-            this.lblCweightres.Location = new System.Drawing.Point(64, 274);
-            this.lblCweightres.Name = "lblCweightres";
-            this.lblCweightres.Size = new System.Drawing.Size(108, 15);
-            this.lblCweightres.TabIndex = 15;
-            this.lblCweightres.Text = "Weight Resolution";
-            // 
-            // btnCacquire
-            // 
-            this.btnCacquire.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnCacquire.Location = new System.Drawing.Point(67, 136);
-            this.btnCacquire.Name = "btnCacquire";
-            this.btnCacquire.Size = new System.Drawing.Size(114, 23);
-            this.btnCacquire.TabIndex = 4;
-            this.btnCacquire.Text = "Aquire Deadload";
-            this.btnCacquire.UseVisualStyleBackColor = false;
-            // 
-            // lblCweightunit
-            // 
-            this.lblCweightunit.AutoSize = true;
-            this.lblCweightunit.Location = new System.Drawing.Point(64, 247);
-            this.lblCweightunit.Name = "lblCweightunit";
-            this.lblCweightunit.Size = new System.Drawing.Size(73, 15);
-            this.lblCweightunit.TabIndex = 14;
-            this.lblCweightunit.Text = "Weight Unit";
-            // 
-            // btnCAcspan
-            // 
-            this.btnCAcspan.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnCAcspan.Location = new System.Drawing.Point(67, 187);
-            this.btnCAcspan.Name = "btnCAcspan";
-            this.btnCAcspan.Size = new System.Drawing.Size(112, 23);
-            this.btnCAcspan.TabIndex = 5;
-            this.btnCAcspan.Text = "Acquire Span";
-            this.btnCAcspan.UseVisualStyleBackColor = false;
-            // 
-            // textBox5
-            // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.textBox5.Location = new System.Drawing.Point(307, 190);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(77, 20);
-            this.textBox5.TabIndex = 13;
-            // 
-            // lblCweightlow
-            // 
-            this.lblCweightlow.AutoSize = true;
-            this.lblCweightlow.Location = new System.Drawing.Point(194, 119);
-            this.lblCweightlow.Name = "lblCweightlow";
-            this.lblCweightlow.Size = new System.Drawing.Size(73, 15);
-            this.lblCweightlow.TabIndex = 6;
-            this.lblCweightlow.Text = "Weight Low";
-            // 
-            // lblCmvv
-            // 
-            this.lblCmvv.AutoSize = true;
-            this.lblCmvv.Location = new System.Drawing.Point(304, 119);
-            this.lblCmvv.Name = "lblCmvv";
-            this.lblCmvv.Size = new System.Drawing.Size(65, 15);
-            this.lblCmvv.TabIndex = 7;
-            this.lblCmvv.Text = "mV/V Low";
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.textBox3.Location = new System.Drawing.Point(307, 139);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(77, 20);
-            this.textBox3.TabIndex = 11;
-            // 
-            // lblCweighthigh
-            // 
-            this.lblCweighthigh.AutoSize = true;
-            this.lblCweighthigh.Location = new System.Drawing.Point(194, 171);
-            this.lblCweighthigh.Name = "lblCweighthigh";
-            this.lblCweighthigh.Size = new System.Drawing.Size(74, 15);
-            this.lblCweighthigh.TabIndex = 8;
-            this.lblCweighthigh.Text = "Weight High";
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.textBox2.Location = new System.Drawing.Point(197, 139);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(81, 20);
-            this.textBox2.TabIndex = 10;
-            // 
-            // lblCmvvhigh
-            // 
-            this.lblCmvvhigh.AutoSize = true;
-            this.lblCmvvhigh.Location = new System.Drawing.Point(304, 171);
-            this.lblCmvvhigh.Name = "lblCmvvhigh";
-            this.lblCmvvhigh.Size = new System.Drawing.Size(66, 15);
-            this.lblCmvvhigh.TabIndex = 9;
-            this.lblCmvvhigh.Text = "mV/V High";
             // 
             // grpCalipro
             // 
@@ -3712,9 +3511,7 @@ namespace VPG_DHS
             // 
             // panel13
             // 
-            //this.panel13.Controls.Add(this.checkBox1);
             this.panel13.Controls.Add(this.lblGraphCursor);
-          //  this.panel13.Controls.Add(this.chart1);
             this.panel13.Controls.Add(this.btnGstart);
             this.panel13.Controls.Add(this.lblGnotes);
             this.panel13.Controls.Add(this.cboSeconds);
@@ -3726,15 +3523,6 @@ namespace VPG_DHS
             this.panel13.Size = new System.Drawing.Size(733, 448);
             this.panel13.TabIndex = 7;
             // 
-            // checkBox1
-            // 
-            //this.checkBox1.AutoSize = true;
-            //this.checkBox1.Location = new System.Drawing.Point(344, 10);
-            //this.checkBox1.Name = "checkBox1";
-            //this.checkBox1.Size = new System.Drawing.Size(15, 14);
-            //this.checkBox1.TabIndex = 9;
-            //this.checkBox1.UseVisualStyleBackColor = true;
-            // 
             // lblGraphCursor
             // 
             this.lblGraphCursor.AutoSize = true;
@@ -3743,23 +3531,6 @@ namespace VPG_DHS
             this.lblGraphCursor.Size = new System.Drawing.Size(126, 18);
             this.lblGraphCursor.TabIndex = 7;
             this.lblGraphCursor.Text = "Cursor Coordinates";
-            // 
-            // chart1
-            // 
-            //chartArea6.Name = "ChartArea1";
-            //this.chart1.ChartAreas.Add(chartArea6);
-            //legend6.Name = "Legend1";
-            //this.chart1.Legends.Add(legend6);
-            //this.chart1.Location = new System.Drawing.Point(3, 28);
-            //this.chart1.Name = "chart1";
-            //series6.ChartArea = "ChartArea1";
-            //series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            //series6.Legend = "Legend1";
-            //series6.Name = "Series1";
-            //this.chart1.Series.Add(series6);
-            //this.chart1.Size = new System.Drawing.Size(714, 327);
-            //this.chart1.TabIndex = 6;
-            //this.chart1.Text = "chart1";
             // 
             // btnGstart
             // 
@@ -3814,6 +3585,180 @@ namespace VPG_DHS
             this.txtGweightunit.Size = new System.Drawing.Size(100, 26);
             this.txtGweightunit.TabIndex = 2;
             // 
+            // textBox4
+            // 
+            this.textBox4.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.textBox4.Location = new System.Drawing.Point(197, 190);
+            this.textBox4.Multiline = true;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(81, 20);
+            this.textBox4.TabIndex = 12;
+            // 
+            // lblCweight
+            // 
+            this.lblCweight.AutoSize = true;
+            this.lblCweight.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCweight.Location = new System.Drawing.Point(138, 25);
+            this.lblCweight.Name = "lblCweight";
+            this.lblCweight.Size = new System.Drawing.Size(53, 18);
+            this.lblCweight.TabIndex = 0;
+            this.lblCweight.Text = "Weight";
+            // 
+            // btnCalisave
+            // 
+            this.btnCalisave.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnCalisave.Location = new System.Drawing.Point(197, 309);
+            this.btnCalisave.Name = "btnCalisave";
+            this.btnCalisave.Size = new System.Drawing.Size(75, 23);
+            this.btnCalisave.TabIndex = 18;
+            this.btnCalisave.Text = "Save";
+            this.btnCalisave.UseVisualStyleBackColor = false;
+            // 
+            // txtCweight
+            // 
+            this.txtCweight.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.txtCweight.Location = new System.Drawing.Point(197, 26);
+            this.txtCweight.Multiline = true;
+            this.txtCweight.Name = "txtCweight";
+            this.txtCweight.Size = new System.Drawing.Size(81, 20);
+            this.txtCweight.TabIndex = 1;
+            // 
+            // txtCweightres
+            // 
+            this.txtCweightres.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.txtCweightres.Location = new System.Drawing.Point(197, 271);
+            this.txtCweightres.Name = "txtCweightres";
+            this.txtCweightres.Size = new System.Drawing.Size(81, 20);
+            this.txtCweightres.TabIndex = 17;
+            // 
+            // lblCmv
+            // 
+            this.lblCmv.AutoSize = true;
+            this.lblCmv.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCmv.Location = new System.Drawing.Point(138, 68);
+            this.lblCmv.Name = "lblCmv";
+            this.lblCmv.Size = new System.Drawing.Size(43, 18);
+            this.lblCmv.TabIndex = 2;
+            this.lblCmv.Text = "mV/V";
+            // 
+            // txtCweightunit
+            // 
+            this.txtCweightunit.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.txtCweightunit.Location = new System.Drawing.Point(197, 240);
+            this.txtCweightunit.Name = "txtCweightunit";
+            this.txtCweightunit.Size = new System.Drawing.Size(81, 20);
+            this.txtCweightunit.TabIndex = 16;
+            // 
+            // txtCmv
+            // 
+            this.txtCmv.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.txtCmv.Location = new System.Drawing.Point(197, 68);
+            this.txtCmv.Multiline = true;
+            this.txtCmv.Name = "txtCmv";
+            this.txtCmv.Size = new System.Drawing.Size(81, 20);
+            this.txtCmv.TabIndex = 3;
+            // 
+            // lblCweightres
+            // 
+            this.lblCweightres.AutoSize = true;
+            this.lblCweightres.Location = new System.Drawing.Point(64, 274);
+            this.lblCweightres.Name = "lblCweightres";
+            this.lblCweightres.Size = new System.Drawing.Size(108, 15);
+            this.lblCweightres.TabIndex = 15;
+            this.lblCweightres.Text = "Weight Resolution";
+            // 
+            // btnCacquire
+            // 
+            this.btnCacquire.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnCacquire.Location = new System.Drawing.Point(67, 136);
+            this.btnCacquire.Name = "btnCacquire";
+            this.btnCacquire.Size = new System.Drawing.Size(114, 23);
+            this.btnCacquire.TabIndex = 4;
+            this.btnCacquire.Text = "Aquire Deadload";
+            this.btnCacquire.UseVisualStyleBackColor = false;
+            // 
+            // lblCweightunit
+            // 
+            this.lblCweightunit.AutoSize = true;
+            this.lblCweightunit.Location = new System.Drawing.Point(64, 247);
+            this.lblCweightunit.Name = "lblCweightunit";
+            this.lblCweightunit.Size = new System.Drawing.Size(73, 15);
+            this.lblCweightunit.TabIndex = 14;
+            this.lblCweightunit.Text = "Weight Unit";
+            // 
+            // btnCAcspan
+            // 
+            this.btnCAcspan.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnCAcspan.Location = new System.Drawing.Point(67, 187);
+            this.btnCAcspan.Name = "btnCAcspan";
+            this.btnCAcspan.Size = new System.Drawing.Size(112, 23);
+            this.btnCAcspan.TabIndex = 5;
+            this.btnCAcspan.Text = "Acquire Span";
+            this.btnCAcspan.UseVisualStyleBackColor = false;
+            // 
+            // textBox5
+            // 
+            this.textBox5.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.textBox5.Location = new System.Drawing.Point(307, 190);
+            this.textBox5.Multiline = true;
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(77, 20);
+            this.textBox5.TabIndex = 13;
+            // 
+            // lblCweightlow
+            // 
+            this.lblCweightlow.AutoSize = true;
+            this.lblCweightlow.Location = new System.Drawing.Point(194, 119);
+            this.lblCweightlow.Name = "lblCweightlow";
+            this.lblCweightlow.Size = new System.Drawing.Size(73, 15);
+            this.lblCweightlow.TabIndex = 6;
+            this.lblCweightlow.Text = "Weight Low";
+            // 
+            // lblCmvv
+            // 
+            this.lblCmvv.AutoSize = true;
+            this.lblCmvv.Location = new System.Drawing.Point(304, 119);
+            this.lblCmvv.Name = "lblCmvv";
+            this.lblCmvv.Size = new System.Drawing.Size(65, 15);
+            this.lblCmvv.TabIndex = 7;
+            this.lblCmvv.Text = "mV/V Low";
+            // 
+            // textBox3
+            // 
+            this.textBox3.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.textBox3.Location = new System.Drawing.Point(307, 139);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(77, 20);
+            this.textBox3.TabIndex = 11;
+            // 
+            // lblCweighthigh
+            // 
+            this.lblCweighthigh.AutoSize = true;
+            this.lblCweighthigh.Location = new System.Drawing.Point(194, 171);
+            this.lblCweighthigh.Name = "lblCweighthigh";
+            this.lblCweighthigh.Size = new System.Drawing.Size(74, 15);
+            this.lblCweighthigh.TabIndex = 8;
+            this.lblCweighthigh.Text = "Weight High";
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.textBox2.Location = new System.Drawing.Point(197, 139);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(81, 20);
+            this.textBox2.TabIndex = 10;
+            // 
+            // lblCmvvhigh
+            // 
+            this.lblCmvvhigh.AutoSize = true;
+            this.lblCmvvhigh.Location = new System.Drawing.Point(304, 171);
+            this.lblCmvvhigh.Name = "lblCmvvhigh";
+            this.lblCmvvhigh.Size = new System.Drawing.Size(66, 15);
+            this.lblCmvvhigh.TabIndex = 9;
+            this.lblCmvvhigh.Text = "mV/V High";
+            // 
             // lblTemp
             // 
             this.lblTemp.AutoSize = true;
@@ -3847,7 +3792,7 @@ namespace VPG_DHS
             this.lblCel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCel.Location = new System.Drawing.Point(580, 37);
             this.lblCel.Name = "lblCel";
-            this.lblCel.Size = new System.Drawing.Size(18, 16);
+            this.lblCel.Size = new System.Drawing.Size(17, 16);
             this.lblCel.TabIndex = 7;
             this.lblCel.Text = "C";
             // 
@@ -3876,19 +3821,6 @@ namespace VPG_DHS
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(100, 23);
             this.lblAddress.TabIndex = 0;
-            // 
-            // VPGSerialPort
-            // 
-            //this.VPGSerialPort.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.VPGSerialPort_DataReceived);
-            // 
-            // btnIndicator
-            // 
-            this.btnIndicator.BackColor = System.Drawing.Color.ForestGreen;
-            this.btnIndicator.Location = new System.Drawing.Point(580, 5);
-            this.btnIndicator.Name = "btnIndicator";
-            this.btnIndicator.Size = new System.Drawing.Size(25, 23);
-            this.btnIndicator.TabIndex = 22;
-            this.btnIndicator.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -3944,8 +3876,6 @@ namespace VPG_DHS
             this.grpMeasuring.ResumeLayout(false);
             this.grpMeasuring.PerformLayout();
             this.pgCalibration.ResumeLayout(false);
-           // this.panel14.ResumeLayout(false);
-           // this.panel14.PerformLayout();
             this.grpCalipro.ResumeLayout(false);
             this.grpCalipro.PerformLayout();
             this.pgView.ResumeLayout(false);
@@ -3979,7 +3909,6 @@ namespace VPG_DHS
             this.pgGraph.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
             this.panel13.PerformLayout();
-            //((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSyrma)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -4318,6 +4247,7 @@ namespace VPG_DHS
        // private System.IO.Ports.SerialPort VPGSerialPort;
         private System.Windows.Forms.Button btnConnect;
         private System.Windows.Forms.Button btnIndicator;
+        private System.IO.Ports.SerialPort VPGSerialPort;
     }
 }
 

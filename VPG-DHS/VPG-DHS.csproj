@@ -78,6 +78,7 @@
     </Compile>
     <EmbeddedResource Include="VPG-Master.resx">
       <DependentUpon>VPG-Master.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="WeighingDisplayStatus.resx">
       <DependentUpon>WeighingDisplayStatus.cs</DependentUpon>
