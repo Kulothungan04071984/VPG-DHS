@@ -240,7 +240,7 @@ namespace VPG_DHS
             this.lblMode = new System.Windows.Forms.Label();
             this.lblGrab = new System.Windows.Forms.Label();
             this.pgCalibration = new System.Windows.Forms.TabPage();
-            this.panel14 = new System.Windows.Forms.Panel();
+            //this.panel14 = new System.Windows.Forms.Panel();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.lblCweight = new System.Windows.Forms.Label();
             this.btnCalisave = new System.Windows.Forms.Button();
@@ -346,9 +346,9 @@ namespace VPG_DHS
             this.txtVactive = new System.Windows.Forms.TextBox();
             this.pgGraph = new System.Windows.Forms.TabPage();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+           // this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.lblGraphCursor = new System.Windows.Forms.Label();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+           // this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.btnGstart = new System.Windows.Forms.Button();
             this.lblGnotes = new System.Windows.Forms.Label();
             this.cboSeconds = new System.Windows.Forms.ComboBox();
@@ -362,7 +362,7 @@ namespace VPG_DHS
             this.btnHelp = new System.Windows.Forms.Button();
             this.picSyrma = new System.Windows.Forms.PictureBox();
             this.lblAddress = new System.Windows.Forms.Label();
-            this.VPGSerialPort = new System.IO.Ports.SerialPort(this.components);
+          //  this.VPGSerialPort = new System.IO.Ports.SerialPort(this.components);
             this.btnIndicator = new System.Windows.Forms.Button();
             this.vpgMenu.SuspendLayout();
             this.tbControl.SuspendLayout();
@@ -382,7 +382,7 @@ namespace VPG_DHS
             this.tbFilters.SuspendLayout();
             this.grpMeasuring.SuspendLayout();
             this.pgCalibration.SuspendLayout();
-            this.panel14.SuspendLayout();
+            //this.panel14.SuspendLayout();
             this.grpCalipro.SuspendLayout();
             this.pgView.SuspendLayout();
             this.grpVnotes.SuspendLayout();
@@ -400,7 +400,7 @@ namespace VPG_DHS
             this.panel1.SuspendLayout();
             this.pgGraph.SuspendLayout();
             this.panel13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            //((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSyrma)).BeginInit();
             this.SuspendLayout();
             // 
@@ -2611,7 +2611,7 @@ namespace VPG_DHS
             // pgCalibration
             // 
             this.pgCalibration.BackColor = System.Drawing.Color.AliceBlue;
-            this.pgCalibration.Controls.Add(this.panel14);
+           // this.pgCalibration.Controls.Add(this.panel14);
             this.pgCalibration.Controls.Add(this.grpCalipro);
             this.pgCalibration.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pgCalibration.Location = new System.Drawing.Point(4, 27);
@@ -2622,31 +2622,31 @@ namespace VPG_DHS
             // 
             // panel14
             // 
-            this.panel14.BackColor = System.Drawing.Color.LightBlue;
-            this.panel14.Controls.Add(this.textBox4);
-            this.panel14.Controls.Add(this.lblCweight);
-            this.panel14.Controls.Add(this.btnCalisave);
-            this.panel14.Controls.Add(this.txtCweight);
-            this.panel14.Controls.Add(this.txtCweightres);
-            this.panel14.Controls.Add(this.lblCmv);
-            this.panel14.Controls.Add(this.txtCweightunit);
-            this.panel14.Controls.Add(this.txtCmv);
-            this.panel14.Controls.Add(this.lblCweightres);
-            this.panel14.Controls.Add(this.btnCacquire);
-            this.panel14.Controls.Add(this.lblCweightunit);
-            this.panel14.Controls.Add(this.btnCAcspan);
-            this.panel14.Controls.Add(this.textBox5);
-            this.panel14.Controls.Add(this.lblCweightlow);
-            this.panel14.Controls.Add(this.lblCmvv);
-            this.panel14.Controls.Add(this.textBox3);
-            this.panel14.Controls.Add(this.lblCweighthigh);
-            this.panel14.Controls.Add(this.textBox2);
-            this.panel14.Controls.Add(this.lblCmvvhigh);
-            this.panel14.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel14.Location = new System.Drawing.Point(17, 36);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(425, 389);
-            this.panel14.TabIndex = 20;
+            //this.panel14.BackColor = System.Drawing.Color.LightBlue;
+            //this.panel14.Controls.Add(this.textBox4);
+            //this.panel14.Controls.Add(this.lblCweight);
+            //this.panel14.Controls.Add(this.btnCalisave);
+            //this.panel14.Controls.Add(this.txtCweight);
+            //this.panel14.Controls.Add(this.txtCweightres);
+            //this.panel14.Controls.Add(this.lblCmv);
+            //this.panel14.Controls.Add(this.txtCweightunit);
+            //this.panel14.Controls.Add(this.txtCmv);
+            //this.panel14.Controls.Add(this.lblCweightres);
+            //this.panel14.Controls.Add(this.btnCacquire);
+            //this.panel14.Controls.Add(this.lblCweightunit);
+            //this.panel14.Controls.Add(this.btnCAcspan);
+            //this.panel14.Controls.Add(this.textBox5);
+            //this.panel14.Controls.Add(this.lblCweightlow);
+            //this.panel14.Controls.Add(this.lblCmvv);
+            //this.panel14.Controls.Add(this.textBox3);
+            //this.panel14.Controls.Add(this.lblCweighthigh);
+            //this.panel14.Controls.Add(this.textBox2);
+            //this.panel14.Controls.Add(this.lblCmvvhigh);
+            //this.panel14.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            //this.panel14.Location = new System.Drawing.Point(17, 36);
+            //this.panel14.Name = "panel14";
+            //this.panel14.Size = new System.Drawing.Size(425, 389);
+            //this.panel14.TabIndex = 20;
             // 
             // textBox4
             // 
@@ -3712,9 +3712,9 @@ namespace VPG_DHS
             // 
             // panel13
             // 
-            this.panel13.Controls.Add(this.checkBox1);
+            //this.panel13.Controls.Add(this.checkBox1);
             this.panel13.Controls.Add(this.lblGraphCursor);
-            this.panel13.Controls.Add(this.chart1);
+          //  this.panel13.Controls.Add(this.chart1);
             this.panel13.Controls.Add(this.btnGstart);
             this.panel13.Controls.Add(this.lblGnotes);
             this.panel13.Controls.Add(this.cboSeconds);
@@ -3728,12 +3728,12 @@ namespace VPG_DHS
             // 
             // checkBox1
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(344, 10);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(15, 14);
-            this.checkBox1.TabIndex = 9;
-            this.checkBox1.UseVisualStyleBackColor = true;
+            //this.checkBox1.AutoSize = true;
+            //this.checkBox1.Location = new System.Drawing.Point(344, 10);
+            //this.checkBox1.Name = "checkBox1";
+            //this.checkBox1.Size = new System.Drawing.Size(15, 14);
+            //this.checkBox1.TabIndex = 9;
+            //this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // lblGraphCursor
             // 
@@ -3746,20 +3746,20 @@ namespace VPG_DHS
             // 
             // chart1
             // 
-            chartArea6.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea6);
-            legend6.Name = "Legend1";
-            this.chart1.Legends.Add(legend6);
-            this.chart1.Location = new System.Drawing.Point(3, 28);
-            this.chart1.Name = "chart1";
-            series6.ChartArea = "ChartArea1";
-            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series6.Legend = "Legend1";
-            series6.Name = "Series1";
-            this.chart1.Series.Add(series6);
-            this.chart1.Size = new System.Drawing.Size(714, 327);
-            this.chart1.TabIndex = 6;
-            this.chart1.Text = "chart1";
+            //chartArea6.Name = "ChartArea1";
+            //this.chart1.ChartAreas.Add(chartArea6);
+            //legend6.Name = "Legend1";
+            //this.chart1.Legends.Add(legend6);
+            //this.chart1.Location = new System.Drawing.Point(3, 28);
+            //this.chart1.Name = "chart1";
+            //series6.ChartArea = "ChartArea1";
+            //series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            //series6.Legend = "Legend1";
+            //series6.Name = "Series1";
+            //this.chart1.Series.Add(series6);
+            //this.chart1.Size = new System.Drawing.Size(714, 327);
+            //this.chart1.TabIndex = 6;
+            //this.chart1.Text = "chart1";
             // 
             // btnGstart
             // 
@@ -3879,7 +3879,7 @@ namespace VPG_DHS
             // 
             // VPGSerialPort
             // 
-            this.VPGSerialPort.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.VPGSerialPort_DataReceived);
+            //this.VPGSerialPort.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.VPGSerialPort_DataReceived);
             // 
             // btnIndicator
             // 
@@ -3944,8 +3944,8 @@ namespace VPG_DHS
             this.grpMeasuring.ResumeLayout(false);
             this.grpMeasuring.PerformLayout();
             this.pgCalibration.ResumeLayout(false);
-            this.panel14.ResumeLayout(false);
-            this.panel14.PerformLayout();
+           // this.panel14.ResumeLayout(false);
+           // this.panel14.PerformLayout();
             this.grpCalipro.ResumeLayout(false);
             this.grpCalipro.PerformLayout();
             this.pgView.ResumeLayout(false);
@@ -3979,7 +3979,7 @@ namespace VPG_DHS
             this.pgGraph.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
             this.panel13.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSyrma)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -4315,7 +4315,7 @@ namespace VPG_DHS
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.CheckBox chkGcursor;
         private System.Windows.Forms.Label lblGraphCursor;
-        private System.IO.Ports.SerialPort VPGSerialPort;
+       // private System.IO.Ports.SerialPort VPGSerialPort;
         private System.Windows.Forms.Button btnConnect;
         private System.Windows.Forms.Button btnIndicator;
     }
