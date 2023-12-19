@@ -131,8 +131,8 @@ namespace VPG_DHS
             this.txtWeightkg = new System.Windows.Forms.TextBox();
             this.tbWeightfilter = new System.Windows.Forms.TabControl();
             this.tbWeightformat = new System.Windows.Forms.TabPage();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.lblFloating = new System.Windows.Forms.Label();
+           // this.textBox6 = new System.Windows.Forms.TextBox();
+           // this.lblFloating = new System.Windows.Forms.Label();
             this.txtMotiondetectperiod = new System.Windows.Forms.TextBox();
             this.txtMotiondetectband = new System.Windows.Forms.TextBox();
             this.cboMotionDetect = new System.Windows.Forms.ComboBox();
@@ -220,12 +220,12 @@ namespace VPG_DHS
             this.lblDelay = new System.Windows.Forms.Label();
             this.lblMode = new System.Windows.Forms.Label();
             this.lblGrab = new System.Windows.Forms.Label();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.chkfastfilter = new System.Windows.Forms.CheckBox();
-            this.lblFastfilter = new System.Windows.Forms.Label();
-            this.chkStandardfilter = new System.Windows.Forms.CheckBox();
-            this.lblStandardFilter = new System.Windows.Forms.Label();
-            this.lblFilterMode = new System.Windows.Forms.Label();
+            //this.tabPage1 = new System.Windows.Forms.TabPage();
+            //this.chkfastfilter = new System.Windows.Forms.CheckBox();
+            //this.lblFastfilter = new System.Windows.Forms.Label();
+            //this.chkStandardfilter = new System.Windows.Forms.CheckBox();
+            //this.lblStandardFilter = new System.Windows.Forms.Label();
+            //this.lblFilterMode = new System.Windows.Forms.Label();
             this.pgCalibration = new System.Windows.Forms.TabPage();
             this.grpCalipro = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -364,7 +364,7 @@ namespace VPG_DHS
             this.grpMeasure.SuspendLayout();
             this.tbFilters.SuspendLayout();
             this.grpMeasuring.SuspendLayout();
-            this.tabPage1.SuspendLayout();
+           // this.tabPage1.SuspendLayout();
             this.pgCalibration.SuspendLayout();
             this.grpCalipro.SuspendLayout();
             this.pgView.SuspendLayout();
@@ -1539,7 +1539,7 @@ namespace VPG_DHS
             // 
             this.tbWeightfilter.Controls.Add(this.tbWeightformat);
             this.tbWeightfilter.Controls.Add(this.tbFilters);
-            this.tbWeightfilter.Controls.Add(this.tabPage1);
+           // this.tbWeightfilter.Controls.Add(this.tabPage1);
             this.tbWeightfilter.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.tbWeightfilter.Location = new System.Drawing.Point(24, 39);
             this.tbWeightfilter.Name = "tbWeightfilter";
@@ -1551,8 +1551,8 @@ namespace VPG_DHS
             // tbWeightformat
             // 
             this.tbWeightformat.BackColor = System.Drawing.Color.LightBlue;
-            this.tbWeightformat.Controls.Add(this.textBox6);
-            this.tbWeightformat.Controls.Add(this.lblFloating);
+           // this.tbWeightformat.Controls.Add(this.textBox6);
+           // this.tbWeightformat.Controls.Add(this.lblFloating);
             this.tbWeightformat.Controls.Add(this.txtMotiondetectperiod);
             this.tbWeightformat.Controls.Add(this.txtMotiondetectband);
             this.tbWeightformat.Controls.Add(this.cboMotionDetect);
@@ -1593,22 +1593,22 @@ namespace VPG_DHS
             // 
             // textBox6
             // 
-            this.textBox6.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.textBox6.Location = new System.Drawing.Point(627, 115);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(90, 20);
-            this.textBox6.TabIndex = 31;
+            //this.textBox6.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            //this.textBox6.Location = new System.Drawing.Point(627, 115);
+            //this.textBox6.Multiline = true;
+            //this.textBox6.Name = "textBox6";
+            //this.textBox6.Size = new System.Drawing.Size(90, 20);
+            //this.textBox6.TabIndex = 31;
             // 
             // lblFloating
             // 
-            this.lblFloating.AutoSize = true;
-            this.lblFloating.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFloating.Location = new System.Drawing.Point(448, 115);
-            this.lblFloating.Name = "lblFloating";
-            this.lblFloating.Size = new System.Drawing.Size(94, 18);
-            this.lblFloating.TabIndex = 30;
-            this.lblFloating.Text = "Floating Point";
+            //this.lblFloating.AutoSize = true;
+            //this.lblFloating.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            //this.lblFloating.Location = new System.Drawing.Point(448, 115);
+            //this.lblFloating.Name = "lblFloating";
+            //this.lblFloating.Size = new System.Drawing.Size(94, 18);
+            //this.lblFloating.TabIndex = 30;
+            //this.lblFloating.Text = "Floating Point";
             // 
             // txtMotiondetectperiod
             // 
@@ -2598,63 +2598,63 @@ namespace VPG_DHS
             // 
             // tabPage1
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.LightBlue;
-            this.tabPage1.Controls.Add(this.chkfastfilter);
-            this.tabPage1.Controls.Add(this.lblFastfilter);
-            this.tabPage1.Controls.Add(this.chkStandardfilter);
-            this.tabPage1.Controls.Add(this.lblStandardFilter);
-            this.tabPage1.Controls.Add(this.lblFilterMode);
-            this.tabPage1.Location = new System.Drawing.Point(4, 27);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(841, 389);
-            this.tabPage1.TabIndex = 2;
-            this.tabPage1.Text = "Modes";
+            //this.tabPage1.BackColor = System.Drawing.Color.LightBlue;
+            //this.tabPage1.Controls.Add(this.chkfastfilter);
+            //this.tabPage1.Controls.Add(this.lblFastfilter);
+            //this.tabPage1.Controls.Add(this.chkStandardfilter);
+            //this.tabPage1.Controls.Add(this.lblStandardFilter);
+            //this.tabPage1.Controls.Add(this.lblFilterMode);
+            //this.tabPage1.Location = new System.Drawing.Point(4, 27);
+            //this.tabPage1.Name = "tabPage1";
+            //this.tabPage1.Size = new System.Drawing.Size(841, 389);
+            //this.tabPage1.TabIndex = 2;
+            //this.tabPage1.Text = "Modes";
             // 
             // chkfastfilter
             // 
-            this.chkfastfilter.AutoSize = true;
-            this.chkfastfilter.Location = new System.Drawing.Point(147, 109);
-            this.chkfastfilter.Name = "chkfastfilter";
-            this.chkfastfilter.Size = new System.Drawing.Size(15, 14);
-            this.chkfastfilter.TabIndex = 16;
-            this.chkfastfilter.UseVisualStyleBackColor = true;
+            //this.chkfastfilter.AutoSize = true;
+            //this.chkfastfilter.Location = new System.Drawing.Point(147, 109);
+            //this.chkfastfilter.Name = "chkfastfilter";
+            //this.chkfastfilter.Size = new System.Drawing.Size(15, 14);
+            //this.chkfastfilter.TabIndex = 16;
+            //this.chkfastfilter.UseVisualStyleBackColor = true;
             // 
             // lblFastfilter
             // 
-            this.lblFastfilter.AutoSize = true;
-            this.lblFastfilter.Location = new System.Drawing.Point(41, 106);
-            this.lblFastfilter.Name = "lblFastfilter";
-            this.lblFastfilter.Size = new System.Drawing.Size(69, 18);
-            this.lblFastfilter.TabIndex = 15;
-            this.lblFastfilter.Text = "Fast Filter";
+            //this.lblFastfilter.AutoSize = true;
+            //this.lblFastfilter.Location = new System.Drawing.Point(41, 106);
+            //this.lblFastfilter.Name = "lblFastfilter";
+            //this.lblFastfilter.Size = new System.Drawing.Size(69, 18);
+            //this.lblFastfilter.TabIndex = 15;
+            //this.lblFastfilter.Text = "Fast Filter";
             // 
             // chkStandardfilter
             // 
-            this.chkStandardfilter.AutoSize = true;
-            this.chkStandardfilter.Location = new System.Drawing.Point(147, 72);
-            this.chkStandardfilter.Name = "chkStandardfilter";
-            this.chkStandardfilter.Size = new System.Drawing.Size(15, 14);
-            this.chkStandardfilter.TabIndex = 14;
-            this.chkStandardfilter.UseVisualStyleBackColor = true;
+            //this.chkStandardfilter.AutoSize = true;
+            //this.chkStandardfilter.Location = new System.Drawing.Point(147, 72);
+            //this.chkStandardfilter.Name = "chkStandardfilter";
+            //this.chkStandardfilter.Size = new System.Drawing.Size(15, 14);
+            //this.chkStandardfilter.TabIndex = 14;
+            //this.chkStandardfilter.UseVisualStyleBackColor = true;
             // 
             // lblStandardFilter
             // 
-            this.lblStandardFilter.AutoSize = true;
-            this.lblStandardFilter.Location = new System.Drawing.Point(41, 69);
-            this.lblStandardFilter.Name = "lblStandardFilter";
-            this.lblStandardFilter.Size = new System.Drawing.Size(99, 18);
-            this.lblStandardFilter.TabIndex = 13;
-            this.lblStandardFilter.Text = "Standard Filter";
+            //this.lblStandardFilter.AutoSize = true;
+            //this.lblStandardFilter.Location = new System.Drawing.Point(41, 69);
+            //this.lblStandardFilter.Name = "lblStandardFilter";
+            //this.lblStandardFilter.Size = new System.Drawing.Size(99, 18);
+            //this.lblStandardFilter.TabIndex = 13;
+            //this.lblStandardFilter.Text = "Standard Filter";
             // 
             // lblFilterMode
             // 
-            this.lblFilterMode.AutoSize = true;
-            this.lblFilterMode.Font = new System.Drawing.Font("Calibri", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFilterMode.Location = new System.Drawing.Point(41, 34);
-            this.lblFilterMode.Name = "lblFilterMode";
-            this.lblFilterMode.Size = new System.Drawing.Size(85, 18);
-            this.lblFilterMode.TabIndex = 12;
-            this.lblFilterMode.Text = "Filter Mode:";
+            //this.lblFilterMode.AutoSize = true;
+            //this.lblFilterMode.Font = new System.Drawing.Font("Calibri", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            //this.lblFilterMode.Location = new System.Drawing.Point(41, 34);
+            //this.lblFilterMode.Name = "lblFilterMode";
+            //this.lblFilterMode.Size = new System.Drawing.Size(85, 18);
+            //this.lblFilterMode.TabIndex = 12;
+            //this.lblFilterMode.Text = "Filter Mode:";
             // 
             // pgCalibration
             // 
@@ -3677,21 +3677,21 @@ namespace VPG_DHS
             // 
             // chtGraphy
             // 
-            this.chtGraphy.BackColor = System.Drawing.Color.Gainsboro;
-            chartArea1.Name = "ChartArea1";
-            this.chtGraphy.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chtGraphy.Legends.Add(legend1);
-            this.chtGraphy.Location = new System.Drawing.Point(35, 28);
-            this.chtGraphy.Name = "chtGraphy";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series1.Legend = "Legend1";
-            series1.Name = "graphy";
-            this.chtGraphy.Series.Add(series1);
-            this.chtGraphy.Size = new System.Drawing.Size(1089, 327);
-            this.chtGraphy.TabIndex = 10;
-            this.chtGraphy.Text = "chart1";
+            //this.chtGraphy.BackColor = System.Drawing.Color.Gainsboro;
+            //chartArea1.Name = "ChartArea1";
+            //this.chtGraphy.ChartAreas.Add(chartArea1);
+            //legend1.Name = "Legend1";
+            //this.chtGraphy.Legends.Add(legend1);
+            //this.chtGraphy.Location = new System.Drawing.Point(35, 28);
+            //this.chtGraphy.Name = "chtGraphy";
+            //series1.ChartArea = "ChartArea1";
+            //series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            //series1.Legend = "Legend1";
+            //series1.Name = "graphy";
+            //this.chtGraphy.Series.Add(series1);
+            //this.chtGraphy.Size = new System.Drawing.Size(1089, 327);
+            //this.chtGraphy.TabIndex = 10;
+            //this.chtGraphy.Text = "chart1";
             // 
             // lblGraphCursor
             // 
@@ -4209,7 +4209,7 @@ namespace VPG_DHS
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(1283, 573);
-            this.Controls.Add(this.lblActiveadd);
+           // this.Controls.Add(this.lblActiveadd);
             this.Controls.Add(this.lblAddress);
             this.Controls.Add(this.picSyrma);
             this.Controls.Add(this.btnHelp);
@@ -4256,8 +4256,8 @@ namespace VPG_DHS
             this.tbFilters.PerformLayout();
             this.grpMeasuring.ResumeLayout(false);
             this.grpMeasuring.PerformLayout();
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
+           // this.tabPage1.ResumeLayout(false);
+           // this.tabPage1.PerformLayout();
             this.pgCalibration.ResumeLayout(false);
             this.grpCalipro.ResumeLayout(false);
             this.grpCalipro.PerformLayout();
